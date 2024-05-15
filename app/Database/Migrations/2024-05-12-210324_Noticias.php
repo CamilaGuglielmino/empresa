@@ -15,12 +15,10 @@ class Noticias extends Migration
                 'unsigned' => true,
                 'auto_increment' => true,
             ],
-            'id_usuario' =>[
-                'type' => 'INT',
-                'constraint' => '5',
-                'unsigned'=> true,
+            'nombre_usuario'=>[
+                'type' => 'VARCHAR',
+                'constraint' => '10',
             ],
-
             'titulo' =>[
                 'type' => 'VARCHAR', 
                 'constraint' => 50,
@@ -41,12 +39,12 @@ class Noticias extends Migration
                 'constraint' => 100,
             ],
             'imagen' =>[
-                'type' => 'BLOB', 
+                'type' => 'FILE', 
             ],
 
         ]);
         $this -> forge -> addKey('id', true);
-        $this -> forge -> addForeignKey('id_usuario', 'usuarios', 'id');
+        $this -> forge -> addForeignKey('nombre_usuario', 'usuarios', 'nombreUsuario');
         $this -> forge ->createTable('noticias');
     }
 

@@ -1,97 +1,127 @@
 <?php
 namespace App\Controllers;
+
 use App\Models\UsuariosModel;
+use App\Models\NoticiasModel;
+use CodeIgniter\I18n\Time;
+
 
 
 class Noticias extends BaseController
 {
     public function index()
     {
-        $mensaje=session('mensaje');
-        $vistas = view('header').view('inicio').view('footer');
+        $mensaje = session('mensaje');
+        $vistas = view('header') . view('inicio') . view('footer');
         return $vistas;
     }
- 
+
     public function show($id = null)
     {
         //
     }
-    public function login (){
+    public function login()
+    {
 
-        $vistas = view('header').view('login').view('footer');
+        $vistas = view('header') . view('login') . view('footer');
         return $vistas;
     }
-    public function iniciar_sesion(){
+    public function iniciar_sesion()
+    {
 
         //var_dump('nombreUsuario', 'contraseña',);
-        
-        $usuario =$this->request->getPost('nombreUsuario');  
+
+        $usuario = $this->request->getPost('nombreUsuario');
         var_dump($usuario);
 
         $contraseña = $this->request->getPost('contraseña');
         var_dump($contraseña);
 
         $Usuario = new UsuariosModel();
-        $datoUsuario=$Usuario->obtenerUsuario(['nombreUsuario' =>$usuario]);
-        $contraBD=$datoUsuario[0]['contraseña'];
-        
-        
-        if(strcasecmp($contraBD, $contraseña) == 0){
-        var_dump($contraBD);
-            
-            $data =[
-                'nombreUsuario'=>$datoUsuario[0]['nombreUsuario'],
-                'tipo_usuario' =>$datoUsuario[0]['tipo_usuario']
-            ];
-            $session =session();
-            $session ->set($data);
-            return redirect()->to(base_url('/'))->with('mensaje','1');
-        
-        }else{
-        var_dump($contraBD);
+        $datoUsuario = $Usuario->obtenerUsuario(['nombreUsuario' => $usuario]);
+        $contraBD = $datoUsuario[0]['contraseña'];
 
-           return redirect()->to(base_url('/login')) -> with('mensaje', '0');
+
+        if (strcasecmp($contraBD, $contraseña) == 0) {
+            var_dump($contraBD);
+
+            $data = [
+                'nombreUsuario' => $datoUsuario[0]['nombreUsuario'],
+                'tipo_usuario' => $datoUsuario[0]['tipo_usuario']
+            ];
+            $session = session();
+            $session->set($data);
+            return redirect()->to(base_url('/'))->with('mensaje', '1');
+
+        } else {
+            var_dump($contraBD);
+
+            return redirect()->to(base_url('/login'))->with('mensaje', '0');
 
 
         }
     }
-    public function logout() {
+    public function logout()
+    {
         // Obtener la instancia de la sesión
         $session = \Config\Services::session();
-    
+
         // Destruir la sesión
         $session->destroy();
-    
+
         // Redireccionar al usuario a la página de inicio de sesión o a la página principal
         return redirect()->to(base_url('/'));
     }
     public function nuevo()
     {
-        $vistas = view('header').view('nuevo').view('footer');
+        $vistas = view('header') . view('nuevo') . view('footer');
         return $vistas;
     }
 
     public function new()
     {
-        //
+        $imagen = $this->request->getFile('imagen');
+        $fechaActual = Time::now();
+        $fechaFormateada = $fechaActual->toLocalizedString('yyyy-MM-dd');
+        $estado='Borrador';
+        $userData = $_SESSION;
+        $imagen->move(WRITEPATH. '/uploads');
+
+        
+        $id_usuario = session('nombreUsuario');
+        var_dump($id_usuario);
+        
+        $data = [
+            'id' =>'1',
+            'nombre_usuario'=>$id_usuario,
+            'titulo' => $this->request->getPost('titulo'),
+            'descripcion' => $this->request->getPost('descripcion'),
+            'fecha' => $fechaFormateada,
+            'estado'=>$estado,
+            'categoria' => $this->request->getPost('categoria'),
+            'imagen'=>$imagen
+        ];
+        $Noticias= new NoticiasModel();
+        $Noticias->insertar($data);
+        return redirect()->to(base_url('/')); 
     }
 
     public function create()
     {
         //
     }
-  
+
     public function edit($id = null)
     {
         //
     }
 
-   
+
     public function update($id = null)
     {
         //
     }
-        public function delete($id = null)
+    public function delete($id = null)
     {
         //
     }

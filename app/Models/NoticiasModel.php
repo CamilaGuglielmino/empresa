@@ -12,7 +12,7 @@ class NoticiasModel extends Model
     protected $returnType       = 'array';
     protected $useSoftDeletes   = false;
     protected $protectFields    = true;
-    protected $allowedFields    = ['id_usuario', 'titulo', 'descripcion', 'fecha', 'estado', 'categoria', 'imagen'];
+    protected $allowedFields    = ['nombre_usuario', 'titulo', 'descripcion', 'fecha', 'estado', 'categoria', 'imagen'];
 
     protected bool $allowEmptyInserts = false;
     protected bool $updateOnlyChanged = true;
@@ -22,9 +22,14 @@ class NoticiasModel extends Model
 
     // Dates
     protected $useTimestamps = true;
-    protected $dateFormat    = 'datetime';
-    protected $createdField  = 'created_at';
-    protected $updatedField  = 'updated_at';
-    protected $deletedField  = 'deleted_at';
+    protected $dateFormat    = '';
+    protected $createdField  = '';
+    protected $updatedField  = '';
+    protected $deletedField  = '';
+    public function insertar($data) {
+        
+        $this -> db -> table('noticias')-> insertBatch($data);
+
+    }
 
 }

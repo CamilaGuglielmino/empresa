@@ -13,12 +13,10 @@ class Usuarios extends Migration
                 'type' => 'INT',
                 'constraint' => '5',
                 'unsigned'=> true,
-                'auto_increment'=>true,
             ],
             'nombreUsuario'=>[
                 'type' => 'VARCHAR',
                 'constraint' => '10',
-               
             ],
             'contraseña'=>[
                 'type' => 'VARCHAR',
@@ -29,7 +27,7 @@ class Usuarios extends Migration
                 'constraint' => '10',             
             ],
         ]);
-        $this-> forge->AddKey('id', true);
+        $this-> forge->AddKey('nombreUsuario', true);
         $this-> forge->createTable('usuarios');
 
     }

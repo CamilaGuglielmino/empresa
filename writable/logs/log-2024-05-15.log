@@ -1,0 +1,1390 @@
+INFO - 2024-05-15 01:22:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-15 01:39:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-15 01:39:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-15 01:39:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-15 01:40:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-15 01:40:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-15 02:13:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-15 02:13:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-15 02:15:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-15 02:16:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-15 02:17:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-15 02:17:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-15 02:19:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-15 02:21:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-15 02:24:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-15 02:25:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-15 02:26:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-15 02:26:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-15 03:38:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-15 03:38:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-15 03:38:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-15 03:38:59 --> Error: Call to undefined method CodeIgniter\Session\Session::userdata()
+[Method: POST, Route: Noticias/new]
+in APPPATH\Controllers\Noticias.php on line 87.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Noticias->new()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Noticias))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-05-15 03:50:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-15 03:50:47 --> ErrorException: Undefined array key "id"
+[Method: POST, Route: Noticias/new]
+in APPPATH\Controllers\Noticias.php on line 87.
+ 1 APPPATH\Controllers\Noticias.php(87): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'C:\\xampp\\htdocs\\empresa\\app\\Controllers\\Noticias.php', 87)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Noticias->new()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Noticias))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-05-15 03:51:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-15 03:51:33 --> ErrorException: Undefined array key "item"
+[Method: POST, Route: Noticias/new]
+in APPPATH\Controllers\Noticias.php on line 87.
+ 1 APPPATH\Controllers\Noticias.php(87): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "item"', 'C:\\xampp\\htdocs\\empresa\\app\\Controllers\\Noticias.php', 87)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Noticias->new()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Noticias))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-05-15 03:53:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-15 03:53:19 --> Error: Array callback must have exactly two elements
+[Method: POST, Route: Noticias/new]
+in APPPATH\Controllers\Noticias.php on line 88.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Noticias->new()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Noticias))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-05-15 03:58:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-15 03:58:11 --> Error: Object of class App\Models\NoticiasModel could not be converted to string
+[Method: POST, Route: Noticias/new]
+in APPPATH\Controllers\Noticias.php on line 101.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Noticias->new()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Noticias))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-05-15 04:10:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-05-15 04:10:38 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '0, 1, 2, 3, 4, 5, 6)
+VALUES (NULL,'titulo','hola hola','2024-05-15','Borrador...' at line 1 in C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:308
+Stack trace:
+#0 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(308): mysqli->query('INSERT INTO `no...', 0)
+#1 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `no...')
+#2 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `no...')
+#3 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1821): CodeIgniter\Database\BaseConnection->query('INSERT INTO `no...', NULL, false)
+#4 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2210): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+#5 C:\xampp\htdocs\empresa\app\Models\NoticiasModel.php(31): CodeIgniter\Database\BaseBuilder->insertBatch(Array)
+#6 C:\xampp\htdocs\empresa\app\Controllers\Noticias.php(101): App\Models\NoticiasModel->insertar(Array)
+#7 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\CodeIgniter.php(933): App\Controllers\Noticias->new()
+#8 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Noticias))
+#9 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Boot.php(312): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\empresa\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2024-05-15 04:10:38 --> CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '0, 1, 2, 3, 4, 5, 6)
+VALUES (NULL,'titulo','hola hola','2024-05-15','Borrador...' at line 1
+[Method: POST, Route: Noticias/new]
+in SYSTEMPATH\Database\BaseConnection.php on line 676.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1821): CodeIgniter\Database\BaseConnection->query('INSERT INTO `noticias` (0, 1, 2, 3, 4, 5, 6)
+VALUES (NULL,\'titulo\',\'hola hola\',\'2024-05-15\',\'Borrador\',\'1\',1)', null, false)
+ 2 SYSTEMPATH\Database\BaseBuilder.php(2210): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+ 3 APPPATH\Models\NoticiasModel.php(31): CodeIgniter\Database\BaseBuilder->insertBatch([...])
+ 4 APPPATH\Controllers\Noticias.php(101): App\Models\NoticiasModel->insertar([...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Noticias->new()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Noticias))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-05-15 04:10:38 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '0, 1, 2, 3, 4, 5, 6)
+VALUES (NULL,'titulo','hola hola','2024-05-15','Borrador...' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 313.
+ 1 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `noticias` (0, 1, 2, 3, 4, 5, 6)
+VALUES (NULL,\'titulo\',\'hola hola\',\'2024-05-15\',\'Borrador\',\'1\',1)')
+ 2 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `noticias` (0, 1, 2, 3, 4, 5, 6)
+VALUES (NULL,\'titulo\',\'hola hola\',\'2024-05-15\',\'Borrador\',\'1\',1)')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1821): CodeIgniter\Database\BaseConnection->query('INSERT INTO `noticias` (0, 1, 2, 3, 4, 5, 6)
+VALUES (NULL,\'titulo\',\'hola hola\',\'2024-05-15\',\'Borrador\',\'1\',1)', null, false)
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2210): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+ 5 APPPATH\Models\NoticiasModel.php(31): CodeIgniter\Database\BaseBuilder->insertBatch([...])
+ 6 APPPATH\Controllers\Noticias.php(101): App\Models\NoticiasModel->insertar([...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Noticias->new()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Noticias))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-05-15 04:10:38 --> [Caused by] mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '0, 1, 2, 3, 4, 5, 6)
+VALUES (NULL,'titulo','hola hola','2024-05-15','Borrador...' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 308.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(308): mysqli->query('INSERT INTO `noticias` (0, 1, 2, 3, 4, 5, 6)
+VALUES (NULL,\'titulo\',\'hola hola\',\'2024-05-15\',\'Borrador\',\'1\',1)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `noticias` (0, 1, 2, 3, 4, 5, 6)
+VALUES (NULL,\'titulo\',\'hola hola\',\'2024-05-15\',\'Borrador\',\'1\',1)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `noticias` (0, 1, 2, 3, 4, 5, 6)
+VALUES (NULL,\'titulo\',\'hola hola\',\'2024-05-15\',\'Borrador\',\'1\',1)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1821): CodeIgniter\Database\BaseConnection->query('INSERT INTO `noticias` (0, 1, 2, 3, 4, 5, 6)
+VALUES (NULL,\'titulo\',\'hola hola\',\'2024-05-15\',\'Borrador\',\'1\',1)', null, false)
+ 5 SYSTEMPATH\Database\BaseBuilder.php(2210): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+ 6 APPPATH\Models\NoticiasModel.php(31): CodeIgniter\Database\BaseBuilder->insertBatch([...])
+ 7 APPPATH\Controllers\Noticias.php(101): App\Models\NoticiasModel->insertar([...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Noticias->new()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Noticias))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-05-15 04:11:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-05-15 04:11:33 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '0, 1, 2, 3, 4, 5, 6, 7)
+VALUES ('62727',NULL,'titulo','hola hola','2024-05-15...' at line 1 in C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:308
+Stack trace:
+#0 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(308): mysqli->query('INSERT INTO `no...', 0)
+#1 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `no...')
+#2 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `no...')
+#3 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1821): CodeIgniter\Database\BaseConnection->query('INSERT INTO `no...', NULL, false)
+#4 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2210): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+#5 C:\xampp\htdocs\empresa\app\Models\NoticiasModel.php(31): CodeIgniter\Database\BaseBuilder->insertBatch(Array)
+#6 C:\xampp\htdocs\empresa\app\Controllers\Noticias.php(102): App\Models\NoticiasModel->insertar(Array)
+#7 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\CodeIgniter.php(933): App\Controllers\Noticias->new()
+#8 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Noticias))
+#9 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Boot.php(312): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\empresa\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2024-05-15 04:11:33 --> CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '0, 1, 2, 3, 4, 5, 6, 7)
+VALUES ('62727',NULL,'titulo','hola hola','2024-05-15...' at line 1
+[Method: POST, Route: Noticias/new]
+in SYSTEMPATH\Database\BaseConnection.php on line 676.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1821): CodeIgniter\Database\BaseConnection->query('INSERT INTO `noticias` (0, 1, 2, 3, 4, 5, 6, 7)
+VALUES (\'62727\',NULL,\'titulo\',\'hola hola\',\'2024-05-15\',\'Borrador\',\'1\',1)', null, false)
+ 2 SYSTEMPATH\Database\BaseBuilder.php(2210): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+ 3 APPPATH\Models\NoticiasModel.php(31): CodeIgniter\Database\BaseBuilder->insertBatch([...])
+ 4 APPPATH\Controllers\Noticias.php(102): App\Models\NoticiasModel->insertar([...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Noticias->new()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Noticias))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-05-15 04:11:33 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '0, 1, 2, 3, 4, 5, 6, 7)
+VALUES ('62727',NULL,'titulo','hola hola','2024-05-15...' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 313.
+ 1 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `noticias` (0, 1, 2, 3, 4, 5, 6, 7)
+VALUES (\'62727\',NULL,\'titulo\',\'hola hola\',\'2024-05-15\',\'Borrador\',\'1\',1)')
+ 2 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `noticias` (0, 1, 2, 3, 4, 5, 6, 7)
+VALUES (\'62727\',NULL,\'titulo\',\'hola hola\',\'2024-05-15\',\'Borrador\',\'1\',1)')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1821): CodeIgniter\Database\BaseConnection->query('INSERT INTO `noticias` (0, 1, 2, 3, 4, 5, 6, 7)
+VALUES (\'62727\',NULL,\'titulo\',\'hola hola\',\'2024-05-15\',\'Borrador\',\'1\',1)', null, false)
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2210): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+ 5 APPPATH\Models\NoticiasModel.php(31): CodeIgniter\Database\BaseBuilder->insertBatch([...])
+ 6 APPPATH\Controllers\Noticias.php(102): App\Models\NoticiasModel->insertar([...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Noticias->new()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Noticias))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-05-15 04:11:33 --> [Caused by] mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '0, 1, 2, 3, 4, 5, 6, 7)
+VALUES ('62727',NULL,'titulo','hola hola','2024-05-15...' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 308.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(308): mysqli->query('INSERT INTO `noticias` (0, 1, 2, 3, 4, 5, 6, 7)
+VALUES (\'62727\',NULL,\'titulo\',\'hola hola\',\'2024-05-15\',\'Borrador\',\'1\',1)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `noticias` (0, 1, 2, 3, 4, 5, 6, 7)
+VALUES (\'62727\',NULL,\'titulo\',\'hola hola\',\'2024-05-15\',\'Borrador\',\'1\',1)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `noticias` (0, 1, 2, 3, 4, 5, 6, 7)
+VALUES (\'62727\',NULL,\'titulo\',\'hola hola\',\'2024-05-15\',\'Borrador\',\'1\',1)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1821): CodeIgniter\Database\BaseConnection->query('INSERT INTO `noticias` (0, 1, 2, 3, 4, 5, 6, 7)
+VALUES (\'62727\',NULL,\'titulo\',\'hola hola\',\'2024-05-15\',\'Borrador\',\'1\',1)', null, false)
+ 5 SYSTEMPATH\Database\BaseBuilder.php(2210): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+ 6 APPPATH\Models\NoticiasModel.php(31): CodeIgniter\Database\BaseBuilder->insertBatch([...])
+ 7 APPPATH\Controllers\Noticias.php(102): App\Models\NoticiasModel->insertar([...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Noticias->new()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Noticias))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-05-15 04:13:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-15 04:14:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-15 04:15:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-15 04:16:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-05-15 04:16:53 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '0, 1, 2, 3, 4, 5, 6, 7)
+VALUES ('62727','1','titulo','hola hola','2024-05-15'...' at line 1 in C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:308
+Stack trace:
+#0 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(308): mysqli->query('INSERT INTO `no...', 0)
+#1 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `no...')
+#2 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `no...')
+#3 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1821): CodeIgniter\Database\BaseConnection->query('INSERT INTO `no...', NULL, false)
+#4 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2210): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+#5 C:\xampp\htdocs\empresa\app\Models\NoticiasModel.php(31): CodeIgniter\Database\BaseBuilder->insertBatch(Array)
+#6 C:\xampp\htdocs\empresa\app\Controllers\Noticias.php(104): App\Models\NoticiasModel->insertar(Array)
+#7 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\CodeIgniter.php(933): App\Controllers\Noticias->new()
+#8 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Noticias))
+#9 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Boot.php(312): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\empresa\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2024-05-15 04:16:53 --> CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '0, 1, 2, 3, 4, 5, 6, 7)
+VALUES ('62727','1','titulo','hola hola','2024-05-15'...' at line 1
+[Method: POST, Route: Noticias/new]
+in SYSTEMPATH\Database\BaseConnection.php on line 676.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1821): CodeIgniter\Database\BaseConnection->query('INSERT INTO `noticias` (0, 1, 2, 3, 4, 5, 6, 7)
+VALUES (\'62727\',\'1\',\'titulo\',\'hola hola\',\'2024-05-15\',\'Borrador\',\'1\',1)', null, false)
+ 2 SYSTEMPATH\Database\BaseBuilder.php(2210): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+ 3 APPPATH\Models\NoticiasModel.php(31): CodeIgniter\Database\BaseBuilder->insertBatch([...])
+ 4 APPPATH\Controllers\Noticias.php(104): App\Models\NoticiasModel->insertar([...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Noticias->new()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Noticias))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-05-15 04:16:53 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '0, 1, 2, 3, 4, 5, 6, 7)
+VALUES ('62727','1','titulo','hola hola','2024-05-15'...' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 313.
+ 1 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `noticias` (0, 1, 2, 3, 4, 5, 6, 7)
+VALUES (\'62727\',\'1\',\'titulo\',\'hola hola\',\'2024-05-15\',\'Borrador\',\'1\',1)')
+ 2 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `noticias` (0, 1, 2, 3, 4, 5, 6, 7)
+VALUES (\'62727\',\'1\',\'titulo\',\'hola hola\',\'2024-05-15\',\'Borrador\',\'1\',1)')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1821): CodeIgniter\Database\BaseConnection->query('INSERT INTO `noticias` (0, 1, 2, 3, 4, 5, 6, 7)
+VALUES (\'62727\',\'1\',\'titulo\',\'hola hola\',\'2024-05-15\',\'Borrador\',\'1\',1)', null, false)
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2210): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+ 5 APPPATH\Models\NoticiasModel.php(31): CodeIgniter\Database\BaseBuilder->insertBatch([...])
+ 6 APPPATH\Controllers\Noticias.php(104): App\Models\NoticiasModel->insertar([...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Noticias->new()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Noticias))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-05-15 04:16:53 --> [Caused by] mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '0, 1, 2, 3, 4, 5, 6, 7)
+VALUES ('62727','1','titulo','hola hola','2024-05-15'...' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 308.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(308): mysqli->query('INSERT INTO `noticias` (0, 1, 2, 3, 4, 5, 6, 7)
+VALUES (\'62727\',\'1\',\'titulo\',\'hola hola\',\'2024-05-15\',\'Borrador\',\'1\',1)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `noticias` (0, 1, 2, 3, 4, 5, 6, 7)
+VALUES (\'62727\',\'1\',\'titulo\',\'hola hola\',\'2024-05-15\',\'Borrador\',\'1\',1)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `noticias` (0, 1, 2, 3, 4, 5, 6, 7)
+VALUES (\'62727\',\'1\',\'titulo\',\'hola hola\',\'2024-05-15\',\'Borrador\',\'1\',1)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1821): CodeIgniter\Database\BaseConnection->query('INSERT INTO `noticias` (0, 1, 2, 3, 4, 5, 6, 7)
+VALUES (\'62727\',\'1\',\'titulo\',\'hola hola\',\'2024-05-15\',\'Borrador\',\'1\',1)', null, false)
+ 5 SYSTEMPATH\Database\BaseBuilder.php(2210): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+ 6 APPPATH\Models\NoticiasModel.php(31): CodeIgniter\Database\BaseBuilder->insertBatch([...])
+ 7 APPPATH\Controllers\Noticias.php(104): App\Models\NoticiasModel->insertar([...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Noticias->new()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Noticias))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-05-15 04:18:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-05-15 04:18:19 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '0, 1, 2, 3, 4, 5, 6)
+VALUES ('62727','1','titulo','hola hola','2024-05-15','B...' at line 1 in C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:308
+Stack trace:
+#0 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(308): mysqli->query('INSERT INTO `no...', 0)
+#1 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `no...')
+#2 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `no...')
+#3 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1821): CodeIgniter\Database\BaseConnection->query('INSERT INTO `no...', NULL, false)
+#4 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2210): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+#5 C:\xampp\htdocs\empresa\app\Models\NoticiasModel.php(31): CodeIgniter\Database\BaseBuilder->insertBatch(Array)
+#6 C:\xampp\htdocs\empresa\app\Controllers\Noticias.php(104): App\Models\NoticiasModel->insertar(Array)
+#7 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\CodeIgniter.php(933): App\Controllers\Noticias->new()
+#8 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Noticias))
+#9 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Boot.php(312): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\empresa\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2024-05-15 04:18:19 --> CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '0, 1, 2, 3, 4, 5, 6)
+VALUES ('62727','1','titulo','hola hola','2024-05-15','B...' at line 1
+[Method: POST, Route: Noticias/new]
+in SYSTEMPATH\Database\BaseConnection.php on line 676.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1821): CodeIgniter\Database\BaseConnection->query('INSERT INTO `noticias` (0, 1, 2, 3, 4, 5, 6)
+VALUES (\'62727\',\'1\',\'titulo\',\'hola hola\',\'2024-05-15\',\'Borrador\',\'1\')', null, false)
+ 2 SYSTEMPATH\Database\BaseBuilder.php(2210): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+ 3 APPPATH\Models\NoticiasModel.php(31): CodeIgniter\Database\BaseBuilder->insertBatch([...])
+ 4 APPPATH\Controllers\Noticias.php(104): App\Models\NoticiasModel->insertar([...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Noticias->new()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Noticias))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-05-15 04:18:19 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '0, 1, 2, 3, 4, 5, 6)
+VALUES ('62727','1','titulo','hola hola','2024-05-15','B...' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 313.
+ 1 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `noticias` (0, 1, 2, 3, 4, 5, 6)
+VALUES (\'62727\',\'1\',\'titulo\',\'hola hola\',\'2024-05-15\',\'Borrador\',\'1\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `noticias` (0, 1, 2, 3, 4, 5, 6)
+VALUES (\'62727\',\'1\',\'titulo\',\'hola hola\',\'2024-05-15\',\'Borrador\',\'1\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1821): CodeIgniter\Database\BaseConnection->query('INSERT INTO `noticias` (0, 1, 2, 3, 4, 5, 6)
+VALUES (\'62727\',\'1\',\'titulo\',\'hola hola\',\'2024-05-15\',\'Borrador\',\'1\')', null, false)
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2210): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+ 5 APPPATH\Models\NoticiasModel.php(31): CodeIgniter\Database\BaseBuilder->insertBatch([...])
+ 6 APPPATH\Controllers\Noticias.php(104): App\Models\NoticiasModel->insertar([...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Noticias->new()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Noticias))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-05-15 04:18:19 --> [Caused by] mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '0, 1, 2, 3, 4, 5, 6)
+VALUES ('62727','1','titulo','hola hola','2024-05-15','B...' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 308.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(308): mysqli->query('INSERT INTO `noticias` (0, 1, 2, 3, 4, 5, 6)
+VALUES (\'62727\',\'1\',\'titulo\',\'hola hola\',\'2024-05-15\',\'Borrador\',\'1\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `noticias` (0, 1, 2, 3, 4, 5, 6)
+VALUES (\'62727\',\'1\',\'titulo\',\'hola hola\',\'2024-05-15\',\'Borrador\',\'1\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `noticias` (0, 1, 2, 3, 4, 5, 6)
+VALUES (\'62727\',\'1\',\'titulo\',\'hola hola\',\'2024-05-15\',\'Borrador\',\'1\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1821): CodeIgniter\Database\BaseConnection->query('INSERT INTO `noticias` (0, 1, 2, 3, 4, 5, 6)
+VALUES (\'62727\',\'1\',\'titulo\',\'hola hola\',\'2024-05-15\',\'Borrador\',\'1\')', null, false)
+ 5 SYSTEMPATH\Database\BaseBuilder.php(2210): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+ 6 APPPATH\Models\NoticiasModel.php(31): CodeIgniter\Database\BaseBuilder->insertBatch([...])
+ 7 APPPATH\Controllers\Noticias.php(104): App\Models\NoticiasModel->insertar([...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Noticias->new()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Noticias))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-05-15 04:18:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-05-15 04:18:59 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '0, 1, 2, 3, 4, 5, 6)
+VALUES ('62727','1','titulo','hola hola','2024-05-15','B...' at line 1 in C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:308
+Stack trace:
+#0 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(308): mysqli->query('INSERT INTO `no...', 0)
+#1 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `no...')
+#2 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `no...')
+#3 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1821): CodeIgniter\Database\BaseConnection->query('INSERT INTO `no...', NULL, false)
+#4 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2210): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+#5 C:\xampp\htdocs\empresa\app\Models\NoticiasModel.php(31): CodeIgniter\Database\BaseBuilder->insertBatch(Array)
+#6 C:\xampp\htdocs\empresa\app\Controllers\Noticias.php(104): App\Models\NoticiasModel->insertar(Array)
+#7 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\CodeIgniter.php(933): App\Controllers\Noticias->new()
+#8 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Noticias))
+#9 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Boot.php(312): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\empresa\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2024-05-15 04:18:59 --> CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '0, 1, 2, 3, 4, 5, 6)
+VALUES ('62727','1','titulo','hola hola','2024-05-15','B...' at line 1
+[Method: POST, Route: Noticias/new]
+in SYSTEMPATH\Database\BaseConnection.php on line 676.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1821): CodeIgniter\Database\BaseConnection->query('INSERT INTO `noticias` (0, 1, 2, 3, 4, 5, 6)
+VALUES (\'62727\',\'1\',\'titulo\',\'hola hola\',\'2024-05-15\',\'Borrador\',\'1\')', null, false)
+ 2 SYSTEMPATH\Database\BaseBuilder.php(2210): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+ 3 APPPATH\Models\NoticiasModel.php(31): CodeIgniter\Database\BaseBuilder->insertBatch([...])
+ 4 APPPATH\Controllers\Noticias.php(104): App\Models\NoticiasModel->insertar([...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Noticias->new()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Noticias))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-05-15 04:18:59 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '0, 1, 2, 3, 4, 5, 6)
+VALUES ('62727','1','titulo','hola hola','2024-05-15','B...' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 313.
+ 1 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `noticias` (0, 1, 2, 3, 4, 5, 6)
+VALUES (\'62727\',\'1\',\'titulo\',\'hola hola\',\'2024-05-15\',\'Borrador\',\'1\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `noticias` (0, 1, 2, 3, 4, 5, 6)
+VALUES (\'62727\',\'1\',\'titulo\',\'hola hola\',\'2024-05-15\',\'Borrador\',\'1\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1821): CodeIgniter\Database\BaseConnection->query('INSERT INTO `noticias` (0, 1, 2, 3, 4, 5, 6)
+VALUES (\'62727\',\'1\',\'titulo\',\'hola hola\',\'2024-05-15\',\'Borrador\',\'1\')', null, false)
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2210): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+ 5 APPPATH\Models\NoticiasModel.php(31): CodeIgniter\Database\BaseBuilder->insertBatch([...])
+ 6 APPPATH\Controllers\Noticias.php(104): App\Models\NoticiasModel->insertar([...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Noticias->new()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Noticias))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-05-15 04:18:59 --> [Caused by] mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '0, 1, 2, 3, 4, 5, 6)
+VALUES ('62727','1','titulo','hola hola','2024-05-15','B...' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 308.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(308): mysqli->query('INSERT INTO `noticias` (0, 1, 2, 3, 4, 5, 6)
+VALUES (\'62727\',\'1\',\'titulo\',\'hola hola\',\'2024-05-15\',\'Borrador\',\'1\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `noticias` (0, 1, 2, 3, 4, 5, 6)
+VALUES (\'62727\',\'1\',\'titulo\',\'hola hola\',\'2024-05-15\',\'Borrador\',\'1\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `noticias` (0, 1, 2, 3, 4, 5, 6)
+VALUES (\'62727\',\'1\',\'titulo\',\'hola hola\',\'2024-05-15\',\'Borrador\',\'1\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1821): CodeIgniter\Database\BaseConnection->query('INSERT INTO `noticias` (0, 1, 2, 3, 4, 5, 6)
+VALUES (\'62727\',\'1\',\'titulo\',\'hola hola\',\'2024-05-15\',\'Borrador\',\'1\')', null, false)
+ 5 SYSTEMPATH\Database\BaseBuilder.php(2210): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+ 6 APPPATH\Models\NoticiasModel.php(31): CodeIgniter\Database\BaseBuilder->insertBatch([...])
+ 7 APPPATH\Controllers\Noticias.php(104): App\Models\NoticiasModel->insertar([...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Noticias->new()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Noticias))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-05-15 04:19:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-15 04:19:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-15 04:19:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-15 04:20:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-05-15 04:20:21 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '0, 1, 2, 3, 4, 5, 6)
+VALUES ('62727','1','cami','fffffff','2024-05-15','Borra...' at line 1 in C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:308
+Stack trace:
+#0 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(308): mysqli->query('INSERT INTO `no...', 0)
+#1 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `no...')
+#2 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `no...')
+#3 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1821): CodeIgniter\Database\BaseConnection->query('INSERT INTO `no...', NULL, false)
+#4 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2210): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+#5 C:\xampp\htdocs\empresa\app\Models\NoticiasModel.php(31): CodeIgniter\Database\BaseBuilder->insertBatch(Array)
+#6 C:\xampp\htdocs\empresa\app\Controllers\Noticias.php(104): App\Models\NoticiasModel->insertar(Array)
+#7 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\CodeIgniter.php(933): App\Controllers\Noticias->new()
+#8 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Noticias))
+#9 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Boot.php(312): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\empresa\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2024-05-15 04:20:21 --> CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '0, 1, 2, 3, 4, 5, 6)
+VALUES ('62727','1','cami','fffffff','2024-05-15','Borra...' at line 1
+[Method: POST, Route: Noticias/new]
+in SYSTEMPATH\Database\BaseConnection.php on line 676.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1821): CodeIgniter\Database\BaseConnection->query('INSERT INTO `noticias` (0, 1, 2, 3, 4, 5, 6)
+VALUES (\'62727\',\'1\',\'cami\',\'fffffff\',\'2024-05-15\',\'Borrador\',\'1\')', null, false)
+ 2 SYSTEMPATH\Database\BaseBuilder.php(2210): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+ 3 APPPATH\Models\NoticiasModel.php(31): CodeIgniter\Database\BaseBuilder->insertBatch([...])
+ 4 APPPATH\Controllers\Noticias.php(104): App\Models\NoticiasModel->insertar([...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Noticias->new()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Noticias))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-05-15 04:20:21 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '0, 1, 2, 3, 4, 5, 6)
+VALUES ('62727','1','cami','fffffff','2024-05-15','Borra...' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 313.
+ 1 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `noticias` (0, 1, 2, 3, 4, 5, 6)
+VALUES (\'62727\',\'1\',\'cami\',\'fffffff\',\'2024-05-15\',\'Borrador\',\'1\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `noticias` (0, 1, 2, 3, 4, 5, 6)
+VALUES (\'62727\',\'1\',\'cami\',\'fffffff\',\'2024-05-15\',\'Borrador\',\'1\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1821): CodeIgniter\Database\BaseConnection->query('INSERT INTO `noticias` (0, 1, 2, 3, 4, 5, 6)
+VALUES (\'62727\',\'1\',\'cami\',\'fffffff\',\'2024-05-15\',\'Borrador\',\'1\')', null, false)
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2210): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+ 5 APPPATH\Models\NoticiasModel.php(31): CodeIgniter\Database\BaseBuilder->insertBatch([...])
+ 6 APPPATH\Controllers\Noticias.php(104): App\Models\NoticiasModel->insertar([...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Noticias->new()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Noticias))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-05-15 04:20:21 --> [Caused by] mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '0, 1, 2, 3, 4, 5, 6)
+VALUES ('62727','1','cami','fffffff','2024-05-15','Borra...' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 308.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(308): mysqli->query('INSERT INTO `noticias` (0, 1, 2, 3, 4, 5, 6)
+VALUES (\'62727\',\'1\',\'cami\',\'fffffff\',\'2024-05-15\',\'Borrador\',\'1\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `noticias` (0, 1, 2, 3, 4, 5, 6)
+VALUES (\'62727\',\'1\',\'cami\',\'fffffff\',\'2024-05-15\',\'Borrador\',\'1\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `noticias` (0, 1, 2, 3, 4, 5, 6)
+VALUES (\'62727\',\'1\',\'cami\',\'fffffff\',\'2024-05-15\',\'Borrador\',\'1\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1821): CodeIgniter\Database\BaseConnection->query('INSERT INTO `noticias` (0, 1, 2, 3, 4, 5, 6)
+VALUES (\'62727\',\'1\',\'cami\',\'fffffff\',\'2024-05-15\',\'Borrador\',\'1\')', null, false)
+ 5 SYSTEMPATH\Database\BaseBuilder.php(2210): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+ 6 APPPATH\Models\NoticiasModel.php(31): CodeIgniter\Database\BaseBuilder->insertBatch([...])
+ 7 APPPATH\Controllers\Noticias.php(104): App\Models\NoticiasModel->insertar([...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Noticias->new()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Noticias))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-05-15 04:22:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-05-15 04:22:48 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '0, 1, 2, 3, 4, 5, 6)
+VALUES ('6227','1','cami','fffffff','2024-05-15','Borrad...' at line 1 in C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:308
+Stack trace:
+#0 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(308): mysqli->query('INSERT INTO `no...', 0)
+#1 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `no...')
+#2 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `no...')
+#3 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1821): CodeIgniter\Database\BaseConnection->query('INSERT INTO `no...', NULL, false)
+#4 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2210): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+#5 C:\xampp\htdocs\empresa\app\Models\NoticiasModel.php(31): CodeIgniter\Database\BaseBuilder->insertBatch(Array)
+#6 C:\xampp\htdocs\empresa\app\Controllers\Noticias.php(104): App\Models\NoticiasModel->insertar(Array)
+#7 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\CodeIgniter.php(933): App\Controllers\Noticias->new()
+#8 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Noticias))
+#9 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Boot.php(312): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\empresa\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2024-05-15 04:22:48 --> CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '0, 1, 2, 3, 4, 5, 6)
+VALUES ('6227','1','cami','fffffff','2024-05-15','Borrad...' at line 1
+[Method: POST, Route: Noticias/new]
+in SYSTEMPATH\Database\BaseConnection.php on line 676.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1821): CodeIgniter\Database\BaseConnection->query('INSERT INTO `noticias` (0, 1, 2, 3, 4, 5, 6)
+VALUES (\'6227\',\'1\',\'cami\',\'fffffff\',\'2024-05-15\',\'Borrador\',\'1\')', null, false)
+ 2 SYSTEMPATH\Database\BaseBuilder.php(2210): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+ 3 APPPATH\Models\NoticiasModel.php(31): CodeIgniter\Database\BaseBuilder->insertBatch([...])
+ 4 APPPATH\Controllers\Noticias.php(104): App\Models\NoticiasModel->insertar([...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Noticias->new()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Noticias))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-05-15 04:22:48 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '0, 1, 2, 3, 4, 5, 6)
+VALUES ('6227','1','cami','fffffff','2024-05-15','Borrad...' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 313.
+ 1 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `noticias` (0, 1, 2, 3, 4, 5, 6)
+VALUES (\'6227\',\'1\',\'cami\',\'fffffff\',\'2024-05-15\',\'Borrador\',\'1\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `noticias` (0, 1, 2, 3, 4, 5, 6)
+VALUES (\'6227\',\'1\',\'cami\',\'fffffff\',\'2024-05-15\',\'Borrador\',\'1\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1821): CodeIgniter\Database\BaseConnection->query('INSERT INTO `noticias` (0, 1, 2, 3, 4, 5, 6)
+VALUES (\'6227\',\'1\',\'cami\',\'fffffff\',\'2024-05-15\',\'Borrador\',\'1\')', null, false)
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2210): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+ 5 APPPATH\Models\NoticiasModel.php(31): CodeIgniter\Database\BaseBuilder->insertBatch([...])
+ 6 APPPATH\Controllers\Noticias.php(104): App\Models\NoticiasModel->insertar([...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Noticias->new()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Noticias))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-05-15 04:22:48 --> [Caused by] mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '0, 1, 2, 3, 4, 5, 6)
+VALUES ('6227','1','cami','fffffff','2024-05-15','Borrad...' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 308.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(308): mysqli->query('INSERT INTO `noticias` (0, 1, 2, 3, 4, 5, 6)
+VALUES (\'6227\',\'1\',\'cami\',\'fffffff\',\'2024-05-15\',\'Borrador\',\'1\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `noticias` (0, 1, 2, 3, 4, 5, 6)
+VALUES (\'6227\',\'1\',\'cami\',\'fffffff\',\'2024-05-15\',\'Borrador\',\'1\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `noticias` (0, 1, 2, 3, 4, 5, 6)
+VALUES (\'6227\',\'1\',\'cami\',\'fffffff\',\'2024-05-15\',\'Borrador\',\'1\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1821): CodeIgniter\Database\BaseConnection->query('INSERT INTO `noticias` (0, 1, 2, 3, 4, 5, 6)
+VALUES (\'6227\',\'1\',\'cami\',\'fffffff\',\'2024-05-15\',\'Borrador\',\'1\')', null, false)
+ 5 SYSTEMPATH\Database\BaseBuilder.php(2210): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+ 6 APPPATH\Models\NoticiasModel.php(31): CodeIgniter\Database\BaseBuilder->insertBatch([...])
+ 7 APPPATH\Controllers\Noticias.php(104): App\Models\NoticiasModel->insertar([...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Noticias->new()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Noticias))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-05-15 04:31:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-05-15 04:31:22 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`empresa`.`noticias`, CONSTRAINT `noticias_id_usuario_foreign` FOREIGN KEY (`id_usuario`) REFERENCES `usuarios` (`id`)) in C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:308
+Stack trace:
+#0 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(308): mysqli->query('INSERT INTO `no...', 0)
+#1 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `no...')
+#2 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `no...')
+#3 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1821): CodeIgniter\Database\BaseConnection->query('INSERT INTO `no...', NULL, false)
+#4 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2210): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+#5 C:\xampp\htdocs\empresa\app\Models\NoticiasModel.php(31): CodeIgniter\Database\BaseBuilder->insertBatch(Array)
+#6 C:\xampp\htdocs\empresa\app\Controllers\Noticias.php(106): App\Models\NoticiasModel->insertar(Array)
+#7 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\CodeIgniter.php(933): App\Controllers\Noticias->new()
+#8 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Noticias))
+#9 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Boot.php(312): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\empresa\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2024-05-15 04:31:22 --> CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`empresa`.`noticias`, CONSTRAINT `noticias_id_usuario_foreign` FOREIGN KEY (`id_usuario`) REFERENCES `usuarios` (`id`))
+[Method: POST, Route: Noticias/new]
+in SYSTEMPATH\Database\BaseConnection.php on line 676.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1821): CodeIgniter\Database\BaseConnection->query('INSERT INTO `noticias` (`categoria`, `descripcion`, `estado`, `fecha`, `id`, `id_usuario`, `imagen`, `titulo`)
+VALUES (\'1\',\'fffffff\',\'Borrador\',\'2024-05-15\',\'6227\',\'1\',\'C:\\\\xampp\\\\tmp\\\\phpD149.tmp\',\'cami\')', null, false)
+ 2 SYSTEMPATH\Database\BaseBuilder.php(2210): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+ 3 APPPATH\Models\NoticiasModel.php(31): CodeIgniter\Database\BaseBuilder->insertBatch([...])
+ 4 APPPATH\Controllers\Noticias.php(106): App\Models\NoticiasModel->insertar([...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Noticias->new()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Noticias))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-05-15 04:31:22 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`empresa`.`noticias`, CONSTRAINT `noticias_id_usuario_foreign` FOREIGN KEY (`id_usuario`) REFERENCES `usuarios` (`id`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 313.
+ 1 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `noticias` (`categoria`, `descripcion`, `estado`, `fecha`, `id`, `id_usuario`, `imagen`, `titulo`)
+VALUES (\'1\',\'fffffff\',\'Borrador\',\'2024-05-15\',\'6227\',\'1\',\'C:\\\\xampp\\\\tmp\\\\phpD149.tmp\',\'cami\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `noticias` (`categoria`, `descripcion`, `estado`, `fecha`, `id`, `id_usuario`, `imagen`, `titulo`)
+VALUES (\'1\',\'fffffff\',\'Borrador\',\'2024-05-15\',\'6227\',\'1\',\'C:\\\\xampp\\\\tmp\\\\phpD149.tmp\',\'cami\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1821): CodeIgniter\Database\BaseConnection->query('INSERT INTO `noticias` (`categoria`, `descripcion`, `estado`, `fecha`, `id`, `id_usuario`, `imagen`, `titulo`)
+VALUES (\'1\',\'fffffff\',\'Borrador\',\'2024-05-15\',\'6227\',\'1\',\'C:\\\\xampp\\\\tmp\\\\phpD149.tmp\',\'cami\')', null, false)
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2210): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+ 5 APPPATH\Models\NoticiasModel.php(31): CodeIgniter\Database\BaseBuilder->insertBatch([...])
+ 6 APPPATH\Controllers\Noticias.php(106): App\Models\NoticiasModel->insertar([...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Noticias->new()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Noticias))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-05-15 04:31:22 --> [Caused by] mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`empresa`.`noticias`, CONSTRAINT `noticias_id_usuario_foreign` FOREIGN KEY (`id_usuario`) REFERENCES `usuarios` (`id`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 308.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(308): mysqli->query('INSERT INTO `noticias` (`categoria`, `descripcion`, `estado`, `fecha`, `id`, `id_usuario`, `imagen`, `titulo`)
+VALUES (\'1\',\'fffffff\',\'Borrador\',\'2024-05-15\',\'6227\',\'1\',\'C:\\\\xampp\\\\tmp\\\\phpD149.tmp\',\'cami\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `noticias` (`categoria`, `descripcion`, `estado`, `fecha`, `id`, `id_usuario`, `imagen`, `titulo`)
+VALUES (\'1\',\'fffffff\',\'Borrador\',\'2024-05-15\',\'6227\',\'1\',\'C:\\\\xampp\\\\tmp\\\\phpD149.tmp\',\'cami\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `noticias` (`categoria`, `descripcion`, `estado`, `fecha`, `id`, `id_usuario`, `imagen`, `titulo`)
+VALUES (\'1\',\'fffffff\',\'Borrador\',\'2024-05-15\',\'6227\',\'1\',\'C:\\\\xampp\\\\tmp\\\\phpD149.tmp\',\'cami\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1821): CodeIgniter\Database\BaseConnection->query('INSERT INTO `noticias` (`categoria`, `descripcion`, `estado`, `fecha`, `id`, `id_usuario`, `imagen`, `titulo`)
+VALUES (\'1\',\'fffffff\',\'Borrador\',\'2024-05-15\',\'6227\',\'1\',\'C:\\\\xampp\\\\tmp\\\\phpD149.tmp\',\'cami\')', null, false)
+ 5 SYSTEMPATH\Database\BaseBuilder.php(2210): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+ 6 APPPATH\Models\NoticiasModel.php(31): CodeIgniter\Database\BaseBuilder->insertBatch([...])
+ 7 APPPATH\Controllers\Noticias.php(106): App\Models\NoticiasModel->insertar([...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Noticias->new()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Noticias))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-05-15 04:31:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-05-15 04:31:51 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`empresa`.`noticias`, CONSTRAINT `noticias_id_usuario_foreign` FOREIGN KEY (`id_usuario`) REFERENCES `usuarios` (`id`)) in C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:308
+Stack trace:
+#0 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(308): mysqli->query('INSERT INTO `no...', 0)
+#1 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `no...')
+#2 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `no...')
+#3 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1821): CodeIgniter\Database\BaseConnection->query('INSERT INTO `no...', NULL, false)
+#4 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2210): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+#5 C:\xampp\htdocs\empresa\app\Models\NoticiasModel.php(31): CodeIgniter\Database\BaseBuilder->insertBatch(Array)
+#6 C:\xampp\htdocs\empresa\app\Controllers\Noticias.php(106): App\Models\NoticiasModel->insertar(Array)
+#7 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\CodeIgniter.php(933): App\Controllers\Noticias->new()
+#8 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Noticias))
+#9 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Boot.php(312): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\empresa\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2024-05-15 04:31:51 --> CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`empresa`.`noticias`, CONSTRAINT `noticias_id_usuario_foreign` FOREIGN KEY (`id_usuario`) REFERENCES `usuarios` (`id`))
+[Method: POST, Route: Noticias/new]
+in SYSTEMPATH\Database\BaseConnection.php on line 676.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1821): CodeIgniter\Database\BaseConnection->query('INSERT INTO `noticias` (`categoria`, `descripcion`, `estado`, `fecha`, `id`, `id_usuario`, `imagen`, `titulo`)
+VALUES (\'1\',\'fffffff\',\'Borrador\',\'2024-05-15\',\'1\',\'1\',\'C:\\\\xampp\\\\tmp\\\\php4282.tmp\',\'cami\')', null, false)
+ 2 SYSTEMPATH\Database\BaseBuilder.php(2210): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+ 3 APPPATH\Models\NoticiasModel.php(31): CodeIgniter\Database\BaseBuilder->insertBatch([...])
+ 4 APPPATH\Controllers\Noticias.php(106): App\Models\NoticiasModel->insertar([...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Noticias->new()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Noticias))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-05-15 04:31:51 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`empresa`.`noticias`, CONSTRAINT `noticias_id_usuario_foreign` FOREIGN KEY (`id_usuario`) REFERENCES `usuarios` (`id`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 313.
+ 1 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `noticias` (`categoria`, `descripcion`, `estado`, `fecha`, `id`, `id_usuario`, `imagen`, `titulo`)
+VALUES (\'1\',\'fffffff\',\'Borrador\',\'2024-05-15\',\'1\',\'1\',\'C:\\\\xampp\\\\tmp\\\\php4282.tmp\',\'cami\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `noticias` (`categoria`, `descripcion`, `estado`, `fecha`, `id`, `id_usuario`, `imagen`, `titulo`)
+VALUES (\'1\',\'fffffff\',\'Borrador\',\'2024-05-15\',\'1\',\'1\',\'C:\\\\xampp\\\\tmp\\\\php4282.tmp\',\'cami\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1821): CodeIgniter\Database\BaseConnection->query('INSERT INTO `noticias` (`categoria`, `descripcion`, `estado`, `fecha`, `id`, `id_usuario`, `imagen`, `titulo`)
+VALUES (\'1\',\'fffffff\',\'Borrador\',\'2024-05-15\',\'1\',\'1\',\'C:\\\\xampp\\\\tmp\\\\php4282.tmp\',\'cami\')', null, false)
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2210): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+ 5 APPPATH\Models\NoticiasModel.php(31): CodeIgniter\Database\BaseBuilder->insertBatch([...])
+ 6 APPPATH\Controllers\Noticias.php(106): App\Models\NoticiasModel->insertar([...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Noticias->new()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Noticias))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-05-15 04:31:51 --> [Caused by] mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`empresa`.`noticias`, CONSTRAINT `noticias_id_usuario_foreign` FOREIGN KEY (`id_usuario`) REFERENCES `usuarios` (`id`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 308.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(308): mysqli->query('INSERT INTO `noticias` (`categoria`, `descripcion`, `estado`, `fecha`, `id`, `id_usuario`, `imagen`, `titulo`)
+VALUES (\'1\',\'fffffff\',\'Borrador\',\'2024-05-15\',\'1\',\'1\',\'C:\\\\xampp\\\\tmp\\\\php4282.tmp\',\'cami\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `noticias` (`categoria`, `descripcion`, `estado`, `fecha`, `id`, `id_usuario`, `imagen`, `titulo`)
+VALUES (\'1\',\'fffffff\',\'Borrador\',\'2024-05-15\',\'1\',\'1\',\'C:\\\\xampp\\\\tmp\\\\php4282.tmp\',\'cami\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `noticias` (`categoria`, `descripcion`, `estado`, `fecha`, `id`, `id_usuario`, `imagen`, `titulo`)
+VALUES (\'1\',\'fffffff\',\'Borrador\',\'2024-05-15\',\'1\',\'1\',\'C:\\\\xampp\\\\tmp\\\\php4282.tmp\',\'cami\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1821): CodeIgniter\Database\BaseConnection->query('INSERT INTO `noticias` (`categoria`, `descripcion`, `estado`, `fecha`, `id`, `id_usuario`, `imagen`, `titulo`)
+VALUES (\'1\',\'fffffff\',\'Borrador\',\'2024-05-15\',\'1\',\'1\',\'C:\\\\xampp\\\\tmp\\\\php4282.tmp\',\'cami\')', null, false)
+ 5 SYSTEMPATH\Database\BaseBuilder.php(2210): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+ 6 APPPATH\Models\NoticiasModel.php(31): CodeIgniter\Database\BaseBuilder->insertBatch([...])
+ 7 APPPATH\Controllers\Noticias.php(106): App\Models\NoticiasModel->insertar([...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Noticias->new()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Noticias))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-05-15 04:32:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-15 04:32:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-15 04:32:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-15 04:35:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-15 04:35:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-15 04:35:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-15 04:35:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-15 04:35:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-15 04:38:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-15 04:38:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-05-15 04:45:14 --> mysqli_sql_exception: Can't create table `empresa`.`noticias` (errno: 150 "Foreign key constraint is incorrectly formed") in C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:308
+Stack trace:
+#0 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(308): mysqli->query('CREATE TABLE `n...', 0)
+#1 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `n...')
+#2 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `n...')
+#3 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\Forge.php(570): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `n...')
+#4 C:\xampp\htdocs\empresa\app\Database\Migrations\2024-05-12-210324_Noticias.php(50): CodeIgniter\Database\Forge->createTable('noticias')
+#5 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(867): App\Database\Migrations\Noticias->up()
+#6 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(183): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Commands\Database\Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\CLI\Commands.php(70): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\CLI\Console.php(48): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Boot.php(338): CodeIgniter\CLI\Console->run()
+#11 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#12 C:\xampp\htdocs\empresa\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#13 {main}
+ERROR - 2024-05-15 04:46:24 --> mysqli_sql_exception: Incorrect table definition; there can be only one auto column and it must be defined as a key in C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:308
+Stack trace:
+#0 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(308): mysqli->query('CREATE TABLE `n...', 0)
+#1 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `n...')
+#2 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `n...')
+#3 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\Forge.php(570): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `n...')
+#4 C:\xampp\htdocs\empresa\app\Database\Migrations\2024-05-12-210324_Noticias.php(51): CodeIgniter\Database\Forge->createTable('noticias')
+#5 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(867): App\Database\Migrations\Noticias->up()
+#6 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(183): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Commands\Database\Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\CLI\Commands.php(70): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\CLI\Console.php(48): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Boot.php(338): CodeIgniter\CLI\Console->run()
+#11 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#12 C:\xampp\htdocs\empresa\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#13 {main}
+ERROR - 2024-05-15 04:47:28 --> mysqli_sql_exception: Can't create table `empresa`.`noticias` (errno: 150 "Foreign key constraint is incorrectly formed") in C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:308
+Stack trace:
+#0 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(308): mysqli->query('CREATE TABLE `n...', 0)
+#1 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `n...')
+#2 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `n...')
+#3 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\Forge.php(570): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `n...')
+#4 C:\xampp\htdocs\empresa\app\Database\Migrations\2024-05-12-210324_Noticias.php(49): CodeIgniter\Database\Forge->createTable('noticias')
+#5 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(867): App\Database\Migrations\Noticias->up()
+#6 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(183): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Commands\Database\Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\CLI\Commands.php(70): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\CLI\Console.php(48): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Boot.php(338): CodeIgniter\CLI\Console->run()
+#11 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#12 C:\xampp\htdocs\empresa\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#13 {main}
+ERROR - 2024-05-15 04:49:15 --> mysqli_sql_exception: Can't create table `empresa`.`noticias` (errno: 150 "Foreign key constraint is incorrectly formed") in C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:308
+Stack trace:
+#0 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(308): mysqli->query('CREATE TABLE `n...', 0)
+#1 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `n...')
+#2 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `n...')
+#3 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\Forge.php(570): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `n...')
+#4 C:\xampp\htdocs\empresa\app\Database\Migrations\2024-05-12-210324_Noticias.php(49): CodeIgniter\Database\Forge->createTable('noticias')
+#5 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(867): App\Database\Migrations\Noticias->up()
+#6 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(183): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Commands\Database\Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\CLI\Commands.php(70): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\CLI\Console.php(48): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Boot.php(338): CodeIgniter\CLI\Console->run()
+#11 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#12 C:\xampp\htdocs\empresa\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#13 {main}
+ERROR - 2024-05-15 04:49:20 --> mysqli_sql_exception: Can't create table `empresa`.`noticias` (errno: 150 "Foreign key constraint is incorrectly formed") in C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:308
+Stack trace:
+#0 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(308): mysqli->query('CREATE TABLE `n...', 0)
+#1 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `n...')
+#2 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `n...')
+#3 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\Forge.php(570): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `n...')
+#4 C:\xampp\htdocs\empresa\app\Database\Migrations\2024-05-12-210324_Noticias.php(49): CodeIgniter\Database\Forge->createTable('noticias')
+#5 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(867): App\Database\Migrations\Noticias->up()
+#6 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(183): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Commands\Database\Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\CLI\Commands.php(70): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\CLI\Console.php(48): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Boot.php(338): CodeIgniter\CLI\Console->run()
+#11 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#12 C:\xampp\htdocs\empresa\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#13 {main}
+ERROR - 2024-05-15 04:52:17 --> mysqli_sql_exception: Can't create table `empresa`.`noticias` (errno: 150 "Foreign key constraint is incorrectly formed") in C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:308
+Stack trace:
+#0 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(308): mysqli->query('CREATE TABLE `n...', 0)
+#1 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `n...')
+#2 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `n...')
+#3 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\Forge.php(570): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `n...')
+#4 C:\xampp\htdocs\empresa\app\Database\Migrations\2024-05-12-210324_Noticias.php(50): CodeIgniter\Database\Forge->createTable('noticias')
+#5 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(867): App\Database\Migrations\Noticias->up()
+#6 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(183): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Commands\Database\Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\CLI\Commands.php(70): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\CLI\Console.php(48): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Boot.php(338): CodeIgniter\CLI\Console->run()
+#11 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#12 C:\xampp\htdocs\empresa\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#13 {main}
+ERROR - 2024-05-15 04:53:56 --> mysqli_sql_exception: Can't create table `empresa`.`noticias` (errno: 150 "Foreign key constraint is incorrectly formed") in C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:308
+Stack trace:
+#0 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(308): mysqli->query('CREATE TABLE `n...', 0)
+#1 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `n...')
+#2 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `n...')
+#3 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\Forge.php(570): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `n...')
+#4 C:\xampp\htdocs\empresa\app\Database\Migrations\2024-05-12-210324_Noticias.php(50): CodeIgniter\Database\Forge->createTable('noticias')
+#5 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(867): App\Database\Migrations\Noticias->up()
+#6 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(183): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Commands\Database\Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\CLI\Commands.php(70): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\CLI\Console.php(48): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Boot.php(338): CodeIgniter\CLI\Console->run()
+#11 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#12 C:\xampp\htdocs\empresa\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#13 {main}
+INFO - 2024-05-15 04:59:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-15 04:59:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-15 05:01:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-05-15 05:01:37 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`empresa`.`noticias`, CONSTRAINT `noticias_id_usuario_foreign` FOREIGN KEY (`id_usuario`) REFERENCES `usuarios` (`id`)) in C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:308
+Stack trace:
+#0 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(308): mysqli->query('INSERT INTO `no...', 0)
+#1 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `no...')
+#2 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `no...')
+#3 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1821): CodeIgniter\Database\BaseConnection->query('INSERT INTO `no...', NULL, false)
+#4 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2210): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+#5 C:\xampp\htdocs\empresa\app\Models\NoticiasModel.php(31): CodeIgniter\Database\BaseBuilder->insertBatch(Array)
+#6 C:\xampp\htdocs\empresa\app\Controllers\Noticias.php(106): App\Models\NoticiasModel->insertar(Array)
+#7 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\CodeIgniter.php(933): App\Controllers\Noticias->new()
+#8 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Noticias))
+#9 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Boot.php(312): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\empresa\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2024-05-15 05:01:37 --> CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`empresa`.`noticias`, CONSTRAINT `noticias_id_usuario_foreign` FOREIGN KEY (`id_usuario`) REFERENCES `usuarios` (`id`))
+[Method: POST, Route: Noticias/new]
+in SYSTEMPATH\Database\BaseConnection.php on line 676.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1821): CodeIgniter\Database\BaseConnection->query('INSERT INTO `noticias` (`categoria`, `descripcion`, `estado`, `fecha`, `id`, `id_usuario`, `imagen`, `titulo`)
+VALUES (\'1\',\'ldsld\',\'Borrador\',\'2024-05-15\',\'1\',\'1\',\'C:\\\\xampp\\\\tmp\\\\php824A.tmp\',\'dlldsl\')', null, false)
+ 2 SYSTEMPATH\Database\BaseBuilder.php(2210): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+ 3 APPPATH\Models\NoticiasModel.php(31): CodeIgniter\Database\BaseBuilder->insertBatch([...])
+ 4 APPPATH\Controllers\Noticias.php(106): App\Models\NoticiasModel->insertar([...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Noticias->new()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Noticias))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-05-15 05:01:37 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`empresa`.`noticias`, CONSTRAINT `noticias_id_usuario_foreign` FOREIGN KEY (`id_usuario`) REFERENCES `usuarios` (`id`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 313.
+ 1 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `noticias` (`categoria`, `descripcion`, `estado`, `fecha`, `id`, `id_usuario`, `imagen`, `titulo`)
+VALUES (\'1\',\'ldsld\',\'Borrador\',\'2024-05-15\',\'1\',\'1\',\'C:\\\\xampp\\\\tmp\\\\php824A.tmp\',\'dlldsl\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `noticias` (`categoria`, `descripcion`, `estado`, `fecha`, `id`, `id_usuario`, `imagen`, `titulo`)
+VALUES (\'1\',\'ldsld\',\'Borrador\',\'2024-05-15\',\'1\',\'1\',\'C:\\\\xampp\\\\tmp\\\\php824A.tmp\',\'dlldsl\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1821): CodeIgniter\Database\BaseConnection->query('INSERT INTO `noticias` (`categoria`, `descripcion`, `estado`, `fecha`, `id`, `id_usuario`, `imagen`, `titulo`)
+VALUES (\'1\',\'ldsld\',\'Borrador\',\'2024-05-15\',\'1\',\'1\',\'C:\\\\xampp\\\\tmp\\\\php824A.tmp\',\'dlldsl\')', null, false)
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2210): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+ 5 APPPATH\Models\NoticiasModel.php(31): CodeIgniter\Database\BaseBuilder->insertBatch([...])
+ 6 APPPATH\Controllers\Noticias.php(106): App\Models\NoticiasModel->insertar([...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Noticias->new()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Noticias))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-05-15 05:01:37 --> [Caused by] mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`empresa`.`noticias`, CONSTRAINT `noticias_id_usuario_foreign` FOREIGN KEY (`id_usuario`) REFERENCES `usuarios` (`id`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 308.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(308): mysqli->query('INSERT INTO `noticias` (`categoria`, `descripcion`, `estado`, `fecha`, `id`, `id_usuario`, `imagen`, `titulo`)
+VALUES (\'1\',\'ldsld\',\'Borrador\',\'2024-05-15\',\'1\',\'1\',\'C:\\\\xampp\\\\tmp\\\\php824A.tmp\',\'dlldsl\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `noticias` (`categoria`, `descripcion`, `estado`, `fecha`, `id`, `id_usuario`, `imagen`, `titulo`)
+VALUES (\'1\',\'ldsld\',\'Borrador\',\'2024-05-15\',\'1\',\'1\',\'C:\\\\xampp\\\\tmp\\\\php824A.tmp\',\'dlldsl\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `noticias` (`categoria`, `descripcion`, `estado`, `fecha`, `id`, `id_usuario`, `imagen`, `titulo`)
+VALUES (\'1\',\'ldsld\',\'Borrador\',\'2024-05-15\',\'1\',\'1\',\'C:\\\\xampp\\\\tmp\\\\php824A.tmp\',\'dlldsl\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1821): CodeIgniter\Database\BaseConnection->query('INSERT INTO `noticias` (`categoria`, `descripcion`, `estado`, `fecha`, `id`, `id_usuario`, `imagen`, `titulo`)
+VALUES (\'1\',\'ldsld\',\'Borrador\',\'2024-05-15\',\'1\',\'1\',\'C:\\\\xampp\\\\tmp\\\\php824A.tmp\',\'dlldsl\')', null, false)
+ 5 SYSTEMPATH\Database\BaseBuilder.php(2210): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+ 6 APPPATH\Models\NoticiasModel.php(31): CodeIgniter\Database\BaseBuilder->insertBatch([...])
+ 7 APPPATH\Controllers\Noticias.php(106): App\Models\NoticiasModel->insertar([...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Noticias->new()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Noticias))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-05-15 05:02:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-05-15 05:02:15 --> mysqli_sql_exception: Unknown column 'nombre_usuario' in 'field list' in C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:308
+Stack trace:
+#0 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(308): mysqli->query('INSERT INTO `no...', 0)
+#1 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `no...')
+#2 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `no...')
+#3 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1821): CodeIgniter\Database\BaseConnection->query('INSERT INTO `no...', NULL, false)
+#4 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2210): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+#5 C:\xampp\htdocs\empresa\app\Models\NoticiasModel.php(31): CodeIgniter\Database\BaseBuilder->insertBatch(Array)
+#6 C:\xampp\htdocs\empresa\app\Controllers\Noticias.php(105): App\Models\NoticiasModel->insertar(Array)
+#7 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\CodeIgniter.php(933): App\Controllers\Noticias->new()
+#8 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Noticias))
+#9 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Boot.php(312): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\empresa\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2024-05-15 05:02:15 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'nombre_usuario' in 'field list'
+[Method: POST, Route: Noticias/new]
+in SYSTEMPATH\Database\BaseConnection.php on line 676.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1821): CodeIgniter\Database\BaseConnection->query('INSERT INTO `noticias` (`categoria`, `descripcion`, `estado`, `fecha`, `id`, `imagen`, `nombre_usuario`, `titulo`)
+VALUES (\'1\',\'ldsld\',\'Borrador\',\'2024-05-15\',\'1\',\'C:\\\\xampp\\\\tmp\\\\php1803.tmp\',\'camila\',\'dlldsl\')', null, false)
+ 2 SYSTEMPATH\Database\BaseBuilder.php(2210): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+ 3 APPPATH\Models\NoticiasModel.php(31): CodeIgniter\Database\BaseBuilder->insertBatch([...])
+ 4 APPPATH\Controllers\Noticias.php(105): App\Models\NoticiasModel->insertar([...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Noticias->new()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Noticias))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-05-15 05:02:15 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'nombre_usuario' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 313.
+ 1 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `noticias` (`categoria`, `descripcion`, `estado`, `fecha`, `id`, `imagen`, `nombre_usuario`, `titulo`)
+VALUES (\'1\',\'ldsld\',\'Borrador\',\'2024-05-15\',\'1\',\'C:\\\\xampp\\\\tmp\\\\php1803.tmp\',\'camila\',\'dlldsl\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `noticias` (`categoria`, `descripcion`, `estado`, `fecha`, `id`, `imagen`, `nombre_usuario`, `titulo`)
+VALUES (\'1\',\'ldsld\',\'Borrador\',\'2024-05-15\',\'1\',\'C:\\\\xampp\\\\tmp\\\\php1803.tmp\',\'camila\',\'dlldsl\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1821): CodeIgniter\Database\BaseConnection->query('INSERT INTO `noticias` (`categoria`, `descripcion`, `estado`, `fecha`, `id`, `imagen`, `nombre_usuario`, `titulo`)
+VALUES (\'1\',\'ldsld\',\'Borrador\',\'2024-05-15\',\'1\',\'C:\\\\xampp\\\\tmp\\\\php1803.tmp\',\'camila\',\'dlldsl\')', null, false)
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2210): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+ 5 APPPATH\Models\NoticiasModel.php(31): CodeIgniter\Database\BaseBuilder->insertBatch([...])
+ 6 APPPATH\Controllers\Noticias.php(105): App\Models\NoticiasModel->insertar([...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Noticias->new()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Noticias))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-05-15 05:02:15 --> [Caused by] mysqli_sql_exception: Unknown column 'nombre_usuario' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 308.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(308): mysqli->query('INSERT INTO `noticias` (`categoria`, `descripcion`, `estado`, `fecha`, `id`, `imagen`, `nombre_usuario`, `titulo`)
+VALUES (\'1\',\'ldsld\',\'Borrador\',\'2024-05-15\',\'1\',\'C:\\\\xampp\\\\tmp\\\\php1803.tmp\',\'camila\',\'dlldsl\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `noticias` (`categoria`, `descripcion`, `estado`, `fecha`, `id`, `imagen`, `nombre_usuario`, `titulo`)
+VALUES (\'1\',\'ldsld\',\'Borrador\',\'2024-05-15\',\'1\',\'C:\\\\xampp\\\\tmp\\\\php1803.tmp\',\'camila\',\'dlldsl\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `noticias` (`categoria`, `descripcion`, `estado`, `fecha`, `id`, `imagen`, `nombre_usuario`, `titulo`)
+VALUES (\'1\',\'ldsld\',\'Borrador\',\'2024-05-15\',\'1\',\'C:\\\\xampp\\\\tmp\\\\php1803.tmp\',\'camila\',\'dlldsl\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1821): CodeIgniter\Database\BaseConnection->query('INSERT INTO `noticias` (`categoria`, `descripcion`, `estado`, `fecha`, `id`, `imagen`, `nombre_usuario`, `titulo`)
+VALUES (\'1\',\'ldsld\',\'Borrador\',\'2024-05-15\',\'1\',\'C:\\\\xampp\\\\tmp\\\\php1803.tmp\',\'camila\',\'dlldsl\')', null, false)
+ 5 SYSTEMPATH\Database\BaseBuilder.php(2210): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+ 6 APPPATH\Models\NoticiasModel.php(31): CodeIgniter\Database\BaseBuilder->insertBatch([...])
+ 7 APPPATH\Controllers\Noticias.php(105): App\Models\NoticiasModel->insertar([...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Noticias->new()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Noticias))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-05-15 05:02:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-05-15 05:02:47 --> mysqli_sql_exception: Unknown column 'nombre_usuario' in 'field list' in C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:308
+Stack trace:
+#0 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(308): mysqli->query('INSERT INTO `no...', 0)
+#1 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `no...')
+#2 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `no...')
+#3 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1821): CodeIgniter\Database\BaseConnection->query('INSERT INTO `no...', NULL, false)
+#4 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2210): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+#5 C:\xampp\htdocs\empresa\app\Models\NoticiasModel.php(31): CodeIgniter\Database\BaseBuilder->insertBatch(Array)
+#6 C:\xampp\htdocs\empresa\app\Controllers\Noticias.php(105): App\Models\NoticiasModel->insertar(Array)
+#7 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\CodeIgniter.php(933): App\Controllers\Noticias->new()
+#8 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Noticias))
+#9 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Boot.php(312): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\empresa\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2024-05-15 05:02:47 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'nombre_usuario' in 'field list'
+[Method: POST, Route: Noticias/new]
+in SYSTEMPATH\Database\BaseConnection.php on line 676.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1821): CodeIgniter\Database\BaseConnection->query('INSERT INTO `noticias` (`categoria`, `descripcion`, `estado`, `fecha`, `id`, `imagen`, `nombre_usuario`, `titulo`)
+VALUES (\'1\',\'ldsld\',\'Borrador\',\'2024-05-15\',\'1\',\'C:\\\\xampp\\\\tmp\\\\php95A1.tmp\',\'camila\',\'dlldsl\')', null, false)
+ 2 SYSTEMPATH\Database\BaseBuilder.php(2210): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+ 3 APPPATH\Models\NoticiasModel.php(31): CodeIgniter\Database\BaseBuilder->insertBatch([...])
+ 4 APPPATH\Controllers\Noticias.php(105): App\Models\NoticiasModel->insertar([...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Noticias->new()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Noticias))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-05-15 05:02:47 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'nombre_usuario' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 313.
+ 1 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `noticias` (`categoria`, `descripcion`, `estado`, `fecha`, `id`, `imagen`, `nombre_usuario`, `titulo`)
+VALUES (\'1\',\'ldsld\',\'Borrador\',\'2024-05-15\',\'1\',\'C:\\\\xampp\\\\tmp\\\\php95A1.tmp\',\'camila\',\'dlldsl\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `noticias` (`categoria`, `descripcion`, `estado`, `fecha`, `id`, `imagen`, `nombre_usuario`, `titulo`)
+VALUES (\'1\',\'ldsld\',\'Borrador\',\'2024-05-15\',\'1\',\'C:\\\\xampp\\\\tmp\\\\php95A1.tmp\',\'camila\',\'dlldsl\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1821): CodeIgniter\Database\BaseConnection->query('INSERT INTO `noticias` (`categoria`, `descripcion`, `estado`, `fecha`, `id`, `imagen`, `nombre_usuario`, `titulo`)
+VALUES (\'1\',\'ldsld\',\'Borrador\',\'2024-05-15\',\'1\',\'C:\\\\xampp\\\\tmp\\\\php95A1.tmp\',\'camila\',\'dlldsl\')', null, false)
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2210): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+ 5 APPPATH\Models\NoticiasModel.php(31): CodeIgniter\Database\BaseBuilder->insertBatch([...])
+ 6 APPPATH\Controllers\Noticias.php(105): App\Models\NoticiasModel->insertar([...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Noticias->new()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Noticias))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-05-15 05:02:47 --> [Caused by] mysqli_sql_exception: Unknown column 'nombre_usuario' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 308.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(308): mysqli->query('INSERT INTO `noticias` (`categoria`, `descripcion`, `estado`, `fecha`, `id`, `imagen`, `nombre_usuario`, `titulo`)
+VALUES (\'1\',\'ldsld\',\'Borrador\',\'2024-05-15\',\'1\',\'C:\\\\xampp\\\\tmp\\\\php95A1.tmp\',\'camila\',\'dlldsl\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `noticias` (`categoria`, `descripcion`, `estado`, `fecha`, `id`, `imagen`, `nombre_usuario`, `titulo`)
+VALUES (\'1\',\'ldsld\',\'Borrador\',\'2024-05-15\',\'1\',\'C:\\\\xampp\\\\tmp\\\\php95A1.tmp\',\'camila\',\'dlldsl\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `noticias` (`categoria`, `descripcion`, `estado`, `fecha`, `id`, `imagen`, `nombre_usuario`, `titulo`)
+VALUES (\'1\',\'ldsld\',\'Borrador\',\'2024-05-15\',\'1\',\'C:\\\\xampp\\\\tmp\\\\php95A1.tmp\',\'camila\',\'dlldsl\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1821): CodeIgniter\Database\BaseConnection->query('INSERT INTO `noticias` (`categoria`, `descripcion`, `estado`, `fecha`, `id`, `imagen`, `nombre_usuario`, `titulo`)
+VALUES (\'1\',\'ldsld\',\'Borrador\',\'2024-05-15\',\'1\',\'C:\\\\xampp\\\\tmp\\\\php95A1.tmp\',\'camila\',\'dlldsl\')', null, false)
+ 5 SYSTEMPATH\Database\BaseBuilder.php(2210): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+ 6 APPPATH\Models\NoticiasModel.php(31): CodeIgniter\Database\BaseBuilder->insertBatch([...])
+ 7 APPPATH\Controllers\Noticias.php(105): App\Models\NoticiasModel->insertar([...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Noticias->new()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Noticias))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-05-15 05:03:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-05-15 05:03:59 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`empresa`.`noticias`, CONSTRAINT `noticias_id_usuario_foreign` FOREIGN KEY (`id_usuario`) REFERENCES `usuarios` (`id`)) in C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:308
+Stack trace:
+#0 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(308): mysqli->query('INSERT INTO `no...', 0)
+#1 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `no...')
+#2 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `no...')
+#3 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1821): CodeIgniter\Database\BaseConnection->query('INSERT INTO `no...', NULL, false)
+#4 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2210): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+#5 C:\xampp\htdocs\empresa\app\Models\NoticiasModel.php(31): CodeIgniter\Database\BaseBuilder->insertBatch(Array)
+#6 C:\xampp\htdocs\empresa\app\Controllers\Noticias.php(105): App\Models\NoticiasModel->insertar(Array)
+#7 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\CodeIgniter.php(933): App\Controllers\Noticias->new()
+#8 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Noticias))
+#9 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Boot.php(312): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\empresa\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2024-05-15 05:03:59 --> CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`empresa`.`noticias`, CONSTRAINT `noticias_id_usuario_foreign` FOREIGN KEY (`id_usuario`) REFERENCES `usuarios` (`id`))
+[Method: POST, Route: Noticias/new]
+in SYSTEMPATH\Database\BaseConnection.php on line 676.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1821): CodeIgniter\Database\BaseConnection->query('INSERT INTO `noticias` (`categoria`, `descripcion`, `estado`, `fecha`, `id`, `id_usuario`, `imagen`, `titulo`)
+VALUES (\'1\',\'ldsld\',\'Borrador\',\'2024-05-15\',\'1\',\'camila\',\'C:\\\\xampp\\\\tmp\\\\phpAC03.tmp\',\'dlldsl\')', null, false)
+ 2 SYSTEMPATH\Database\BaseBuilder.php(2210): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+ 3 APPPATH\Models\NoticiasModel.php(31): CodeIgniter\Database\BaseBuilder->insertBatch([...])
+ 4 APPPATH\Controllers\Noticias.php(105): App\Models\NoticiasModel->insertar([...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Noticias->new()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Noticias))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-05-15 05:03:59 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`empresa`.`noticias`, CONSTRAINT `noticias_id_usuario_foreign` FOREIGN KEY (`id_usuario`) REFERENCES `usuarios` (`id`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 313.
+ 1 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `noticias` (`categoria`, `descripcion`, `estado`, `fecha`, `id`, `id_usuario`, `imagen`, `titulo`)
+VALUES (\'1\',\'ldsld\',\'Borrador\',\'2024-05-15\',\'1\',\'camila\',\'C:\\\\xampp\\\\tmp\\\\phpAC03.tmp\',\'dlldsl\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `noticias` (`categoria`, `descripcion`, `estado`, `fecha`, `id`, `id_usuario`, `imagen`, `titulo`)
+VALUES (\'1\',\'ldsld\',\'Borrador\',\'2024-05-15\',\'1\',\'camila\',\'C:\\\\xampp\\\\tmp\\\\phpAC03.tmp\',\'dlldsl\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1821): CodeIgniter\Database\BaseConnection->query('INSERT INTO `noticias` (`categoria`, `descripcion`, `estado`, `fecha`, `id`, `id_usuario`, `imagen`, `titulo`)
+VALUES (\'1\',\'ldsld\',\'Borrador\',\'2024-05-15\',\'1\',\'camila\',\'C:\\\\xampp\\\\tmp\\\\phpAC03.tmp\',\'dlldsl\')', null, false)
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2210): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+ 5 APPPATH\Models\NoticiasModel.php(31): CodeIgniter\Database\BaseBuilder->insertBatch([...])
+ 6 APPPATH\Controllers\Noticias.php(105): App\Models\NoticiasModel->insertar([...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Noticias->new()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Noticias))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-05-15 05:03:59 --> [Caused by] mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`empresa`.`noticias`, CONSTRAINT `noticias_id_usuario_foreign` FOREIGN KEY (`id_usuario`) REFERENCES `usuarios` (`id`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 308.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(308): mysqli->query('INSERT INTO `noticias` (`categoria`, `descripcion`, `estado`, `fecha`, `id`, `id_usuario`, `imagen`, `titulo`)
+VALUES (\'1\',\'ldsld\',\'Borrador\',\'2024-05-15\',\'1\',\'camila\',\'C:\\\\xampp\\\\tmp\\\\phpAC03.tmp\',\'dlldsl\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `noticias` (`categoria`, `descripcion`, `estado`, `fecha`, `id`, `id_usuario`, `imagen`, `titulo`)
+VALUES (\'1\',\'ldsld\',\'Borrador\',\'2024-05-15\',\'1\',\'camila\',\'C:\\\\xampp\\\\tmp\\\\phpAC03.tmp\',\'dlldsl\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `noticias` (`categoria`, `descripcion`, `estado`, `fecha`, `id`, `id_usuario`, `imagen`, `titulo`)
+VALUES (\'1\',\'ldsld\',\'Borrador\',\'2024-05-15\',\'1\',\'camila\',\'C:\\\\xampp\\\\tmp\\\\phpAC03.tmp\',\'dlldsl\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1821): CodeIgniter\Database\BaseConnection->query('INSERT INTO `noticias` (`categoria`, `descripcion`, `estado`, `fecha`, `id`, `id_usuario`, `imagen`, `titulo`)
+VALUES (\'1\',\'ldsld\',\'Borrador\',\'2024-05-15\',\'1\',\'camila\',\'C:\\\\xampp\\\\tmp\\\\phpAC03.tmp\',\'dlldsl\')', null, false)
+ 5 SYSTEMPATH\Database\BaseBuilder.php(2210): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+ 6 APPPATH\Models\NoticiasModel.php(31): CodeIgniter\Database\BaseBuilder->insertBatch([...])
+ 7 APPPATH\Controllers\Noticias.php(105): App\Models\NoticiasModel->insertar([...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Noticias->new()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Noticias))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-05-15 05:04:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-15 05:04:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-15 05:04:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-15 05:04:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-15 05:04:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-15 05:04:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-15 05:04:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-15 05:04:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-05-15 05:04:59 --> mysqli_sql_exception: Unknown column 'nombre_usuario' in 'field list' in C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:308
+Stack trace:
+#0 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(308): mysqli->query('INSERT INTO `no...', 0)
+#1 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `no...')
+#2 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `no...')
+#3 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1821): CodeIgniter\Database\BaseConnection->query('INSERT INTO `no...', NULL, false)
+#4 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2210): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+#5 C:\xampp\htdocs\empresa\app\Models\NoticiasModel.php(31): CodeIgniter\Database\BaseBuilder->insertBatch(Array)
+#6 C:\xampp\htdocs\empresa\app\Controllers\Noticias.php(105): App\Models\NoticiasModel->insertar(Array)
+#7 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\CodeIgniter.php(933): App\Controllers\Noticias->new()
+#8 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Noticias))
+#9 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Boot.php(312): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\empresa\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2024-05-15 05:04:59 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'nombre_usuario' in 'field list'
+[Method: POST, Route: Noticias/new]
+in SYSTEMPATH\Database\BaseConnection.php on line 676.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1821): CodeIgniter\Database\BaseConnection->query('INSERT INTO `noticias` (`categoria`, `descripcion`, `estado`, `fecha`, `id`, `imagen`, `nombre_usuario`, `titulo`)
+VALUES (\'1\',\'jsjsj\',\'Borrador\',\'2024-05-15\',\'1\',\'C:\\\\xampp\\\\tmp\\\\php9849.tmp\',\'camila\',\'ddd\')', null, false)
+ 2 SYSTEMPATH\Database\BaseBuilder.php(2210): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+ 3 APPPATH\Models\NoticiasModel.php(31): CodeIgniter\Database\BaseBuilder->insertBatch([...])
+ 4 APPPATH\Controllers\Noticias.php(105): App\Models\NoticiasModel->insertar([...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Noticias->new()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Noticias))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-05-15 05:04:59 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'nombre_usuario' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 313.
+ 1 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `noticias` (`categoria`, `descripcion`, `estado`, `fecha`, `id`, `imagen`, `nombre_usuario`, `titulo`)
+VALUES (\'1\',\'jsjsj\',\'Borrador\',\'2024-05-15\',\'1\',\'C:\\\\xampp\\\\tmp\\\\php9849.tmp\',\'camila\',\'ddd\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `noticias` (`categoria`, `descripcion`, `estado`, `fecha`, `id`, `imagen`, `nombre_usuario`, `titulo`)
+VALUES (\'1\',\'jsjsj\',\'Borrador\',\'2024-05-15\',\'1\',\'C:\\\\xampp\\\\tmp\\\\php9849.tmp\',\'camila\',\'ddd\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1821): CodeIgniter\Database\BaseConnection->query('INSERT INTO `noticias` (`categoria`, `descripcion`, `estado`, `fecha`, `id`, `imagen`, `nombre_usuario`, `titulo`)
+VALUES (\'1\',\'jsjsj\',\'Borrador\',\'2024-05-15\',\'1\',\'C:\\\\xampp\\\\tmp\\\\php9849.tmp\',\'camila\',\'ddd\')', null, false)
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2210): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+ 5 APPPATH\Models\NoticiasModel.php(31): CodeIgniter\Database\BaseBuilder->insertBatch([...])
+ 6 APPPATH\Controllers\Noticias.php(105): App\Models\NoticiasModel->insertar([...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Noticias->new()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Noticias))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-05-15 05:04:59 --> [Caused by] mysqli_sql_exception: Unknown column 'nombre_usuario' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 308.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(308): mysqli->query('INSERT INTO `noticias` (`categoria`, `descripcion`, `estado`, `fecha`, `id`, `imagen`, `nombre_usuario`, `titulo`)
+VALUES (\'1\',\'jsjsj\',\'Borrador\',\'2024-05-15\',\'1\',\'C:\\\\xampp\\\\tmp\\\\php9849.tmp\',\'camila\',\'ddd\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `noticias` (`categoria`, `descripcion`, `estado`, `fecha`, `id`, `imagen`, `nombre_usuario`, `titulo`)
+VALUES (\'1\',\'jsjsj\',\'Borrador\',\'2024-05-15\',\'1\',\'C:\\\\xampp\\\\tmp\\\\php9849.tmp\',\'camila\',\'ddd\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `noticias` (`categoria`, `descripcion`, `estado`, `fecha`, `id`, `imagen`, `nombre_usuario`, `titulo`)
+VALUES (\'1\',\'jsjsj\',\'Borrador\',\'2024-05-15\',\'1\',\'C:\\\\xampp\\\\tmp\\\\php9849.tmp\',\'camila\',\'ddd\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1821): CodeIgniter\Database\BaseConnection->query('INSERT INTO `noticias` (`categoria`, `descripcion`, `estado`, `fecha`, `id`, `imagen`, `nombre_usuario`, `titulo`)
+VALUES (\'1\',\'jsjsj\',\'Borrador\',\'2024-05-15\',\'1\',\'C:\\\\xampp\\\\tmp\\\\php9849.tmp\',\'camila\',\'ddd\')', null, false)
+ 5 SYSTEMPATH\Database\BaseBuilder.php(2210): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+ 6 APPPATH\Models\NoticiasModel.php(31): CodeIgniter\Database\BaseBuilder->insertBatch([...])
+ 7 APPPATH\Controllers\Noticias.php(105): App\Models\NoticiasModel->insertar([...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Noticias->new()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Noticias))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-05-15 05:05:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-05-15 05:06:23 --> mysqli_sql_exception: Can't create table `empresa`.`noticias` (errno: 150 "Foreign key constraint is incorrectly formed") in C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:308
+Stack trace:
+#0 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(308): mysqli->query('CREATE TABLE `n...', 0)
+#1 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `n...')
+#2 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `n...')
+#3 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\Forge.php(570): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `n...')
+#4 C:\xampp\htdocs\empresa\app\Database\Migrations\2024-05-12-210324_Noticias.php(48): CodeIgniter\Database\Forge->createTable('noticias')
+#5 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(867): App\Database\Migrations\Noticias->up()
+#6 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(183): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Commands\Database\Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\CLI\Commands.php(70): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\CLI\Console.php(48): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Boot.php(338): CodeIgniter\CLI\Console->run()
+#11 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#12 C:\xampp\htdocs\empresa\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#13 {main}
+ERROR - 2024-05-15 05:06:53 --> mysqli_sql_exception: Can't create table `empresa`.`noticias` (errno: 150 "Foreign key constraint is incorrectly formed") in C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:308
+Stack trace:
+#0 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(308): mysqli->query('CREATE TABLE `n...', 0)
+#1 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `n...')
+#2 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `n...')
+#3 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\Forge.php(570): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `n...')
+#4 C:\xampp\htdocs\empresa\app\Database\Migrations\2024-05-12-210324_Noticias.php(48): CodeIgniter\Database\Forge->createTable('noticias')
+#5 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(867): App\Database\Migrations\Noticias->up()
+#6 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(183): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Commands\Database\Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\CLI\Commands.php(70): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\CLI\Console.php(48): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Boot.php(338): CodeIgniter\CLI\Console->run()
+#11 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#12 C:\xampp\htdocs\empresa\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#13 {main}
+ERROR - 2024-05-15 05:07:19 --> mysqli_sql_exception: Can't create table `empresa`.`noticias` (errno: 150 "Foreign key constraint is incorrectly formed") in C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:308
+Stack trace:
+#0 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(308): mysqli->query('CREATE TABLE `n...', 0)
+#1 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `n...')
+#2 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `n...')
+#3 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\Forge.php(570): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `n...')
+#4 C:\xampp\htdocs\empresa\app\Database\Migrations\2024-05-12-210324_Noticias.php(48): CodeIgniter\Database\Forge->createTable('noticias')
+#5 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(867): App\Database\Migrations\Noticias->up()
+#6 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(183): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Commands\Database\Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\CLI\Commands.php(70): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\CLI\Console.php(48): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Boot.php(338): CodeIgniter\CLI\Console->run()
+#11 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#12 C:\xampp\htdocs\empresa\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#13 {main}
+ERROR - 2024-05-15 05:07:40 --> mysqli_sql_exception: Can't create table `empresa`.`noticias` (errno: 150 "Foreign key constraint is incorrectly formed") in C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:308
+Stack trace:
+#0 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(308): mysqli->query('CREATE TABLE `n...', 0)
+#1 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `n...')
+#2 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `n...')
+#3 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\Forge.php(570): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `n...')
+#4 C:\xampp\htdocs\empresa\app\Database\Migrations\2024-05-12-210324_Noticias.php(48): CodeIgniter\Database\Forge->createTable('noticias')
+#5 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(867): App\Database\Migrations\Noticias->up()
+#6 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(183): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Commands\Database\Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\CLI\Commands.php(70): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\CLI\Console.php(48): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Boot.php(338): CodeIgniter\CLI\Console->run()
+#11 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#12 C:\xampp\htdocs\empresa\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#13 {main}
+ERROR - 2024-05-15 05:08:28 --> mysqli_sql_exception: Can't create table `empresa`.`noticias` (errno: 150 "Foreign key constraint is incorrectly formed") in C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:308
+Stack trace:
+#0 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(308): mysqli->query('CREATE TABLE `n...', 0)
+#1 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `n...')
+#2 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `n...')
+#3 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\Forge.php(570): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `n...')
+#4 C:\xampp\htdocs\empresa\app\Database\Migrations\2024-05-12-210324_Noticias.php(48): CodeIgniter\Database\Forge->createTable('noticias')
+#5 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(867): App\Database\Migrations\Noticias->up()
+#6 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(183): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Commands\Database\Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\CLI\Commands.php(70): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\CLI\Console.php(48): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Boot.php(338): CodeIgniter\CLI\Console->run()
+#11 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#12 C:\xampp\htdocs\empresa\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#13 {main}
+ERROR - 2024-05-15 05:13:46 --> mysqli_sql_exception: Incorrect table definition; there can be only one auto column and it must be defined as a key in C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:308
+Stack trace:
+#0 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(308): mysqli->query('CREATE TABLE `u...', 0)
+#1 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `u...')
+#2 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `u...')
+#3 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\Forge.php(570): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `u...')
+#4 C:\xampp\htdocs\empresa\app\Database\Migrations\2024-05-12-205226_Usuarios.php(32): CodeIgniter\Database\Forge->createTable('usuarios')
+#5 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(867): App\Database\Migrations\Usuarios->up()
+#6 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(183): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Commands\Database\Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\CLI\Commands.php(70): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\CLI\Console.php(48): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Boot.php(338): CodeIgniter\CLI\Console->run()
+#11 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#12 C:\xampp\htdocs\empresa\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#13 {main}
+INFO - 2024-05-15 05:16:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-15 05:16:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-15 05:16:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-15 05:16:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-15 05:16:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-15 05:16:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-15 05:16:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-15 05:16:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-15 05:16:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-15 05:19:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-05-15 05:21:24 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'NOT NULL,
+	CONSTRAINT `pk_noticias` PRIMARY KEY(`id`),
+	CONSTRAINT `noticias_...' at line 9 in C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:308
+Stack trace:
+#0 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(308): mysqli->query('CREATE TABLE `n...', 0)
+#1 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `n...')
+#2 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `n...')
+#3 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\Forge.php(570): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `n...')
+#4 C:\xampp\htdocs\empresa\app\Database\Migrations\2024-05-12-210324_Noticias.php(48): CodeIgniter\Database\Forge->createTable('noticias')
+#5 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(867): App\Database\Migrations\Noticias->up()
+#6 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(183): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Commands\Database\Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\CLI\Commands.php(70): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\CLI\Console.php(48): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Boot.php(338): CodeIgniter\CLI\Console->run()
+#11 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#12 C:\xampp\htdocs\empresa\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#13 {main}
+ERROR - 2024-05-15 05:21:38 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'NOT NULL,
+	CONSTRAINT `pk_noticias` PRIMARY KEY(`id`),
+	CONSTRAINT `noticias_...' at line 9 in C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:308
+Stack trace:
+#0 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(308): mysqli->query('CREATE TABLE `n...', 0)
+#1 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `n...')
+#2 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `n...')
+#3 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\Forge.php(570): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `n...')
+#4 C:\xampp\htdocs\empresa\app\Database\Migrations\2024-05-12-210324_Noticias.php(48): CodeIgniter\Database\Forge->createTable('noticias')
+#5 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(867): App\Database\Migrations\Noticias->up()
+#6 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(183): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Commands\Database\Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\CLI\Commands.php(70): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\CLI\Console.php(48): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Boot.php(338): CodeIgniter\CLI\Console->run()
+#11 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#12 C:\xampp\htdocs\empresa\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#13 {main}
+ERROR - 2024-05-15 05:22:27 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'NOT NULL,
+	CONSTRAINT `pk_noticias` PRIMARY KEY(`id`),
+	CONSTRAINT `noticias_...' at line 9 in C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:308
+Stack trace:
+#0 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(308): mysqli->query('CREATE TABLE `n...', 0)
+#1 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `n...')
+#2 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `n...')
+#3 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\Forge.php(570): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `n...')
+#4 C:\xampp\htdocs\empresa\app\Database\Migrations\2024-05-12-210324_Noticias.php(48): CodeIgniter\Database\Forge->createTable('noticias')
+#5 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(867): App\Database\Migrations\Noticias->up()
+#6 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(183): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Commands\Database\Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\CLI\Commands.php(70): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\CLI\Console.php(48): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Boot.php(338): CodeIgniter\CLI\Console->run()
+#11 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#12 C:\xampp\htdocs\empresa\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#13 {main}
+ERROR - 2024-05-15 05:22:39 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'NOT NULL,
+	CONSTRAINT `pk_noticias` PRIMARY KEY(`id`),
+	CONSTRAINT `noticias_...' at line 9 in C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:308
+Stack trace:
+#0 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(308): mysqli->query('CREATE TABLE `n...', 0)
+#1 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `n...')
+#2 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `n...')
+#3 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\Forge.php(570): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `n...')
+#4 C:\xampp\htdocs\empresa\app\Database\Migrations\2024-05-12-210324_Noticias.php(48): CodeIgniter\Database\Forge->createTable('noticias')
+#5 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(867): App\Database\Migrations\Noticias->up()
+#6 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(183): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Commands\Database\Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\CLI\Commands.php(70): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\CLI\Console.php(48): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Boot.php(338): CodeIgniter\CLI\Console->run()
+#11 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#12 C:\xampp\htdocs\empresa\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#13 {main}
+ERROR - 2024-05-15 05:22:50 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'NOT NULL,
+	CONSTRAINT `pk_noticias` PRIMARY KEY(`id`),
+	CONSTRAINT `noticias_...' at line 9 in C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:308
+Stack trace:
+#0 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(308): mysqli->query('CREATE TABLE `n...', 0)
+#1 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `n...')
+#2 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `n...')
+#3 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\Forge.php(570): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `n...')
+#4 C:\xampp\htdocs\empresa\app\Database\Migrations\2024-05-12-210324_Noticias.php(48): CodeIgniter\Database\Forge->createTable('noticias')
+#5 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(867): App\Database\Migrations\Noticias->up()
+#6 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(183): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Commands\Database\Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\CLI\Commands.php(70): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\CLI\Console.php(48): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Boot.php(338): CodeIgniter\CLI\Console->run()
+#11 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#12 C:\xampp\htdocs\empresa\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#13 {main}
+ERROR - 2024-05-15 05:24:52 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'NOT NULL,
+	CONSTRAINT `pk_noticias` PRIMARY KEY(`id`),
+	CONSTRAINT `noticias_...' at line 9 in C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:308
+Stack trace:
+#0 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(308): mysqli->query('CREATE TABLE `n...', 0)
+#1 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `n...')
+#2 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `n...')
+#3 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\Forge.php(570): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `n...')
+#4 C:\xampp\htdocs\empresa\app\Database\Migrations\2024-05-12-210324_Noticias.php(48): CodeIgniter\Database\Forge->createTable('noticias')
+#5 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(867): App\Database\Migrations\Noticias->up()
+#6 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(183): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Commands\Database\Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\CLI\Commands.php(70): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\CLI\Console.php(48): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Boot.php(338): CodeIgniter\CLI\Console->run()
+#11 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#12 C:\xampp\htdocs\empresa\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#13 {main}

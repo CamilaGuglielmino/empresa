@@ -16,8 +16,8 @@ class UsuariosModel extends Model
 
     protected bool $allowEmptyInserts = false;
     protected bool $updateOnlyChanged = true;
-    protected array $casts = []; 
-    protected array $castHandlers = []; 
+    protected array $casts = [];
+    protected array $castHandlers = [];
     public function obtenerUsuario($data)
     {
         $Usuario = $this->db->table('usuarios');
@@ -32,5 +32,6 @@ class UsuariosModel extends Model
         $data = ['noticias' => $resultado];
         return $data;
     }
+    
 
 }

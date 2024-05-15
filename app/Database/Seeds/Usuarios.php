@@ -10,16 +10,19 @@ class Usuarios extends Seeder
     {
         $data =[
             [
+                'id'=>'123',
                 'nombreUsuario' => 'camila',
                 'contraseña' => '1234',
                 'tipo_usuario' => 'Editor',
             ],
             [
+                'id'=>'456',
                 'nombreUsuario' => 'sofia',
                 'contraseña' => '4567',
                 'tipo_usuario' => 'Publicador',
             ],
             [
+                'id'=>'789',
                 'nombreUsuario' => 'nicolas',
                 'contraseña' => '6789',
                 'tipo_usuario' => 'Ambos',

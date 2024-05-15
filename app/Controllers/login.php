@@ -1,10 +1,16 @@
 <?php
+
 namespace App\Controllers;
+$session=\Config\Services::session();
+
 use App\Models\UsuariosModel;
+
 
 
 class login extends BaseController
 {
+    
+
     public function index(){
         return view('login');
 
@@ -21,6 +27,7 @@ class login extends BaseController
     var_dump($contraseña);
   }
 }
+
 
     
     /*
