@@ -84,7 +84,7 @@ class Noticias extends BaseController
         $fechaActual = Time::now();
         $fechaFormateada = $fechaActual->toLocalizedString('yyyy-MM-dd');
         $estado='Borrador';
-        $userData = $_SESSION;
+        
         $imagen->move(WRITEPATH. '/uploads');
 
         
@@ -104,6 +104,19 @@ class Noticias extends BaseController
         $Noticias= new NoticiasModel();
         $Noticias->insertar($data);
         return redirect()->to(base_url('/')); 
+    }
+    // public function historial()
+    // {
+    //     $vistas = view('header') . view('historial') . view('footer');
+    //     return $vistas;
+    // }
+    public function historial(){
+        $Noticias= new NoticiasModel();
+        
+        $data['registros'] = $Noticias->mostrar_todo();
+        
+        $vistas = view('header') . view('historial', $data). view('footer');
+        return $vistas;
     }
 
     public function create()

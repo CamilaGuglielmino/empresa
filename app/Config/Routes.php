@@ -13,6 +13,8 @@ $routes->post('Noticias/iniciar_sesion', 'Noticias::iniciar_sesion');
 $routes->get('Noticias/logout', 'Noticias::logout');
 $routes->get('/nuevo', 'Noticias::nuevo');
 $routes->post('Noticias/new', 'Noticias::new');
+$routes->get('/historial', 'Noticias::historial');
+
 
 
 

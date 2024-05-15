@@ -27,10 +27,10 @@ class UsuariosModel extends Model
 
     public function mostrarTodo()
     {
-        $noticiasModel = new NoticiasModel();
-        $resultado = $noticiasModel->findAll();
-        $data = ['noticias' => $resultado];
-        return $data;
+        
+    //     $query = $this->db->get('nombre_de_la_tabla');
+    // return $query->result();
+        
     }
     
 

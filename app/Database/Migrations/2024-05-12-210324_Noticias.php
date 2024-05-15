@@ -20,26 +20,39 @@ class Noticias extends Migration
                 'constraint' => '10',
             ],
             'titulo' =>[
-                'type' => 'VARCHAR', 
-                'constraint' => 50,
+                'type' => 'TINYTEXT', 
+                
             ],
             'descripcion' =>[
                 'type' => 'LONGTEXT', 
                 'null' => true,
             ],
-            'fecha' =>[
+            'fecha_creacion' =>[
                 'type' => 'DATE', 
+            ],
+            'fecha_correccion' =>[
+                'type' => 'DATE',
+                'null' => true,
+            ],
+            'fecha_publicacion' =>[
+                'type' => 'DATE', 
+                'null' => true,
             ],
             'estado' =>[
                 'type' => 'VARCHAR', 
-                'constraint' => 10,
+                'constraint' => 15,
             ],
+            // 'estado2' =>[
+            //     'type' => 'VARCHAR', 
+            //     'constraint' => 15,
+            // ],
             'categoria' =>[
                 'type' => 'VARCHAR', 
                 'constraint' => 100,
             ],
             'imagen' =>[
-                'type' => 'FILE', 
+                'type' => 'VARCHAR', 
+                'constraint' => 100,
             ],
 
         ]);

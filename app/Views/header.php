@@ -20,18 +20,18 @@ $session = \Config\Services::session();
     <!-- Responsive navbar-->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
-            <a class="navbar-brand" href="<?php base_url(); ?>">
+            <a class="navbar-brand" href="<?php base_url('/'); ?>">
                 <img id="logo" src="..\public\imagenes\logo.png" height="120">
             </a>
 
-            <form class="d-none d-md-inline-block form-inline ms-auto me-0 me-md-3 my-2 my-md-0">
+            <!-- <form class="d-none d-md-inline-block form-inline ms-auto me-0 me-md-3 my-2 my-md-0">
                 <div class="input-group">
                     <input class="form-control" type="text" placeholder="Search for..." aria-label="Search for..."
                         aria-describedby="btnNavbarSearch" />
                     <button class="btn btn-primary" id="btnNavbarSearch" type="button"><i
                             class="fas fa-search"></i></button>
                 </div>
-            </form>
+            </form> -->
 
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -46,10 +46,10 @@ $session = \Config\Services::session();
                                 <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button"
                                     data-bs-toggle="dropdown" aria-expanded="false">Categorias</a>
                                 <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-                                    <li><a class="dropdown-item" href="#!">Innovaciones y Lanzamientos</a></li>
-                                    <li><a class="dropdown-item" href="#!">Tendencias del Sector</a></li>
-                                    <li><a class="dropdown-item" href="#!">Casos de Éxito</a></li>
-                                    <li><a class="dropdown-item" href="#!">Eventos y Conferencias</a></li>
+                                    <li><a class="dropdown-item" href="<?php base_url('categoria'); ?>">Innovaciones y Lanzamientos</a></li>
+                                    <li><a class="dropdown-item" href="<?php base_url('categoria'); ?>">Tendencias del Sector</a></li>
+                                    <li><a class="dropdown-item" href="<?php base_url('categoria'); ?>">Casos de Éxito</a></li>
+                                    <li><a class="dropdown-item" href="<?php base_url('categoria'); ?>">Eventos y Conferencias</a></li>
                                 </ul>
                             </li>
                         </ul>
@@ -80,16 +80,16 @@ $session = \Config\Services::session();
                                     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
                                     
                                     <li><a class="dropdown-item" href="<?php echo base_url('nuevo') ?>">Nuevo</a></li>
-                                    <li><a class="dropdown-item" href="#!">Editar</a></li>
-                                    <li><a class="dropdown-item" href="#!">Publicaciones</a></li>
+                                    <li><a class="dropdown-item" href="<?php echo base_url('editar') ?>">Editar</a></li>
+                                    <li><a class="dropdown-item" href="<?php echo base_url('historial') ?>">Historial</a></li>
                                     <li><hr class="dropdown-divider"></li>
                                     <li><a class="dropdown-item" href="<?php echo base_url('Noticias/logout') ?>">Salir</a></li>
                                 </ul>
                               <?php  } elseif (strcasecmp($tipo, $publicador)==0) {?>
                                 <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
                                     
-                                    <li><a class="dropdown-item" href="#!">Validar</a></li>
-                                    <li><a class="dropdown-item" href="#!">Publicaciones</a></li>
+                                    <li><a class="dropdown-item" href="<?php echo base_url('validar') ?>">Validar</a></li>
+                                    <li><a class="dropdown-item" href="<?php echo base_url('historial') ?>">Historial</a></li>
                                     <li><hr class="dropdown-divider"></li>
                                     <li><a class="dropdown-item" href="<?php echo base_url('Noticias/logout') ?>">Salir</a></li>
                                 </ul>
@@ -98,9 +98,9 @@ $session = \Config\Services::session();
                                 <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
                                    
                                     <li><a class="dropdown-item" href="<?php echo base_url('nuevo') ?>">Nuevo</a></li>
-                                    <li><a class="dropdown-item" href="#!">Validar</a></li>
-                                    <li><a class="dropdown-item" href="#!">Editar</a></li>
-                                    <li><a class="dropdown-item" href="#!">Publicaciones</a></li>
+                                    <li><a class="dropdown-item" href="<?php echo base_url('validar') ?>">Validar</a></li>
+                                    <li><a class="dropdown-item" href="<?php echo base_url('editar') ?>">Editar</a></li>
+                                    <li><a class="dropdown-item" href="<?php echo base_url('historial') ?>">Historial</a></li>
                                     <li><hr class="dropdown-divider"></li>
                                     <li><a class="dropdown-item" href="<?php echo base_url('Noticias/logout') ?>">Salir</a></li>
                                 </ul>
