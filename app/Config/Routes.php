@@ -14,6 +14,8 @@ $routes->get('Noticias/logout', 'Noticias::logout');
 $routes->get('/nuevo', 'Noticias::nuevo');
 $routes->post('Noticias/new', 'Noticias::new');
 $routes->get('/historial', 'Noticias::historial');
+$routes->get('Noticias/index', 'Noticias::index');
+
 
 
 
