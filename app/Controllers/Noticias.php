@@ -11,14 +11,14 @@ class Noticias extends BaseController
 {
     public function index()
     {
-        $Noticias= new NoticiasModel();
-        
+        $Noticias = new NoticiasModel();
+
         $data['registros'] = $Noticias->mostrar_todo();
         $mensaje = session('mensaje');
-        
-        $vistas = view('header') . view('inicio', $data). view('footer');
+
+        $vistas = view('header') . view('inicio', $data) . view('footer');
         return $vistas;
-       
+
     }
 
     public function show($id = null)
@@ -88,47 +88,49 @@ class Noticias extends BaseController
         $imagen = $this->request->getFile('imagen');
         $fechaActual = Time::now();
         $fechaFormateada = $fechaActual->toLocalizedString('yyyy-MM-dd');
-        $estado='Borrador';
-        
-        $imagen->move(WRITEPATH. '/uploads');
+        $estado = 'Borrador';
 
-        
+        $imagen->move(WRITEPATH . '/uploads');
+
+
         $id_usuario = session('nombreUsuario');
         var_dump($id_usuario);
-        
+
         $data = [
             'id' => rand(10000, 59999), // 
-            'nombre_usuario'=>$id_usuario,
+            'nombre_usuario' => $id_usuario,
             'titulo' => $this->request->getPost('titulo'),
             'descripcion' => $this->request->getPost('descripcion'),
             'fecha_creacion' => $fechaFormateada,
-            'estado'=>$estado,
+            'estado' => $this->request->getPost('estado'),
             'categoria' => $this->request->getPost('categoria'),
-            'imagen'=>$imagen
+            'imagen' => $imagen
         ];
-        $Noticias= new NoticiasModel();
+        $Noticias = new NoticiasModel();
         $Noticias->insertar($data);
-        return redirect()->to(base_url('/')); 
+        return redirect()->to(base_url('/'));
     }
-    
-    public function historial(){
-        $Noticias= new NoticiasModel();
-        
+
+    public function historial()
+    {
+        $Noticias = new NoticiasModel();
+
         $data['registros'] = $Noticias->mostrar_todo();
-        
-        $vistas = view('header') . view('historial', $data). view('footer');
+
+        $vistas = view('header') . view('historial', $data) . view('footer');
         return $vistas;
     }
 
 
 
-    public function editar()    {
+    public function editar()
+    {
         $id = $_GET['id'];
-        $Noticias= new NoticiasModel();
-        $dato['dato']= $Noticias->mostrar_noticia(['id' => $id]);
-       
-       // var_dump($dato);
-        $vistas = view('header') . view('editar', $dato). view('footer');
+        $Noticias = new NoticiasModel();
+        $dato['dato'] = $Noticias->mostrar_noticia(['id' => $id]);
+
+        // var_dump($dato);
+        $vistas = view('header') . view('editar', $dato) . view('footer');
         return $vistas;
     }
 
@@ -138,36 +140,84 @@ class Noticias extends BaseController
         $imagen = $this->request->getFile('imagen');
         $fechaActual = Time::now();
         $fechaFormateada = $fechaActual->toLocalizedString('yyyy-MM-dd');
-        $estado='Borrador';
-        
-        $imagen->move(WRITEPATH. '/uploads');
+        $estado = 'Borrador';
 
-        
+        $imagen->move(WRITEPATH . '/uploads');
+
+
         $id_usuario = session('nombreUsuario');
         var_dump($id_usuario);
-        
+
         $data = [
             'id' => rand(10000, 99999),
-            'nombre_usuario'=>$id_usuario,
+            'nombre_usuario' => $id_usuario,
             'titulo' => $this->request->getPost('titulo'),
             'descripcion' => $this->request->getPost('descripcion'),
-            'fecha_creacion'=>'null',
+            'fecha_creacion' => 'null',
             'fecha_correccion' => $fechaFormateada,
-            'fecha_publicacion'=>'null',
-            'estado'=>$estado,
+            'fecha_publicacion' => 'null',
+            'estado' => $estado,
             'categoria' => $this->request->getPost('categoria'),
-            'imagen'=>$imagen
+            'imagen' => $imagen
         ];
-        $Noticias= new NoticiasModel();
+        $Noticias = new NoticiasModel();
         $Noticias->insertar($data);
-        return redirect()->to(base_url('/')); 
+        return redirect()->to(base_url('/'));
     }
-    public function modal(){
-        $vistas = view('header') . view('modal') . view('footer');
-        return $vistas;
-    }
-    public function delete($id = null)
+    
+    public function categoria()
     {
-        // 
+        $var = $_GET['var'];
+        $Noticias = new NoticiasModel();
+       
+        $var1 = 'Innovaciones y Lanzamientos';
+        $var2 = 'Tendencias del Sector';
+        $var3 = 'Casos de Éxito';
+        $var4 = 'Eventos y Conferencias';
+       
+        if(strcasecmp($var, $var1)==0){
+            $data['registros'] = $Noticias->mostrar_categoria(['categoria' => $var]);
+            $vistas = view('header') . view('categorias', $data) . view('footer');
+            return $vistas;
+        }elseif(strcasecmp($var, $var2)==0){
+            $data['registros'] = $Noticias->mostrar_categoria(['categoria' => $var]);
+            $vistas = view('header') . view('categorias', $data) . view('footer');
+            return $vistas;
+        }elseif(strcasecmp($var, $var3)==0){
+            $data['registros'] = $Noticias->mostrar_categoria(['categoria' => $var]);
+            $vistas = view('header') . view('categorias', $data) . view('footer');
+            return $vistas;
+        }elseif(strcasecmp($var, $var4)==0){
+            $data['registros'] = $Noticias->mostrar_categoria(['categoria' => $var]);
+            $vistas = view('header') . view('categorias', $data) . view('footer');
+            return $vistas;
+        }
+        
+
+        //var_dump($var);      // 
     }
+    public function detalle()
+    {
+        $id = $_GET['id'];
+        $Noticias = new NoticiasModel();
+        $data['dato'] = $Noticias->mostrar_noticia(['id' => $id]);
+        $vistas = view('header') . view('detalle', $data) . view('footer');
+        return $vistas;
+    
+    }
+    public function descartar(){
+        
+        $id = $_GET['id'];
+        $Noticias = new NoticiasModel();
+        $Noticias->modificar($id);
+        return redirect()->to(base_url('/historial'));
+
+
+
+        
+
+
+    }
+
+
 }

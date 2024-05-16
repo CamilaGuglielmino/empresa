@@ -4,7 +4,7 @@ use CodeIgniter\Router\RouteCollection;
 
 /**
  * @var RouteCollection $routes
- */
+ */ 
 
 
 $routes->get('/', 'Noticias::index');
@@ -17,7 +17,13 @@ $routes->get('/historial', 'Noticias::historial');
 $routes->get('Noticias/index', 'Noticias::index');
 $routes->get('Noticias/editar', 'Noticias::editar');
 $routes->post('Noticias/actualizar', 'Noticias::actualizar');
-$routes->get('/modal', 'Noticias::modal');
+$routes->get('/detalle', 'Noticias::detalle');
+$routes->get('Noticias/categoria', 'Noticias::categoria');
+$routes->get('Noticias/detalle', 'Noticias::detalle');
+$routes->get('Noticias/descartar', 'Noticias::descartar');
+
+
+
 
 
 

@@ -2,10 +2,12 @@
 
 $session = \Config\Services::session();
 ?>
+<div class="container mt-5">
 
 <div class="row row-cols1 row-cols-sm-2 row-cols-md-3 g-3" id="card">
   <?php
   foreach ($registros as $registro):
+    $id=$registro['id'];
     $autor=$registro['nombre_usuario'];
     $titulo = $registro['titulo'];
     $descripcion = $registro['descripcion'];
@@ -19,12 +21,14 @@ $session = \Config\Services::session();
     $publicado = 'Publicado';
     if (strcasecmp($estado, $publicado) == 0) {
       ?>
-      <a href="http://www.instagram.com">
+    
       <div class="col">
         <div class="card shadow sm" id="card">
           <img src="..\public\imagenes\logo.png" class="card-img-top" alt="<?php echo $titulo?>">
           <div class="card-body">
+          <a href="<?php echo base_url('Noticias/detalle?id='.$id);?>">
             <h5 class="card-title"><?php echo $titulo?></h5>
+            </a>
             <p class="card-text"><?php echo $descripcion?></p>
           </div>
           <div class="card-footer">
@@ -34,10 +38,11 @@ $session = \Config\Services::session();
           </div>
         </div>
       </div>
-      </a>
+      
     <?php
     }
   endforeach;
   //<?php echo base64_encode($ID); 
   ?>
+  </div>
   </div>

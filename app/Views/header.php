@@ -15,13 +15,14 @@ $session = \Config\Services::session();
     <!-- Favicon-->
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
     <!-- Core theme CSS (includes Bootstrap)-->
-    <link href="css/styles.css" rel="stylesheet" />
+    <link href="<?= base_url('css/styles.css') ?>" rel="stylesheet">
+
 </head>
     <!-- Responsive navbar-->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
             <a class="navbar-brand" href="<?php echo base_url('/'); ?>">
-                <img id="logo" src="..\public\imagenes\logo.png" height="120">
+                <img id="logo" src="<?php echo base_url('imagenes/logo.png')?>" height="120">
             </a>
 
             <!-- <form class="d-none d-md-inline-block form-inline ms-auto me-0 me-md-3 my-2 my-md-0">
@@ -46,10 +47,17 @@ $session = \Config\Services::session();
                                 <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button"
                                     data-bs-toggle="dropdown" aria-expanded="false">Categorias</a>
                                 <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-                                    <li><a class="dropdown-item" href="<?php echo base_url('categoria'); ?>">Innovaciones y Lanzamientos</a></li>
-                                    <li><a class="dropdown-item" href="<?php echo base_url('categoria'); ?>">Tendencias del Sector</a></li>
-                                    <li><a class="dropdown-item" href="<?php echo base_url('categoria'); ?>">Casos de Éxito</a></li>
-                                    <li><a class="dropdown-item" href="<?php echo base_url('categoria'); ?>">Eventos y Conferencias</a></li>
+                                <?php 
+                                $var1='Innovaciones y Lanzamientos';
+                                $var2='Tendencias del Sector';
+                                $var3='Casos de Éxito';
+                                $var4='Eventos y Conferencias';
+                                
+                                ?>
+                                    <li><a class="dropdown-item" href="<?php echo base_url('Noticias/categoria?var='.$var1); ?>">Innovaciones y Lanzamientos</a></li>
+                                    <li><a class="dropdown-item" href="<?php echo base_url('Noticias/categoria?var='.$var2); ?>">Tendencias del Sector</a></li>
+                                    <li><a class="dropdown-item" href="<?php echo base_url('Noticias/categoria?var='.$var3); ?>">Casos de Éxito</a></li>
+                                    <li><a class="dropdown-item" href="<?php echo base_url('Noticias/categoria?var='.$var4); ?>">Eventos y Conferencias</a></li>
                                 </ul>
                             </li>
                         </ul>

@@ -23,10 +23,10 @@
                         <div class="mb-3">
                             <select class="form-select" name="categoria" required>
                                 <option selected>Seleccionar una categoria</option>
-                                <option value="1">Innovaciones y Lanzamientos</option>
-                                <option value="2">Tendencias del Sector</option>
-                                <option value="3">Casos de Éxito</option>
-                                <option value="4">Eventos y Conferencias</option>
+                                <option value="Innovaciones y Lanzamientos">Innovaciones y Lanzamientos</option>
+                                <option value="Tendencias del Sector">Tendencias del Sector</option>
+                                <option value="Casos de Éxito">Casos de Éxito</option>
+                                <option value="Eventos y Conferencias">Eventos y Conferencias</option>
                             </select>
 
                         </div>
@@ -41,7 +41,9 @@
                         <br>
                         <br>
 
-                        <input class="submitBtn" type="submit" name="crear" value="Crear">
+                        <input class="submitBtn" type="submit" name="estado" value="Borrador">
+                        <input class="submitBtn" type="submit" name="estado" value="Validar">
+
 
 
                 </form>

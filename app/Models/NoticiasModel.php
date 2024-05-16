@@ -43,10 +43,26 @@ class NoticiasModel extends Model
         return $Noticias->get()->getResultArray();
     }
     public function mostrar_noticia($id){
-        
             $Noticias = $this->db->table('noticias');
             $Noticias->where($id);
             return $Noticias->get()->getResultArray();
-        
+    }
+    public function mostrar_categoria($var){
+            $Noticias = $this->db->table('noticias');
+            $Noticias->where($var);
+            return $Noticias->get()->getResultArray();
+           
+
+    }
+    public function modificar($id){
+        $Noticias = $this->db->table('noticias');
+        $Noticias->where(['id' => $id]);
+        $datos = [
+            'estado' => 'Descartado'
+        ];
+       
+        //$this->db->update('noticias', $datos);
+
+
     }
 }
