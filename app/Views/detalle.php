@@ -29,7 +29,8 @@ endforeach;
                 </header>
                 <!-- Preview image figure-->
                 <figure class="mb-4"><img class="img-fluid rounded"
-                        src="<?php echo $imagen?>" alt="..." /></figure>
+                src="<?php echo base_url('imagenes/'.$imagen)?>" alt="..." /></figure>
+                        
                 <!-- Post content-->
                 <section class="mb-5">
                     <?php echo $descripcion?>

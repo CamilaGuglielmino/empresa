@@ -55,13 +55,7 @@ class NoticiasModel extends Model
 
     }
     public function modificar($id){
-        $Noticias = $this->db->table('noticias');
-        $Noticias->where(['id' => $id]);
-        $datos = [
-            'estado' => 'Descartado'
-        ];
-       
-        //$this->db->update('noticias', $datos);
+        
 
 
     }

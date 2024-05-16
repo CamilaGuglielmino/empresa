@@ -1,3 +1,8 @@
+<?php if (session()->has('error_message')): ?>
+    <div class="alert alert-success">
+        <?= session('error_message') ?>
+    </div>
+<?php endif; ?>
 <main>
 <div class="container mt-5">
     <div class="row">

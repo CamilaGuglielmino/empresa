@@ -21,6 +21,8 @@ $routes->get('/detalle', 'Noticias::detalle');
 $routes->get('Noticias/categoria', 'Noticias::categoria');
 $routes->get('Noticias/detalle', 'Noticias::detalle');
 $routes->get('Noticias/descartar', 'Noticias::descartar');
+$routes->get('Noticias/validar', 'Noticias::validar');
+
 
 
 

@@ -44,22 +44,26 @@ class Noticias extends BaseController
 
         $Usuario = new UsuariosModel();
         $datoUsuario = $Usuario->obtenerUsuario(['nombreUsuario' => $usuario]);
-        $contraBD = $datoUsuario[0]['contraseña'];
+        if (!empty($datoUsuario)) {
+            $contraBD = $datoUsuario[0]['contraseña'];
 
 
-        if (strcasecmp($contraBD, $contraseña) == 0) {
-            var_dump($contraBD);
+            if (strcasecmp($contraBD, $contraseña) == 0) {
+                var_dump($contraBD);
 
-            $data = [
-                'nombreUsuario' => $datoUsuario[0]['nombreUsuario'],
-                'tipo_usuario' => $datoUsuario[0]['tipo_usuario']
-            ];
-            $session = session();
-            $session->set($data);
-            return redirect()->to(base_url('/'))->with('mensaje', '1');
+                $data = [
+                    'nombreUsuario' => $datoUsuario[0]['nombreUsuario'],
+                    'tipo_usuario' => $datoUsuario[0]['tipo_usuario']
+                ];
+                $session = session();
+                $session->set($data);
+                $this->session->setFlashdata('success_message', '¡Inicio de sesión exitoso!');
+                return redirect()->to(base_url('/'))->with('mensaje', '1');
 
+            }
         } else {
-            var_dump($contraBD);
+
+            $this->session->setFlashdata('error_message', 'Credenciales incorrectas');
 
             return redirect()->to(base_url('/login'))->with('mensaje', '0');
 
@@ -86,11 +90,35 @@ class Noticias extends BaseController
     public function new()
     {
         $imagen = $this->request->getFile('imagen');
-        $fechaActual = Time::now();
-        $fechaFormateada = $fechaActual->toLocalizedString('yyyy-MM-dd');
-        $estado = 'Borrador';
 
-        $imagen->move(WRITEPATH . '/uploads');
+        if ($imagen->isValid() && !$imagen->hasMoved()) {
+            // Asegúrate de que la carpeta 'uploads' exista en la ruta especificada y tenga los permisos adecuados
+            $rutaDestino = FCPATH . 'imagenes'; 
+            $newName = $imagen->getRandomName(); // Genera un nuevo nombre para evitar conflictos
+            $imagen->move($rutaDestino, $newName);
+
+
+            // Verifica si el archivo se movió correctamente
+            if ($imagen->hasMoved()) {
+                // El archivo se movió correctamente
+                echo "Archivo guardado en: " . $rutaDestino . $newName;
+                $imagen = $newName;
+                
+                
+
+
+            } else {
+                // El archivo no se movió, maneja el error aquí
+                echo "Error al mover el archivo.";
+
+            }
+
+        }
+        $fechaActual = Time::now();
+
+        $fechaFormateada = $fechaActual->toLocalizedString('yyyy-MM-dd');
+
+
 
 
         $id_usuario = session('nombreUsuario');
@@ -138,11 +166,34 @@ class Noticias extends BaseController
     public function actualizar()
     {
         $imagen = $this->request->getFile('imagen');
+
+        if ($imagen->isValid() && !$imagen->hasMoved()) {
+            // Asegúrate de que la carpeta 'uploads' exista en la ruta especificada y tenga los permisos adecuados
+            $rutaDestino = WRITEPATH . 'uploads';
+            $newName = $imagen->getRandomName(); // Genera un nuevo nombre para evitar conflictos
+            $imagen->move($rutaDestino, $newName);
+
+
+            // Verifica si el archivo se movió correctamente
+            if ($imagen->hasMoved()) {
+                // El archivo se movió correctamente
+                echo "Archivo guardado en: " . $rutaDestino . $newName;
+                $imagen = $newName;
+
+
+            } else {
+                // El archivo no se movió, maneja el error aquí
+                echo "Error al mover el archivo.";
+
+            }
+
+        }
+
         $fechaActual = Time::now();
         $fechaFormateada = $fechaActual->toLocalizedString('yyyy-MM-dd');
-        $estado = 'Borrador';
 
-        $imagen->move(WRITEPATH . '/uploads');
+
+
 
 
         $id_usuario = session('nombreUsuario');
@@ -156,7 +207,7 @@ class Noticias extends BaseController
             'fecha_creacion' => 'null',
             'fecha_correccion' => $fechaFormateada,
             'fecha_publicacion' => 'null',
-            'estado' => $estado,
+            'estado' => $this->request->getPost('estado'),
             'categoria' => $this->request->getPost('categoria'),
             'imagen' => $imagen
         ];
@@ -164,35 +215,35 @@ class Noticias extends BaseController
         $Noticias->insertar($data);
         return redirect()->to(base_url('/'));
     }
-    
+
     public function categoria()
     {
         $var = $_GET['var'];
         $Noticias = new NoticiasModel();
-       
+
         $var1 = 'Innovaciones y Lanzamientos';
         $var2 = 'Tendencias del Sector';
         $var3 = 'Casos de Éxito';
         $var4 = 'Eventos y Conferencias';
-       
-        if(strcasecmp($var, $var1)==0){
+
+        if (strcasecmp($var, $var1) == 0) {
             $data['registros'] = $Noticias->mostrar_categoria(['categoria' => $var]);
             $vistas = view('header') . view('categorias', $data) . view('footer');
             return $vistas;
-        }elseif(strcasecmp($var, $var2)==0){
+        } elseif (strcasecmp($var, $var2) == 0) {
             $data['registros'] = $Noticias->mostrar_categoria(['categoria' => $var]);
             $vistas = view('header') . view('categorias', $data) . view('footer');
             return $vistas;
-        }elseif(strcasecmp($var, $var3)==0){
+        } elseif (strcasecmp($var, $var3) == 0) {
             $data['registros'] = $Noticias->mostrar_categoria(['categoria' => $var]);
             $vistas = view('header') . view('categorias', $data) . view('footer');
             return $vistas;
-        }elseif(strcasecmp($var, $var4)==0){
+        } elseif (strcasecmp($var, $var4) == 0) {
             $data['registros'] = $Noticias->mostrar_categoria(['categoria' => $var]);
             $vistas = view('header') . view('categorias', $data) . view('footer');
             return $vistas;
         }
-        
+
 
         //var_dump($var);      // 
     }
@@ -203,19 +254,72 @@ class Noticias extends BaseController
         $data['dato'] = $Noticias->mostrar_noticia(['id' => $id]);
         $vistas = view('header') . view('detalle', $data) . view('footer');
         return $vistas;
-    
+
     }
-    public function descartar(){
-        
+    public function descartar()
+    {
+
+        // $id = $_GET['id'];
+        // $Noticias = new NoticiasModel();
+        // $Noticias->update($id, ['estado' => 'Descartado']);
+        // $data['dato'] = $Noticias->mostrar_noticia(['id' => $id]);
+
+        // $datos = [
+        //     'estado' => 'Descartado'
+        // ]; 
+        // $data->update($id, ['estado'=> $datos['estado'] ]);
+
         $id = $_GET['id'];
         $Noticias = new NoticiasModel();
-        $Noticias->modificar($id);
+
+        // Obtener el 'builder' para la tabla deseada
+        $builder = $Noticias->builder();
+
+        // Realizar la actualización
+        $builder->where('id', $id);
+        $builder->set(['estado' => 'Descartado']);
+        $builder->update();
+
         return redirect()->to(base_url('/historial'));
 
 
 
-        
 
+
+
+    }
+    public function validar()
+    {
+
+        $id = $_GET['id'];
+        $Noticias = new NoticiasModel();
+
+        // Obtener el 'builder' para la tabla deseada
+        $builder = $Noticias->builder();
+
+        // Realizar la actualización
+        $builder->where('id', $id);
+        $builder->set(['estado' => 'publicado']);
+        $builder->update();
+
+        return redirect()->to(base_url('/historial'));
+
+    }
+    public function corregir()
+    {
+
+        $id = $_GET['id'];
+        $Noticias = new NoticiasModel();
+
+        // Obtener el 'builder' para la tabla deseada
+        $builder = $Noticias->builder();
+
+        // Realizar la actualización
+        $builder->where('id', $id);
+        $builder->set(['estado' => 'corregir']);
+        $builder->update();
+
+        return redirect()->to(base_url('/historial'));
 
     }
 

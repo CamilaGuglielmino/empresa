@@ -94,11 +94,11 @@ $session = \Config\Services::session();
                                                                     La publicación quedara anulada y no podrá volver a corregirla.
                                                                 </div>
                                                                 <div class="modal-footer">
-                                                                    <a class="btn btn-secondary" data-bs-toggle="modal" href="<?php echo base_url('Noticias/descartar?id='. $id); ?>"role="button">SI</a>
-                                                                    <a class="btn btn-secondary" data-bs-toggle="modal" href="<?php echo base_url('/')?>" role="button">NO</a>
 
+                                                                    <input data-bs-toggle="modal" type="button" value="NO">
+                                                                    <input data-bs-toggle="modal" type="button" value="SI"
+                                                                        href="<?php echo base_url('Noticias/descartar?id=' . $id) ?>">
                                                                     
-
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -144,8 +144,7 @@ $session = \Config\Services::session();
                                             <td><?php echo $categoria ?></td>
                                             <td><?php echo $imagen ?></td>
                                             <td>
-                                            
-                                                <a href="<?php echo base_url('Noticias/validar?id=' . $id); ?>" title="Validar" role="button">
+                                                <a href="<?php echo base_url('Noticias/actualizar') ?>" title="Validar" role="button">
                                                     <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="green"
                                                         class="bi bi-check-square" viewBox="0 0 16 16">
                                                         <path
@@ -283,6 +282,8 @@ $session = \Config\Services::session();
                                     <?php
 
                             endforeach; ?>
+
+
 
                             </tr>
 

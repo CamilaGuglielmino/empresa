@@ -2,6 +2,8 @@
 
 $session = \Config\Services::session();
 ?>
+
+
 <div class="container mt-5">
 
 <div class="row row-cols1 row-cols-sm-2 row-cols-md-3 g-3" id="card">
@@ -24,7 +26,9 @@ $session = \Config\Services::session();
     
       <div class="col">
         <div class="card shadow sm" id="card">
-          <img src="..\public\imagenes\logo.png" class="card-img-top" alt="<?php echo $titulo?>">
+      
+          
+          <img src="<?php echo base_url('imagenes/'.$imagen)?>" class="card-img-top" alt="<?php echo $titulo?>">
           <div class="card-body">
           <a href="<?php echo base_url('Noticias/detalle?id='.$id);?>">
             <h5 class="card-title"><?php echo $titulo?></h5>

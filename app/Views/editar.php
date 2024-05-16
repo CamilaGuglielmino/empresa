@@ -16,6 +16,7 @@
                         $descripcion=$dat['descripcion'];
                         $categoria=$dat['categoria'];
                         $imagen=$dat['imagen'];
+                        $estado=$dat['estado'];
 
                        
                     endforeach;
@@ -35,25 +36,32 @@
 
                         <div class="mb-3">
                             <select class="form-select" name="categoria" required>
-                            <option <?php if ($categoria == 'Innovaciones y Lanzamientos') echo 'selected'; ?> value="1">Innovaciones y Lanzamientos</option>
-                            <option <?php if ($categoria == 'Tendencias del Sector') echo 'selected'; ?> value="2">Tendencias del Sector</option>
-                            <option <?php if ($categoria == 'Casos de Éxito') echo 'selected'; ?> value="3">Casos de Éxito</option>
-                            <option <?php if ($categoria == 'Eventos y Conferencias') echo 'selected'; ?> value="4">Eventos y Conferencias</option>
+                            <option <?php if ($categoria == 'Innovaciones y Lanzamientos') echo 'selected'; ?> value="Innovaciones y Lanzamientos">Innovaciones y Lanzamientos</option>
+                            <option <?php if ($categoria == 'Tendencias del Sector') echo 'selected'; ?> value="Tendencias del Sector">Tendencias del Sector</option>
+                            <option <?php if ($categoria == 'Casos de Éxito') echo 'selected'; ?> value="Casos de Éxito">Casos de Éxito</option>
+                            <option <?php if ($categoria == 'Eventos y Conferencias') echo 'selected'; ?> value="Eventos y Conferencias">Eventos y Conferencias</option>
                             </select>
 
                         </div>
                         <div class="mb-3">
                             <label for="formFile">Imagen</label>
-                            <input type="file" name="imagen" class="form-control" id="formFile" accept="image/png" required>
+                            <input type="file" name="imagen" class="form-control" id="formFile" accept="image/png">
                             <small>*Subir imagen en formato png</small>
+                        </div>
+                        <div class="mb-3">
+                            <h5>Elija un estado para la guardar la noticia </h5>
+                            <select class="form-select" name="estado" required>
+                            <option <?php if ($estado == 'Borrador') echo 'selected'; ?> value="Borrador">Borrador</option>
+                            <option value="Validar">Validar</option>
+                
+                            </select>
                         </div>
 
                     </div>
                         <br>
                         <br>
 
-                        <input class="submitBtn" type="submit" name="crear" value="Crear">
-
+                        <input class="submitBtn" type="submit" name="crear" value="Guardar cambios">
 
                 </form>
                 <br>

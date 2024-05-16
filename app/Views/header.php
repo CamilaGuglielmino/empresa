@@ -3,6 +3,11 @@
 $session = \Config\Services::session();
 
 ?>
+<?php if (session()->has('success_message')): ?>
+    <div class="alert alert-success">
+        <?= session('success_message') ?>
+    </div>
+<?php endif; ?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -25,14 +30,6 @@ $session = \Config\Services::session();
                 <img id="logo" src="<?php echo base_url('imagenes/logo.png')?>" height="120">
             </a>
 
-            <!-- <form class="d-none d-md-inline-block form-inline ms-auto me-0 me-md-3 my-2 my-md-0">
-                <div class="input-group">
-                    <input class="form-control" type="text" placeholder="Search for..." aria-label="Search for..."
-                        aria-describedby="btnNavbarSearch" />
-                    <button class="btn btn-primary" id="btnNavbarSearch" type="button"><i
-                            class="fas fa-search"></i></button>
-                </div>
-            </form> -->
 
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -86,6 +83,7 @@ $session = \Config\Services::session();
                                 </a>
                                 <?php if (strcasecmp($tipo, $editar)==0) { ?>
                                     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                                        
                                     
                                     <li><a class="dropdown-item" href="<?php echo base_url('nuevo') ?>">Nuevo</a></li>
                                     <li><a class="dropdown-item" href="<?php echo base_url('historial') ?>">Historial</a></li>
@@ -104,6 +102,7 @@ $session = \Config\Services::session();
                                 <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
                                    
                                     <li><a class="dropdown-item" href="<?php echo base_url('nuevo') ?>">Nuevo</a></li>
+                                    
                                     <li><a class="dropdown-item" href="<?php echo base_url('historial') ?>">Historial</a></li>
                                     <li><hr class="dropdown-divider"></li>
                                     <li><a class="dropdown-item" href="<?php echo base_url('Noticias/logout') ?>">Salir</a></li>
