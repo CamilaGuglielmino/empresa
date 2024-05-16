@@ -11,9 +11,14 @@ class Noticias extends BaseController
 {
     public function index()
     {
+        $Noticias= new NoticiasModel();
+        
+        $data['registros'] = $Noticias->mostrar_todo();
         $mensaje = session('mensaje');
-        $vistas = view('header') . view('inicio') . view('footer');
+        
+        $vistas = view('header') . view('inicio', $data). view('footer');
         return $vistas;
+       
     }
 
     public function show($id = null)
@@ -92,11 +97,11 @@ class Noticias extends BaseController
         var_dump($id_usuario);
         
         $data = [
-            'id' =>'1',
+            'id' => rand(10000, 59999), // 
             'nombre_usuario'=>$id_usuario,
             'titulo' => $this->request->getPost('titulo'),
             'descripcion' => $this->request->getPost('descripcion'),
-            'fecha' => $fechaFormateada,
+            'fecha_creacion' => $fechaFormateada,
             'estado'=>$estado,
             'categoria' => $this->request->getPost('categoria'),
             'imagen'=>$imagen
@@ -105,11 +110,7 @@ class Noticias extends BaseController
         $Noticias->insertar($data);
         return redirect()->to(base_url('/')); 
     }
-    // public function historial()
-    // {
-    //     $vistas = view('header') . view('historial') . view('footer');
-    //     return $vistas;
-    // }
+    
     public function historial(){
         $Noticias= new NoticiasModel();
         
@@ -119,23 +120,54 @@ class Noticias extends BaseController
         return $vistas;
     }
 
-    public function create()
-    {
-        //
+
+
+    public function editar()    {
+        $id = $_GET['id'];
+        $Noticias= new NoticiasModel();
+        $dato['dato']= $Noticias->mostrar_noticia(['id' => $id]);
+       
+       // var_dump($dato);
+        $vistas = view('header') . view('editar', $dato). view('footer');
+        return $vistas;
     }
 
-    public function edit($id = null)
+
+    public function actualizar()
     {
-        //
+        $imagen = $this->request->getFile('imagen');
+        $fechaActual = Time::now();
+        $fechaFormateada = $fechaActual->toLocalizedString('yyyy-MM-dd');
+        $estado='Borrador';
+        
+        $imagen->move(WRITEPATH. '/uploads');
+
+        
+        $id_usuario = session('nombreUsuario');
+        var_dump($id_usuario);
+        
+        $data = [
+            'id' => rand(10000, 99999),
+            'nombre_usuario'=>$id_usuario,
+            'titulo' => $this->request->getPost('titulo'),
+            'descripcion' => $this->request->getPost('descripcion'),
+            'fecha_creacion'=>'null',
+            'fecha_correccion' => $fechaFormateada,
+            'fecha_publicacion'=>'null',
+            'estado'=>$estado,
+            'categoria' => $this->request->getPost('categoria'),
+            'imagen'=>$imagen
+        ];
+        $Noticias= new NoticiasModel();
+        $Noticias->insertar($data);
+        return redirect()->to(base_url('/')); 
     }
-
-
-    public function update($id = null)
-    {
-        //
+    public function modal(){
+        $vistas = view('header') . view('modal') . view('footer');
+        return $vistas;
     }
     public function delete($id = null)
     {
-        //
+        // 
     }
 }

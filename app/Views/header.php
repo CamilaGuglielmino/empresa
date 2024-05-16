@@ -87,7 +87,7 @@ $session = \Config\Services::session();
                               <?php  } elseif (strcasecmp($tipo, $publicador)==0) {?>
                                 <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
                                     
-                                    <li><a class="dropdown-item" href="<?php echo base_url('historial') ?>">Validar</a></li>
+                                    <li><a class="dropdown-item" href="<?php echo base_url('historial') ?>">Historial</a></li>
                                     <li><hr class="dropdown-divider"></li>
                                     <li><a class="dropdown-item" href="<?php echo base_url('Noticias/logout') ?>">Salir</a></li>
                                 </ul>

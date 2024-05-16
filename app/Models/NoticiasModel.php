@@ -42,4 +42,11 @@ class NoticiasModel extends Model
         $Noticias->where($data);
         return $Noticias->get()->getResultArray();
     }
+    public function mostrar_noticia($id){
+        
+            $Noticias = $this->db->table('noticias');
+            $Noticias->where($id);
+            return $Noticias->get()->getResultArray();
+        
+    }
 }

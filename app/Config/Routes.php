@@ -15,6 +15,14 @@ $routes->get('/nuevo', 'Noticias::nuevo');
 $routes->post('Noticias/new', 'Noticias::new');
 $routes->get('/historial', 'Noticias::historial');
 $routes->get('Noticias/index', 'Noticias::index');
+$routes->get('Noticias/editar', 'Noticias::editar');
+$routes->post('Noticias/actualizar', 'Noticias::actualizar');
+$routes->get('/modal', 'Noticias::modal');
+
+
+
+
+
 
 
 
