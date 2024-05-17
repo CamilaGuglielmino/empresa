@@ -50,6 +50,9 @@ class Noticias extends Seeder
                 'estado'=>'Borrador',
                 'categoria'=>'Tendencias del Sector',
                 'imagen'=>'crecimiento.png',
+                'nombrePublicador'=>'',
+                'fecha_publicacion'=>'',
+                'estado1'=>'',
             ],
             [
                 'id'=>'10055',
@@ -94,6 +97,9 @@ class Noticias extends Seeder
                 'estado'=>'Borrador',
                 'categoria'=>'Casos de Éxito',
                 'imagen'=>'litio.png',
+                'nombrePublicador'=>'',
+                'fecha_publicacion'=>'',
+                'estado1'=>'',
             ],
             [
                 'id'=>'10061',
@@ -108,6 +114,9 @@ class Noticias extends Seeder
                 'estado'=>'Validar',
                 'categoria'=>'Casos de Éxito',
                 'imagen'=>'gpt.png',
+                'nombrePublicador'=>'',
+                'fecha_publicacion'=>'',
+                'estado1'=>'',
                 
             ],
             [
@@ -119,6 +128,9 @@ class Noticias extends Seeder
                 'estado'=>'Validar',
                 'categoria'=>'Tendencias del Sector',
                 'imagen'=>'compu.png',
+                'nombrePublicador'=>'',
+                'fecha_publicacion'=>'',
+                'estado1'=>'',
                 
             ],
             [

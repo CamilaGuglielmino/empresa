@@ -6,6 +6,8 @@ foreach ($dato as $dat):
     $descripcion = $dat['descripcion'];
     $categoria = $dat['categoria'];
     $imagen = $dat['imagen'];
+    $fecha1 = $dat['fecha_publicacion'];
+    $fechaInvertida = date("d-m-Y", strtotime($fecha1)); 
 
 
 endforeach;
@@ -20,7 +22,7 @@ endforeach;
                     <!-- Post title-->
                     <h1 class="fw-bolder mb-1"><?php echo $titulo ?></h1>
                     <!-- Post meta content-->
-                    <div class="text-muted fst-italic mb-2">Publicado el <?php echo $autor; ?> por <?php echo $autor; ?>
+                    <div class="text-muted fst-italic mb-2">Fecha de publicación el <?php echo $fechaInvertida; ?> , Autor: <?php echo $autor; ?>
                     </div>
                     <!-- Post categories-->
                     <a class="badge bg-secondary text-decoration-none link-light" href="#!"><?php echo $categoria ?></a>

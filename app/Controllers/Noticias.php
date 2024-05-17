@@ -3,7 +3,7 @@ namespace App\Controllers;
 
 use App\Models\UsuariosModel;
 use App\Models\NoticiasModel;
-use App\Models\PublicarModel;
+
 use CodeIgniter\I18n\Time;
 
 
@@ -13,26 +13,15 @@ class Noticias extends BaseController
     public function index()
     {
         $Noticias = new NoticiasModel();
-        $Publicar = new PublicarModel();
-
-        $dato['publicaciones'] = $Publicar->mostrar_todo();
-
+       
         $data['registros'] = $Noticias->mostrar_todo();
         $mensaje = session('mensaje');
 
-        $vistas = view('header') . view('inicio', $data, $dato) . view('footer');
+        $vistas = view('header') . view('inicio', $data) . view('footer');
         return $vistas;
 
     }
 
-    public function show($id = null)
-    {
-
-       
-        //$query = $this->db->get('nombre_de_la_tabla');
-        // return $query->result();
-
-    }
     public function login()
     {
 
@@ -273,9 +262,6 @@ class Noticias extends BaseController
 
         $id_usuario = session('nombreUsuario');
 
-
-
-
         // Obtener el 'builder' para la tabla deseada
         $builder = $Noticias->builder();
 
@@ -293,8 +279,8 @@ class Noticias extends BaseController
             'estado' => 'activo',
 
         ];
-        $Publicar = new PublicarModel();
-        $Publicar->insertar($data);
+        $Noticias = new NoticiasModel();
+        $Noticias->insertar($data);
 
 
         return redirect()->to(base_url('/historial'));

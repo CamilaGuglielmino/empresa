@@ -253,3 +253,154 @@ INFO - 2024-05-17 17:55:14 --> Session: Class initialized using 'CodeIgniter\Ses
 INFO - 2024-05-17 17:55:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 INFO - 2024-05-17 17:55:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 INFO - 2024-05-17 17:55:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-05-17 18:42:11 --> mysqli_sql_exception: Column count doesn't match value count at row 3 in C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:308
+Stack trace:
+#0 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(308): mysqli->query('INSERT INTO `no...', 0)
+#1 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `no...')
+#2 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `no...')
+#3 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1821): CodeIgniter\Database\BaseConnection->query('INSERT INTO `no...', NULL, false)
+#4 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2210): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+#5 C:\xampp\htdocs\empresa\app\Database\Seeds\Noticias.php(155): CodeIgniter\Database\BaseBuilder->insertBatch(Array)
+#6 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\Seeder.php(147): App\Database\Seeds\Noticias->run()
+#7 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Commands\Database\Seed.php(79): CodeIgniter\Database\Seeder->call('App\\Database\\Se...')
+#8 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\CLI\Commands.php(70): CodeIgniter\Commands\Database\Seed->run(Array)
+#9 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\CLI\Console.php(48): CodeIgniter\CLI\Commands->run('db:seed', Array)
+#10 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Boot.php(338): CodeIgniter\CLI\Console->run()
+#11 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#12 C:\xampp\htdocs\empresa\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#13 {main}
+ERROR - 2024-05-17 18:43:39 --> mysqli_sql_exception: Column count doesn't match value count at row 3 in C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:308
+Stack trace:
+#0 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(308): mysqli->query('INSERT INTO `no...', 0)
+#1 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `no...')
+#2 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `no...')
+#3 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1821): CodeIgniter\Database\BaseConnection->query('INSERT INTO `no...', NULL, false)
+#4 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2210): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+#5 C:\xampp\htdocs\empresa\app\Database\Seeds\Noticias.php(155): CodeIgniter\Database\BaseBuilder->insertBatch(Array)
+#6 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\Seeder.php(147): App\Database\Seeds\Noticias->run()
+#7 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Commands\Database\Seed.php(79): CodeIgniter\Database\Seeder->call('App\\Database\\Se...')
+#8 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\CLI\Commands.php(70): CodeIgniter\Commands\Database\Seed->run(Array)
+#9 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\CLI\Console.php(48): CodeIgniter\CLI\Commands->run('db:seed', Array)
+#10 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Boot.php(338): CodeIgniter\CLI\Console->run()
+#11 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#12 C:\xampp\htdocs\empresa\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#13 {main}
+ERROR - 2024-05-17 18:45:25 --> mysqli_sql_exception: Column count doesn't match value count at row 3 in C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:308
+Stack trace:
+#0 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(308): mysqli->query('INSERT INTO `no...', 0)
+#1 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `no...')
+#2 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `no...')
+#3 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1821): CodeIgniter\Database\BaseConnection->query('INSERT INTO `no...', NULL, false)
+#4 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2210): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+#5 C:\xampp\htdocs\empresa\app\Database\Seeds\Noticias.php(155): CodeIgniter\Database\BaseBuilder->insertBatch(Array)
+#6 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\Seeder.php(147): App\Database\Seeds\Noticias->run()
+#7 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Commands\Database\Seed.php(79): CodeIgniter\Database\Seeder->call('App\\Database\\Se...')
+#8 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\CLI\Commands.php(70): CodeIgniter\Commands\Database\Seed->run(Array)
+#9 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\CLI\Console.php(48): CodeIgniter\CLI\Commands->run('db:seed', Array)
+#10 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Boot.php(338): CodeIgniter\CLI\Console->run()
+#11 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#12 C:\xampp\htdocs\empresa\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#13 {main}
+ERROR - 2024-05-17 18:51:25 --> mysqli_sql_exception: Unknown table 'empresa.corregir' in C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:308
+Stack trace:
+#0 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(308): mysqli->query('DROP TABLE `cor...', 0)
+#1 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('DROP TABLE `cor...')
+#2 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('DROP TABLE `cor...')
+#3 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\Forge.php(663): CodeIgniter\Database\BaseConnection->query('DROP TABLE `cor...')
+#4 C:\xampp\htdocs\empresa\app\Database\Migrations\2024-05-16-233742_Corregir.php(47): CodeIgniter\Database\Forge->dropTable('corregir')
+#5 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(867): App\Database\Migrations\Corregir->down()
+#6 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(290): CodeIgniter\Database\MigrationRunner->migrate('down', Object(stdClass))
+#7 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Commands\Database\MigrateRollback.php(87): CodeIgniter\Database\MigrationRunner->regress(2)
+#8 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\CLI\Commands.php(70): CodeIgniter\Commands\Database\MigrateRollback->run(Array)
+#9 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\CLI\Console.php(48): CodeIgniter\CLI\Commands->run('migrate:rollbac...', Array)
+#10 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Boot.php(338): CodeIgniter\CLI\Console->run()
+#11 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#12 C:\xampp\htdocs\empresa\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#13 {main}
+ERROR - 2024-05-17 18:52:32 --> mysqli_sql_exception: Unknown table 'empresa.corregir' in C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:308
+Stack trace:
+#0 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(308): mysqli->query('DROP TABLE `cor...', 0)
+#1 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('DROP TABLE `cor...')
+#2 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('DROP TABLE `cor...')
+#3 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\Forge.php(663): CodeIgniter\Database\BaseConnection->query('DROP TABLE `cor...')
+#4 C:\xampp\htdocs\empresa\app\Database\Migrations\2024-05-16-233742_Corregir.php(47): CodeIgniter\Database\Forge->dropTable('corregir')
+#5 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(867): App\Database\Migrations\Corregir->down()
+#6 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(290): CodeIgniter\Database\MigrationRunner->migrate('down', Object(stdClass))
+#7 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Commands\Database\MigrateRollback.php(87): CodeIgniter\Database\MigrationRunner->regress(2)
+#8 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\CLI\Commands.php(70): CodeIgniter\Commands\Database\MigrateRollback->run(Array)
+#9 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\CLI\Console.php(48): CodeIgniter\CLI\Commands->run('migrate:rollbac...', Array)
+#10 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Boot.php(338): CodeIgniter\CLI\Console->run()
+#11 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#12 C:\xampp\htdocs\empresa\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#13 {main}
+ERROR - 2024-05-17 18:52:56 --> mysqli_sql_exception: Unknown table 'empresa.corregir' in C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:308
+Stack trace:
+#0 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(308): mysqli->query('DROP TABLE `cor...', 0)
+#1 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('DROP TABLE `cor...')
+#2 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('DROP TABLE `cor...')
+#3 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\Forge.php(663): CodeIgniter\Database\BaseConnection->query('DROP TABLE `cor...')
+#4 C:\xampp\htdocs\empresa\app\Database\Migrations\2024-05-16-233742_Corregir.php(47): CodeIgniter\Database\Forge->dropTable('corregir')
+#5 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(867): App\Database\Migrations\Corregir->down()
+#6 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(290): CodeIgniter\Database\MigrationRunner->migrate('down', Object(stdClass))
+#7 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Commands\Database\MigrateRollback.php(87): CodeIgniter\Database\MigrationRunner->regress(2)
+#8 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\CLI\Commands.php(70): CodeIgniter\Commands\Database\MigrateRollback->run(Array)
+#9 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\CLI\Console.php(48): CodeIgniter\CLI\Commands->run('migrate:rollbac...', Array)
+#10 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Boot.php(338): CodeIgniter\CLI\Console->run()
+#11 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#12 C:\xampp\htdocs\empresa\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#13 {main}
+INFO - 2024-05-17 19:32:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-17 19:32:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-17 19:32:29 --> BadMethodCallException: Call to undefined method App\Models\PublicarModel::mostrar_todo
+[Method: GET, Route: /]
+in SYSTEMPATH\Model.php on line 921.
+ 1 APPPATH\Controllers\Noticias.php(18): CodeIgniter\Model->__call('mostrar_todo', [])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Noticias->index()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Noticias))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-05-17 19:34:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-17 19:36:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-17 19:36:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-17 19:37:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-17 19:37:50 --> ErrorException: Undefined variable $registro
+[Method: GET, Route: Noticias/detalle]
+in APPPATH\Views\detalle.php on line 9.
+ 1 APPPATH\Views\detalle.php(9): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $registro', 'C:\\xampp\\htdocs\\empresa\\app\\Views\\detalle.php', 9)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\empresa\\app\\Views\\detalle.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('detalle', [], true)
+ 5 APPPATH\Controllers\Noticias.php(247): view('detalle', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Noticias->detalle()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Noticias))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-05-17 19:43:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-17 19:43:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-17 19:43:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-17 19:44:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-17 19:45:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-17 19:45:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-17 19:45:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-17 19:46:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-17 19:47:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-17 19:48:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-17 19:50:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-17 19:51:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-17 19:51:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-17 19:52:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-17 19:52:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-17 19:53:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-17 19:53:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-17 19:53:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-17 19:55:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-17 19:56:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-17 19:57:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-17 19:58:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-17 19:58:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-17 19:58:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-17 19:58:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

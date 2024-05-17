@@ -13,11 +13,11 @@ $session = \Config\Services::session();
     $autor=$registro['nombre_usuario'];
     $titulo = $registro['titulo'];
     $descripcion = $registro['descripcion'];
-    $fecha1 = $registro['fecha_creacion'];
+    $fecha1 = $registro['fecha_publicacion'];
     $estado = $registro['estado'];
     $categoria = $registro['categoria'];
     $imagen = $registro['imagen'];
-
+    $fechaInvertida = date("d-m-Y", strtotime($fecha1)); 
     $publicado = 'Publicado';
     if (strcasecmp($estado, $publicado) == 0) {
      
@@ -38,7 +38,7 @@ $session = \Config\Services::session();
             <h6><i>Autor:  <?php echo $autor?></i></h6>
             <h6><u>Categoria:</u> <?php echo $categoria?> </h6>
            
-            <small class="text-body-secondary">Fecha de publicación: </small>  <!-- echo $fecha1; -->
+            <small class="text-body-secondary">Fecha de publicación: <?php echo $fechaInvertida?></small>  <!-- echo $fecha1; -->
           </div>
         </div>
       </div>

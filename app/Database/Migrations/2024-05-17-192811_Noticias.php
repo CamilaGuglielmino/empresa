@@ -9,7 +9,7 @@ class Noticias extends Migration
     public function up()
     {
         $this->forge->addField([
-            'id' =>[
+            'id'=>[
                 'type' => 'INT', 
                 'constraint' => 5,
                 'unsigned' => true,
@@ -19,27 +19,26 @@ class Noticias extends Migration
                 'type' => 'VARCHAR',
                 'constraint' => '10',
             ],
-            'titulo' =>[
+            'titulo'=>[
                 'type' => 'TINYTEXT', 
                 
             ],
-            'descripcion' =>[
+            'descripcion'=>[
                 'type' => 'LONGTEXT', 
                 'null' => true,
             ],
-            'fecha_creacion' =>[
+            'fecha_creacion'=>[
                 'type' => 'DATE', 
             ],
-            'estado' =>[
+            'estado'=>[
                 'type' => 'VARCHAR', 
                 'constraint' => 15,
             ],
-            
-            'categoria' =>[
+            'categoria'=>[
                 'type' => 'VARCHAR', 
                 'constraint' => 100,
             ],
-            'imagen' =>[
+            'imagen'=>[
                 'type' => 'VARCHAR', 
                 'constraint' => 100,
             ],
@@ -47,15 +46,29 @@ class Noticias extends Migration
                 'type' => 'VARCHAR',
                 'constraint' => '10',
             ],
-            'fecha_publicacion' =>[
+            'fecha_publicacion'=>[
                 'type' => 'DATE',
                 'null' => true,
             ],
-            'estado1' =>[
+            'estado1'=>[
                 'type' => 'VARCHAR', 
                 'constraint' => 15,
+                'null' => true,
             ],
-
+            'nombreCorregir'=>[
+                'type' => 'VARCHAR',
+                'constraint' => '10',
+                'null' => true,
+            ],
+            'fecha_correccion'=>[
+                'type' => 'DATE',
+                'null' => true,
+            ],
+            'estado2'=>[
+                'type' => 'VARCHAR', 
+                'constraint' => 15,
+                'null' => true,
+            ],
         ]);
         $this -> forge -> addKey('id', true);
         $this -> forge -> addForeignKey('nombre_usuario', 'usuarios', 'nombreUsuario');
