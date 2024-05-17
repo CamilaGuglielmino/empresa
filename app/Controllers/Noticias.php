@@ -164,7 +164,7 @@ class Noticias extends BaseController
 
 
     public function actualizar()
-    {
+    {  
         $imagen = $this->request->getFile('imagen');
 
         if ($imagen->isValid() && !$imagen->hasMoved()) {
@@ -179,22 +179,14 @@ class Noticias extends BaseController
                 // El archivo se movió correctamente
                 echo "Archivo guardado en: " . $rutaDestino . $newName;
                 $imagen = $newName;
-
-
             } else {
                 // El archivo no se movió, maneja el error aquí
                 echo "Error al mover el archivo.";
-
             }
-
         }
-
+    
         $fechaActual = Time::now();
         $fechaFormateada = $fechaActual->toLocalizedString('yyyy-MM-dd');
-
-
-
-
 
         $id_usuario = session('nombreUsuario');
         var_dump($id_usuario);
@@ -204,9 +196,7 @@ class Noticias extends BaseController
             'nombre_usuario' => $id_usuario,
             'titulo' => $this->request->getPost('titulo'),
             'descripcion' => $this->request->getPost('descripcion'),
-            'fecha_creacion' => 'null',
-            'fecha_correccion' => $fechaFormateada,
-            'fecha_publicacion' => 'null',
+            'fecha_creacion' => $fechaFormateada,        
             'estado' => $this->request->getPost('estado'),
             'categoria' => $this->request->getPost('categoria'),
             'imagen' => $imagen
@@ -214,6 +204,7 @@ class Noticias extends BaseController
         $Noticias = new NoticiasModel();
         $Noticias->insertar($data);
         return redirect()->to(base_url('/'));
+
     }
 
     public function categoria()
@@ -259,16 +250,6 @@ class Noticias extends BaseController
     public function descartar()
     {
 
-        // $id = $_GET['id'];
-        // $Noticias = new NoticiasModel();
-        // $Noticias->update($id, ['estado' => 'Descartado']);
-        // $data['dato'] = $Noticias->mostrar_noticia(['id' => $id]);
-
-        // $datos = [
-        //     'estado' => 'Descartado'
-        // ]; 
-        // $data->update($id, ['estado'=> $datos['estado'] ]);
-
         $id = $_GET['id'];
         $Noticias = new NoticiasModel();
 
@@ -281,11 +262,6 @@ class Noticias extends BaseController
         $builder->update();
 
         return redirect()->to(base_url('/historial'));
-
-
-
-
-
 
     }
     public function validar()

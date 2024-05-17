@@ -23,8 +23,6 @@ $session = \Config\Services::session();
                                 <th scope="col">Autor</th>
                                 <th scope="col">Titulo</th>
                                 <th scope="col">Fecha de Creacion</th>
-                                <th scope="col">Fecha de Correccion</th>
-                                <th scope="col">Fecha de Publicacion</th>
                                 <th scope="col">Estado</th>
                                 <th scope="col">Categoria</th>
                                 <th scope="col">imagen</th>
@@ -37,9 +35,7 @@ $session = \Config\Services::session();
                                 $autor = $registro['nombre_usuario'];
                                 $titulo = $registro['titulo'];
                                 $descripcion = $registro['descripcion'];
-                                $fecha1 = $registro['fecha_creacion'];
-                                $fecha2 = $registro['fecha_correccion'];
-                                $fecha3 = $registro['fecha_publicacion'];
+                                $fecha1 = $registro['fecha_creacion'];          
                                 $estado = $registro['estado'];
                                 $categoria = $registro['categoria'];
                                 $imagen = $registro['imagen'];
@@ -57,10 +53,7 @@ $session = \Config\Services::session();
                                             <th scope="row"><?php echo $num ?></th>
                                             <td><?php echo $autor ?></td>
                                             <td><?php echo $titulo ?></td>
-
                                             <td><?php echo $fecha1 ?></td>
-                                            <td><?php echo $fecha2 ?></td>
-                                            <td><?php echo $fecha3 ?></td>
                                             <td><?php echo $estado ?></td>
                                             <td><?php echo $categoria ?></td>
                                             <td><?php echo $imagen ?></td>
@@ -133,13 +126,9 @@ $session = \Config\Services::session();
                                             $num++;
                                             ?>
                                             <th scope="row"><?php echo $num ?></th>
-
                                             <td><?php echo $autor ?></td>
                                             <td><?php echo $titulo ?></td>
-
-                                            <td><?php echo $fecha1 ?></td>
-                                            <td><?php echo $fecha2 ?></td>
-                                            <td><?php echo $fecha3 ?></td>
+                                            <td><?php echo $fecha1 ?></td>                                       
                                             <td><?php echo $estado ?></td>
                                             <td><?php echo $categoria ?></td>
                                             <td><?php echo $imagen ?></td>
@@ -188,8 +177,7 @@ $session = \Config\Services::session();
                                         <td><?php echo $titulo ?></td>
 
                                         <td><?php echo $fecha1 ?></td>
-                                        <td><?php echo $fecha2 ?></td>
-                                        <td><?php echo $fecha3 ?></td>
+                                
                                         <td><?php echo $estado ?></td>
                                         <td><?php echo $categoria ?></td>
                                         <td><?php echo $imagen ?></td>

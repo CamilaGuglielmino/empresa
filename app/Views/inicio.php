@@ -14,8 +14,6 @@ $session = \Config\Services::session();
     $titulo = $registro['titulo'];
     $descripcion = $registro['descripcion'];
     $fecha1 = $registro['fecha_creacion'];
-    $fecha2 = $registro['fecha_correccion'];
-    $fecha3 = $registro['fecha_publicacion'];
     $estado = $registro['estado'];
     $categoria = $registro['categoria'];
     $imagen = $registro['imagen'];
@@ -38,7 +36,8 @@ $session = \Config\Services::session();
           <div class="card-footer">
             <h6><i>Autor:  <?php echo $autor?></i></h6>
             <h6><u>Categoria:</u> <?php echo $categoria?> </h6>
-            <small class="text-body-secondary">Fecha de publicación: <?php echo $fecha1?></small>
+           
+            <small class="text-body-secondary">Fecha de publicación: </small>  <!-- echo $fecha1; -->
           </div>
         </div>
       </div>

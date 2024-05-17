@@ -1,0 +1,150 @@
+INFO - 2024-05-17 00:33:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-17 00:33:38 --> ErrorException: Undefined array key "fecha_correccion"
+[Method: GET, Route: /]
+in APPPATH\Views\inicio.php on line 17.
+ 1 APPPATH\Views\inicio.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "fecha_correccion"', 'C:\\xampp\\htdocs\\empresa\\app\\Views\\inicio.php', 17)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\empresa\\app\\Views\\inicio.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('inicio', [], true)
+ 5 APPPATH\Controllers\Noticias.php(19): view('inicio', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Noticias->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Noticias))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-05-17 00:33:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-17 00:33:41 --> ErrorException: Undefined array key "fecha_correccion"
+[Method: GET, Route: /]
+in APPPATH\Views\inicio.php on line 17.
+ 1 APPPATH\Views\inicio.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "fecha_correccion"', 'C:\\xampp\\htdocs\\empresa\\app\\Views\\inicio.php', 17)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\empresa\\app\\Views\\inicio.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('inicio', [], true)
+ 5 APPPATH\Controllers\Noticias.php(19): view('inicio', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Noticias->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Noticias))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-05-17 00:37:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-17 00:38:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-17 00:38:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-17 00:39:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-17 00:39:59 --> ErrorException: Undefined array key "fecha_correccion"
+[Method: GET, Route: Noticias/categoria]
+in APPPATH\Views\categorias.php on line 15.
+ 1 APPPATH\Views\categorias.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "fecha_correccion"', 'C:\\xampp\\htdocs\\empresa\\app\\Views\\categorias.php', 15)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\empresa\\app\\Views\\categorias.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('categorias', [], true)
+ 5 APPPATH\Controllers\Noticias.php(231): view('categorias', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Noticias->categoria()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Noticias))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-05-17 00:40:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-17 00:41:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-17 00:41:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-17 00:41:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-17 00:41:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-17 00:41:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-17 00:41:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-17 00:41:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-17 00:41:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-17 00:41:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-17 00:41:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-17 00:41:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-17 00:44:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-17 00:44:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-17 00:46:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-17 00:46:30 --> ErrorException: Undefined array key "fecha_correccion"
+[Method: GET, Route: historial]
+in APPPATH\Views\historial.php on line 41.
+ 1 APPPATH\Views\historial.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "fecha_correccion"', 'C:\\xampp\\htdocs\\empresa\\app\\Views\\historial.php', 41)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\empresa\\app\\Views\\historial.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('historial', [], true)
+ 5 APPPATH\Controllers\Noticias.php(148): view('historial', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Noticias->historial()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Noticias))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-05-17 00:47:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-17 00:48:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-17 00:48:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-17 00:52:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-05-17 00:52:25 --> mysqli_sql_exception: Unknown column 'fecha_correccion' in 'field list' in C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:308
+Stack trace:
+#0 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(308): mysqli->query('INSERT INTO `no...', 0)
+#1 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `no...')
+#2 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `no...')
+#3 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1821): CodeIgniter\Database\BaseConnection->query('INSERT INTO `no...', NULL, false)
+#4 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2210): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+#5 C:\xampp\htdocs\empresa\app\Models\NoticiasModel.php(31): CodeIgniter\Database\BaseBuilder->insertBatch(Array)
+#6 C:\xampp\htdocs\empresa\app\Controllers\Noticias.php(215): App\Models\NoticiasModel->insertar(Array)
+#7 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\CodeIgniter.php(933): App\Controllers\Noticias->actualizar()
+#8 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Noticias))
+#9 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Boot.php(312): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\empresa\vendor\codeigniter4\framework\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\empresa\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2024-05-17 00:52:25 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'fecha_correccion' in 'field list'
+[Method: POST, Route: Noticias/actualizar]
+in SYSTEMPATH\Database\BaseConnection.php on line 676.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1821): CodeIgniter\Database\BaseConnection->query('INSERT INTO `noticias` (`categoria`, `descripcion`, `estado`, `fecha_correccion`, `fecha_creacion`, `fecha_publicacion`, `id`, `imagen`, `nombre_usuario`, `titulo`)
+VALUES (\'Tendencias del Sector\',\' Globalmente, los empleadores de todo el mundo están luchando por cubrir puestos vacantes, y se espera que 85 millones de puestos de trabajo queden sin cubrir para 2030, según Korn Ferry, que además estima que este déficit de mano de obra podría traducirse en aproximadamente 8,5 billones de dólares en ingresos anuales no realizados en el mismo período.\\r\\n\\r\\n                El surgimiento de tecnologías como la IA Generativa también está trayendo nuevas oportunidades laborales. 46% de los CEO encuestados en Estados Unidos por la multinacional, ha contratado a trabajadores adicionales debido a la IA generativa, con el 26% de ellos afirmando que tienen planes para más contrataciones por delante. Es clave que las empresas continúen innovando para crear valor para su talento. Esto les ayudará pasar de la reacción a la acción en el largo plazo.\',\'Validar\',\'2024-05-17\',\'null\',\'null\',36133,\'1715907145_ef0f61bc93ddb1942411.jpg\',\'camila\',\'El crecimiento en jaque por la escasez de talento en tecnología\')', null, false)
+ 2 SYSTEMPATH\Database\BaseBuilder.php(2210): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+ 3 APPPATH\Models\NoticiasModel.php(31): CodeIgniter\Database\BaseBuilder->insertBatch([...])
+ 4 APPPATH\Controllers\Noticias.php(215): App\Models\NoticiasModel->insertar([...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Noticias->actualizar()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Noticias))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-05-17 00:52:25 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'fecha_correccion' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 313.
+ 1 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `noticias` (`categoria`, `descripcion`, `estado`, `fecha_correccion`, `fecha_creacion`, `fecha_publicacion`, `id`, `imagen`, `nombre_usuario`, `titulo`)
+VALUES (\'Tendencias del Sector\',\' Globalmente, los empleadores de todo el mundo están luchando por cubrir puestos vacantes, y se espera que 85 millones de puestos de trabajo queden sin cubrir para 2030, según Korn Ferry, que además estima que este déficit de mano de obra podría traducirse en aproximadamente 8,5 billones de dólares en ingresos anuales no realizados en el mismo período.\\r\\n\\r\\n                El surgimiento de tecnologías como la IA Generativa también está trayendo nuevas oportunidades laborales. 46% de los CEO encuestados en Estados Unidos por la multinacional, ha contratado a trabajadores adicionales debido a la IA generativa, con el 26% de ellos afirmando que tienen planes para más contrataciones por delante. Es clave que las empresas continúen innovando para crear valor para su talento. Esto les ayudará pasar de la reacción a la acción en el largo plazo.\',\'Validar\',\'2024-05-17\',\'null\',\'null\',36133,\'1715907145_ef0f61bc93ddb1942411.jpg\',\'camila\',\'El crecimiento en jaque por la escasez de talento en tecnología\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `noticias` (`categoria`, `descripcion`, `estado`, `fecha_correccion`, `fecha_creacion`, `fecha_publicacion`, `id`, `imagen`, `nombre_usuario`, `titulo`)
+VALUES (\'Tendencias del Sector\',\' Globalmente, los empleadores de todo el mundo están luchando por cubrir puestos vacantes, y se espera que 85 millones de puestos de trabajo queden sin cubrir para 2030, según Korn Ferry, que además estima que este déficit de mano de obra podría traducirse en aproximadamente 8,5 billones de dólares en ingresos anuales no realizados en el mismo período.\\r\\n\\r\\n                El surgimiento de tecnologías como la IA Generativa también está trayendo nuevas oportunidades laborales. 46% de los CEO encuestados en Estados Unidos por la multinacional, ha contratado a trabajadores adicionales debido a la IA generativa, con el 26% de ellos afirmando que tienen planes para más contrataciones por delante. Es clave que las empresas continúen innovando para crear valor para su talento. Esto les ayudará pasar de la reacción a la acción en el largo plazo.\',\'Validar\',\'2024-05-17\',\'null\',\'null\',36133,\'1715907145_ef0f61bc93ddb1942411.jpg\',\'camila\',\'El crecimiento en jaque por la escasez de talento en tecnología\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1821): CodeIgniter\Database\BaseConnection->query('INSERT INTO `noticias` (`categoria`, `descripcion`, `estado`, `fecha_correccion`, `fecha_creacion`, `fecha_publicacion`, `id`, `imagen`, `nombre_usuario`, `titulo`)
+VALUES (\'Tendencias del Sector\',\' Globalmente, los empleadores de todo el mundo están luchando por cubrir puestos vacantes, y se espera que 85 millones de puestos de trabajo queden sin cubrir para 2030, según Korn Ferry, que además estima que este déficit de mano de obra podría traducirse en aproximadamente 8,5 billones de dólares en ingresos anuales no realizados en el mismo período.\\r\\n\\r\\n                El surgimiento de tecnologías como la IA Generativa también está trayendo nuevas oportunidades laborales. 46% de los CEO encuestados en Estados Unidos por la multinacional, ha contratado a trabajadores adicionales debido a la IA generativa, con el 26% de ellos afirmando que tienen planes para más contrataciones por delante. Es clave que las empresas continúen innovando para crear valor para su talento. Esto les ayudará pasar de la reacción a la acción en el largo plazo.\',\'Validar\',\'2024-05-17\',\'null\',\'null\',36133,\'1715907145_ef0f61bc93ddb1942411.jpg\',\'camila\',\'El crecimiento en jaque por la escasez de talento en tecnología\')', null, false)
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2210): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+ 5 APPPATH\Models\NoticiasModel.php(31): CodeIgniter\Database\BaseBuilder->insertBatch([...])
+ 6 APPPATH\Controllers\Noticias.php(215): App\Models\NoticiasModel->insertar([...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Noticias->actualizar()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Noticias))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-05-17 00:52:25 --> [Caused by] mysqli_sql_exception: Unknown column 'fecha_correccion' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 308.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(308): mysqli->query('INSERT INTO `noticias` (`categoria`, `descripcion`, `estado`, `fecha_correccion`, `fecha_creacion`, `fecha_publicacion`, `id`, `imagen`, `nombre_usuario`, `titulo`)
+VALUES (\'Tendencias del Sector\',\' Globalmente, los empleadores de todo el mundo están luchando por cubrir puestos vacantes, y se espera que 85 millones de puestos de trabajo queden sin cubrir para 2030, según Korn Ferry, que además estima que este déficit de mano de obra podría traducirse en aproximadamente 8,5 billones de dólares en ingresos anuales no realizados en el mismo período.\\r\\n\\r\\n                El surgimiento de tecnologías como la IA Generativa también está trayendo nuevas oportunidades laborales. 46% de los CEO encuestados en Estados Unidos por la multinacional, ha contratado a trabajadores adicionales debido a la IA generativa, con el 26% de ellos afirmando que tienen planes para más contrataciones por delante. Es clave que las empresas continúen innovando para crear valor para su talento. Esto les ayudará pasar de la reacción a la acción en el largo plazo.\',\'Validar\',\'2024-05-17\',\'null\',\'null\',36133,\'1715907145_ef0f61bc93ddb1942411.jpg\',\'camila\',\'El crecimiento en jaque por la escasez de talento en tecnología\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `noticias` (`categoria`, `descripcion`, `estado`, `fecha_correccion`, `fecha_creacion`, `fecha_publicacion`, `id`, `imagen`, `nombre_usuario`, `titulo`)
+VALUES (\'Tendencias del Sector\',\' Globalmente, los empleadores de todo el mundo están luchando por cubrir puestos vacantes, y se espera que 85 millones de puestos de trabajo queden sin cubrir para 2030, según Korn Ferry, que además estima que este déficit de mano de obra podría traducirse en aproximadamente 8,5 billones de dólares en ingresos anuales no realizados en el mismo período.\\r\\n\\r\\n                El surgimiento de tecnologías como la IA Generativa también está trayendo nuevas oportunidades laborales. 46% de los CEO encuestados en Estados Unidos por la multinacional, ha contratado a trabajadores adicionales debido a la IA generativa, con el 26% de ellos afirmando que tienen planes para más contrataciones por delante. Es clave que las empresas continúen innovando para crear valor para su talento. Esto les ayudará pasar de la reacción a la acción en el largo plazo.\',\'Validar\',\'2024-05-17\',\'null\',\'null\',36133,\'1715907145_ef0f61bc93ddb1942411.jpg\',\'camila\',\'El crecimiento en jaque por la escasez de talento en tecnología\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `noticias` (`categoria`, `descripcion`, `estado`, `fecha_correccion`, `fecha_creacion`, `fecha_publicacion`, `id`, `imagen`, `nombre_usuario`, `titulo`)
+VALUES (\'Tendencias del Sector\',\' Globalmente, los empleadores de todo el mundo están luchando por cubrir puestos vacantes, y se espera que 85 millones de puestos de trabajo queden sin cubrir para 2030, según Korn Ferry, que además estima que este déficit de mano de obra podría traducirse en aproximadamente 8,5 billones de dólares en ingresos anuales no realizados en el mismo período.\\r\\n\\r\\n                El surgimiento de tecnologías como la IA Generativa también está trayendo nuevas oportunidades laborales. 46% de los CEO encuestados en Estados Unidos por la multinacional, ha contratado a trabajadores adicionales debido a la IA generativa, con el 26% de ellos afirmando que tienen planes para más contrataciones por delante. Es clave que las empresas continúen innovando para crear valor para su talento. Esto les ayudará pasar de la reacción a la acción en el largo plazo.\',\'Validar\',\'2024-05-17\',\'null\',\'null\',36133,\'1715907145_ef0f61bc93ddb1942411.jpg\',\'camila\',\'El crecimiento en jaque por la escasez de talento en tecnología\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1821): CodeIgniter\Database\BaseConnection->query('INSERT INTO `noticias` (`categoria`, `descripcion`, `estado`, `fecha_correccion`, `fecha_creacion`, `fecha_publicacion`, `id`, `imagen`, `nombre_usuario`, `titulo`)
+VALUES (\'Tendencias del Sector\',\' Globalmente, los empleadores de todo el mundo están luchando por cubrir puestos vacantes, y se espera que 85 millones de puestos de trabajo queden sin cubrir para 2030, según Korn Ferry, que además estima que este déficit de mano de obra podría traducirse en aproximadamente 8,5 billones de dólares en ingresos anuales no realizados en el mismo período.\\r\\n\\r\\n                El surgimiento de tecnologías como la IA Generativa también está trayendo nuevas oportunidades laborales. 46% de los CEO encuestados en Estados Unidos por la multinacional, ha contratado a trabajadores adicionales debido a la IA generativa, con el 26% de ellos afirmando que tienen planes para más contrataciones por delante. Es clave que las empresas continúen innovando para crear valor para su talento. Esto les ayudará pasar de la reacción a la acción en el largo plazo.\',\'Validar\',\'2024-05-17\',\'null\',\'null\',36133,\'1715907145_ef0f61bc93ddb1942411.jpg\',\'camila\',\'El crecimiento en jaque por la escasez de talento en tecnología\')', null, false)
+ 5 SYSTEMPATH\Database\BaseBuilder.php(2210): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+ 6 APPPATH\Models\NoticiasModel.php(31): CodeIgniter\Database\BaseBuilder->insertBatch([...])
+ 7 APPPATH\Controllers\Noticias.php(215): App\Models\NoticiasModel->insertar([...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Noticias->actualizar()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Noticias))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-05-17 00:53:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-17 00:53:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-17 01:00:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

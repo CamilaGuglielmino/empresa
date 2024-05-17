@@ -12,8 +12,6 @@ $session = \Config\Services::session();
     $titulo = $registro['titulo'];
     $descripcion = $registro['descripcion'];
     $fecha1 = $registro['fecha_creacion'];
-    $fecha2 = $registro['fecha_correccion'];
-    $fecha3 = $registro['fecha_publicacion'];
     $estado = $registro['estado'];
     $categoria = $registro['categoria'];
     $imagen = $registro['imagen'];
@@ -24,7 +22,7 @@ $session = \Config\Services::session();
      
       <div class="col">
         <div class="card shadow sm" id="card">
-          <img src="..\public\imagenes\logo.png" class="card-img-top" alt="<?php echo $titulo?>">
+          <img src="<?php echo base_url('imagenes/'.$imagen)?>" class="card-img-top" alt="<?php echo $titulo?>">
           <div class="card-body">
           <a href="<?php echo base_url('detalle')?>">
             <h5 class="card-title"><?php echo $titulo?></h5>
@@ -34,7 +32,7 @@ $session = \Config\Services::session();
           <div class="card-footer">
             <h6><i>Autor:  <?php echo $autor?></i></h6>
             <h6><u>Categoria:</u> <?php echo $categoria?> </h6>
-            <small class="text-body-secondary">Fecha de publicación: <?php echo $fecha1?></small>
+            <small class="text-body-secondary">Fecha de publicación: </small>
           </div>
         </div>
       </div>
