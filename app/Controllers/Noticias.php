@@ -3,6 +3,7 @@ namespace App\Controllers;
 
 use App\Models\UsuariosModel;
 use App\Models\NoticiasModel;
+use App\Models\PublicarModel;
 use CodeIgniter\I18n\Time;
 
 
@@ -12,18 +13,25 @@ class Noticias extends BaseController
     public function index()
     {
         $Noticias = new NoticiasModel();
+        $Publicar = new PublicarModel();
+
+        $dato['publicaciones'] = $Publicar->mostrar_todo();
 
         $data['registros'] = $Noticias->mostrar_todo();
         $mensaje = session('mensaje');
 
-        $vistas = view('header') . view('inicio', $data) . view('footer');
+        $vistas = view('header') . view('inicio', $data, $dato) . view('footer');
         return $vistas;
 
     }
 
     public function show($id = null)
     {
-        //
+
+       
+        //$query = $this->db->get('nombre_de_la_tabla');
+        // return $query->result();
+
     }
     public function login()
     {
@@ -93,7 +101,7 @@ class Noticias extends BaseController
 
         if ($imagen->isValid() && !$imagen->hasMoved()) {
             // Asegúrate de que la carpeta 'uploads' exista en la ruta especificada y tenga los permisos adecuados
-            $rutaDestino = FCPATH . 'imagenes'; 
+            $rutaDestino = FCPATH . 'imagenes';
             $newName = $imagen->getRandomName(); // Genera un nuevo nombre para evitar conflictos
             $imagen->move($rutaDestino, $newName);
 
@@ -103,9 +111,6 @@ class Noticias extends BaseController
                 // El archivo se movió correctamente
                 echo "Archivo guardado en: " . $rutaDestino . $newName;
                 $imagen = $newName;
-                
-                
-
 
             } else {
                 // El archivo no se movió, maneja el error aquí
@@ -117,9 +122,6 @@ class Noticias extends BaseController
         $fechaActual = Time::now();
 
         $fechaFormateada = $fechaActual->toLocalizedString('yyyy-MM-dd');
-
-
-
 
         $id_usuario = session('nombreUsuario');
         var_dump($id_usuario);
@@ -149,8 +151,6 @@ class Noticias extends BaseController
         return $vistas;
     }
 
-
-
     public function editar()
     {
         $id = $_GET['id'];
@@ -164,7 +164,7 @@ class Noticias extends BaseController
 
 
     public function actualizar()
-    {  
+    {
         $imagen = $this->request->getFile('imagen');
 
         if ($imagen->isValid() && !$imagen->hasMoved()) {
@@ -184,7 +184,7 @@ class Noticias extends BaseController
                 echo "Error al mover el archivo.";
             }
         }
-    
+
         $fechaActual = Time::now();
         $fechaFormateada = $fechaActual->toLocalizedString('yyyy-MM-dd');
 
@@ -196,11 +196,13 @@ class Noticias extends BaseController
             'nombre_usuario' => $id_usuario,
             'titulo' => $this->request->getPost('titulo'),
             'descripcion' => $this->request->getPost('descripcion'),
-            'fecha_creacion' => $fechaFormateada,        
+            'fecha_creacion' => $fechaFormateada,
             'estado' => $this->request->getPost('estado'),
             'categoria' => $this->request->getPost('categoria'),
             'imagen' => $imagen
         ];
+
+
         $Noticias = new NoticiasModel();
         $Noticias->insertar($data);
         return redirect()->to(base_url('/'));
@@ -234,7 +236,6 @@ class Noticias extends BaseController
             $vistas = view('header') . view('categorias', $data) . view('footer');
             return $vistas;
         }
-
 
         //var_dump($var);      // 
     }
@@ -270,6 +271,11 @@ class Noticias extends BaseController
         $id = $_GET['id'];
         $Noticias = new NoticiasModel();
 
+        $id_usuario = session('nombreUsuario');
+
+
+
+
         // Obtener el 'builder' para la tabla deseada
         $builder = $Noticias->builder();
 
@@ -277,6 +283,19 @@ class Noticias extends BaseController
         $builder->where('id', $id);
         $builder->set(['estado' => 'publicado']);
         $builder->update();
+        $fechaActual = Time::now();
+        $fechaFormateada = $fechaActual->toLocalizedString('yyyy-MM-dd');
+
+        $data = [
+            'id_noticias' => $id,
+            'nombre_usuario' => $id_usuario,
+            'fecha_publicacion' => $fechaFormateada,
+            'estado' => 'activo',
+
+        ];
+        $Publicar = new PublicarModel();
+        $Publicar->insertar($data);
+
 
         return redirect()->to(base_url('/historial'));
 

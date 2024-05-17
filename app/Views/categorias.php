@@ -7,6 +7,7 @@ $session = \Config\Services::session();
 
 <div class="row row-cols1 row-cols-sm-2 row-cols-md-3 g-3" id="card">
   <?php
+  $estado1='publicado';
   foreach ($registros as $registro):
     $autor=$registro['nombre_usuario'];
     $titulo = $registro['titulo'];
@@ -16,7 +17,7 @@ $session = \Config\Services::session();
     $categoria = $registro['categoria'];
     $imagen = $registro['imagen'];
 
-    
+    if(strcasecmp($estado, $estado1)==0){
   
       ?>
      
@@ -38,6 +39,9 @@ $session = \Config\Services::session();
       </div>
       
     <?php
+    }
+    
+    
     
   endforeach;
   //<?php echo base64_encode($ID); 

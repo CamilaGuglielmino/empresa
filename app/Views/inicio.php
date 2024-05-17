@@ -20,8 +20,9 @@ $session = \Config\Services::session();
 
     $publicado = 'Publicado';
     if (strcasecmp($estado, $publicado) == 0) {
-      ?>
-    
+     
+      
+?>
       <div class="col">
         <div class="card shadow sm" id="card">
       
@@ -43,8 +44,12 @@ $session = \Config\Services::session();
       </div>
       
     <?php
+  
+
     }
   endforeach;
+
+
   //<?php echo base64_encode($ID); 
   ?>
   </div>

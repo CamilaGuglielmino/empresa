@@ -43,6 +43,18 @@ class Noticias extends Migration
                 'type' => 'VARCHAR', 
                 'constraint' => 100,
             ],
+            'nombrePublicador'=>[
+                'type' => 'VARCHAR',
+                'constraint' => '10',
+            ],
+            'fecha_publicacion' =>[
+                'type' => 'DATE',
+                'null' => true,
+            ],
+            'estado1' =>[
+                'type' => 'VARCHAR', 
+                'constraint' => 15,
+            ],
 
         ]);
         $this -> forge -> addKey('id', true);

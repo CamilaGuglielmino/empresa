@@ -12,7 +12,7 @@ class NoticiasModel extends Model
     protected $returnType       = 'array';
     protected $useSoftDeletes   = false;
     protected $protectFields    = true;
-    protected $allowedFields    = ['nombre_usuario', 'titulo', 'descripcion', 'fecha_creacion', 'fecha_correccion', 'fecha_publicacion', 'estado', 'categoria', 'imagen'];
+    protected $allowedFields    = ['nombre_usuario', 'titulo', 'descripcion', 'fecha_creacion', 'estado', 'categoria', 'imagen'];
 
     protected bool $allowEmptyInserts = false;
     protected bool $updateOnlyChanged = true;
