@@ -34,8 +34,7 @@ class NoticiasModel extends Model
     public function mostrar_todo(){
         $Noticias = $this->db->table('noticias');
         return $Noticias->get()->getResultArray();
-        //$query = $this->db->get('nombre_de_la_tabla');
-        // return $query->result();
+     
     }
     public function mostrar_usuario($data){
         $Noticias = $this->db->table('noticias');

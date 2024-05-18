@@ -30,7 +30,6 @@ $session = \Config\Services::session();
                 <img id="logo" src="<?php echo base_url('imagenes/logo.png')?>" height="120">
             </a>
 
-
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span>
@@ -87,12 +86,14 @@ $session = \Config\Services::session();
                                     
                                     <li><a class="dropdown-item" href="<?php echo base_url('nuevo') ?>">Nuevo</a></li>
                                     <li><a class="dropdown-item" href="<?php echo base_url('historial') ?>">Historial</a></li>
+                                    <li><a class="dropdown-item" href="<?php echo base_url('borradores') ?>">Borradores</a></li>
+
                                     <li><hr class="dropdown-divider"></li>
                                     <li><a class="dropdown-item" href="<?php echo base_url('Noticias/logout') ?>">Salir</a></li>
                                 </ul>
                               <?php  } elseif (strcasecmp($tipo, $publicador)==0) {?>
                                 <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-                                    
+                                    <li><a class="dropdown-item" href="<?php echo base_url('validar') ?>">Publicaciones para validar</a></li>
                                     <li><a class="dropdown-item" href="<?php echo base_url('historial') ?>">Historial</a></li>
                                     <li><hr class="dropdown-divider"></li>
                                     <li><a class="dropdown-item" href="<?php echo base_url('Noticias/logout') ?>">Salir</a></li>
@@ -102,6 +103,8 @@ $session = \Config\Services::session();
                                 <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
                                    
                                     <li><a class="dropdown-item" href="<?php echo base_url('nuevo') ?>">Nuevo</a></li>
+                                    <li><a class="dropdown-item" href="<?php echo base_url('validar') ?>">Publicaciones para validar</a></li>
+                                    <li><a class="dropdown-item" href="<?php echo base_url('borradores') ?>">Mis borradores</a></li>
                                     
                                     <li><a class="dropdown-item" href="<?php echo base_url('historial') ?>">Historial</a></li>
                                     <li><hr class="dropdown-divider"></li>

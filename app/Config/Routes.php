@@ -22,6 +22,14 @@ $routes->get('Noticias/categoria', 'Noticias::categoria');
 $routes->get('Noticias/detalle', 'Noticias::detalle');
 $routes->get('Noticias/descartar', 'Noticias::descartar');
 $routes->get('Noticias/validar', 'Noticias::validar');
+$routes->get('borradores', 'Noticias::borradores');
+$routes->get('validar', 'Noticias::vista');
+$routes->get('Noticias/borrador', 'Noticias::borrador');
+$routes->get('Noticias/anular', 'Noticias::anular');
+
+
+
+
 
 
 

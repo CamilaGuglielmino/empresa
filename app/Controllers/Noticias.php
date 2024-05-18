@@ -151,7 +151,6 @@ class Noticias extends BaseController
         return $vistas;
     }
 
-
     public function actualizar()
     {
         $imagen = $this->request->getFile('imagen');
@@ -239,48 +238,41 @@ class Noticias extends BaseController
     }
     public function descartar()
     {
-
         $id = $_GET['id'];
+        var_dump($id);
         $Noticias = new NoticiasModel();
-
         // Obtener el 'builder' para la tabla deseada
         $builder = $Noticias->builder();
 
         // Realizar la actualización
         $builder->where('id', $id);
-        $builder->set(['estado' => 'Descartado']);
+        $builder->set(['estado' => 'descartado']);
         $builder->update();
-
-        return redirect()->to(base_url('/historial'));
+        return redirect()->to(base_url('/borradores'));
 
     }
     public function validar()
     {
-
         $id = $_GET['id'];
         $Noticias = new NoticiasModel();
-
         $id_usuario = session('nombreUsuario');
-
         // Obtener el 'builder' para la tabla deseada
         $builder = $Noticias->builder();
-
         // Realizar la actualización
         $builder->where('id', $id);
         $builder->set(['estado' => 'publicado']);
         $builder->update();
         $fechaActual = Time::now();
         $fechaFormateada = $fechaActual->toLocalizedString('yyyy-MM-dd');
-
         $data = [
-            'id_noticias' => $id,
+            
             'nombre_usuario' => $id_usuario,
             'fecha_publicacion' => $fechaFormateada,
             'estado' => 'activo',
 
         ];
-        $Noticias = new NoticiasModel();
-        $Noticias->insertar($data);
+        
+       
 
 
         return redirect()->to(base_url('/historial'));
@@ -301,6 +293,45 @@ class Noticias extends BaseController
         $builder->update();
 
         return redirect()->to(base_url('/historial'));
+
+    }
+    public function borradores(){
+        $Noticias = new NoticiasModel();
+        $data['registros'] = $Noticias->mostrar_todo();
+        $vistas = view('header') . view('borradores', $data) . view('footer');
+        return $vistas;
+    }
+    public function vista(){
+        $Noticias = new NoticiasModel();
+        $data['registros'] = $Noticias->mostrar_todo();
+        $vistas = view('header') . view('validar', $data) . view('footer');
+        return $vistas;
+    }
+    public function borrador(){
+        $id = $_GET['id'];
+        var_dump($id);
+        $Noticias = new NoticiasModel();
+        // Obtener el 'builder' para la tabla deseada
+        $builder = $Noticias->builder();
+
+        // Realizar la actualización
+        $builder->where('id', $id);
+        $builder->set(['estado' => 'Borrador']);
+        $builder->update();
+        return redirect()->to(base_url('/validar'));
+    }
+    public function anular(){
+        $id = $_GET['id'];
+        var_dump($id);
+        $Noticias = new NoticiasModel();
+        // Obtener el 'builder' para la tabla deseada
+        $builder = $Noticias->builder();
+
+        // Realizar la actualización
+        $builder->where('id', $id);
+        $builder->set(['estado' => 'Anular']);
+        $builder->update();
+        return redirect()->to(base_url('/validar'));
 
     }
 
