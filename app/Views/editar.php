@@ -45,8 +45,8 @@
                         </div>
                         <div class="mb-3">
                             <label for="formFile">Imagen</label>
-                            <input type="file" name="imagen" class="form-control" id="formFile" accept="image/png">
-                            <small>*Subir imagen en formato png</small>
+                            <input type="file" name="imagen" class="form-control" id="formFile" value="<?php echo $imagen ?>" required>
+                            
                         </div>
                         <div class="mb-3">
                             <h5>Elija un estado para la guardar la noticia </h5>

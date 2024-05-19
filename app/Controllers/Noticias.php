@@ -3,7 +3,7 @@ namespace App\Controllers;
 
 use App\Models\UsuariosModel;
 use App\Models\NoticiasModel;
-
+use CodeIgniter\Events\Events;
 use CodeIgniter\I18n\Time;
 
 
@@ -13,10 +13,10 @@ class Noticias extends BaseController
     public function index()
     {
         $Noticias = new NoticiasModel();
-       
+
         $data['registros'] = $Noticias->ordenar();
         $mensaje = session('mensaje');
-
+        //Events::trigger('publicacion_programada');
         $vistas = view('header') . view('inicio', $data) . view('footer');
         return $vistas;
 
@@ -122,6 +122,9 @@ class Noticias extends BaseController
         ];
         $Noticias = new NoticiasModel();
         $Noticias->insertar($data);
+        
+        $this->session->setFlashdata('success', 'Se creo exitosamente');
+
         return redirect()->to(base_url('/'));
     }
     public function historial()
@@ -145,6 +148,7 @@ class Noticias extends BaseController
     }
     public function actualizar()
     {
+       
         $imagen = $this->request->getFile('imagen');
 
         if ($imagen->isValid() && !$imagen->hasMoved()) {
@@ -164,28 +168,42 @@ class Noticias extends BaseController
                 echo "Error al mover el archivo.";
             }
         }
-
         $fechaActual = Time::now();
         $fechaFormateada = $fechaActual->toLocalizedString('yyyy-MM-dd');
 
         $id_usuario = session('nombreUsuario');
+        
+
         var_dump($id_usuario);
+        if(!empty($imagen)){
 
         $data = [
             'id' => rand(10000, 99999),
             'nombre_usuario' => $id_usuario,
             'titulo' => $this->request->getPost('titulo'),
             'descripcion' => $this->request->getPost('descripcion'),
-            'fecha_creacion' => $fechaFormateada,
+            'fecha_correccion' => $fechaFormateada,
             'estado' => $this->request->getPost('estado'),
             'categoria' => $this->request->getPost('categoria'),
-            'imagen' => $imagen
+            'imagen' => $imagen,
         ];
+        }else{
+            $data = [
+                'id' => rand(10000, 99999),
+                'nombre_usuario' => $id_usuario,
+                'titulo' => $this->request->getPost('titulo'),
+                'descripcion' => $this->request->getPost('descripcion'),
+                'fecha_correccion' => $fechaFormateada,
+                'estado' => $this->request->getPost('estado'),
+                'categoria' => $this->request->getPost('categoria'),
+
+            ];
+        }
 
 
         $Noticias = new NoticiasModel();
         $Noticias->insertar($data);
-        return redirect()->to(base_url('/'));
+        return redirect()->to(base_url('/borradores'));
 
     }
     public function categoria()
@@ -266,7 +284,7 @@ class Noticias extends BaseController
         $builder->set(['nombrePublicador' => $id_usuario]);
         $builder->set(['fecha_publicacion' => $fechaFormateada]);
         $builder->update();
-        return redirect()->to(base_url('/validar'));   
+        return redirect()->to(base_url('/validar'));
     }
     public function corregir()
     {
@@ -285,19 +303,22 @@ class Noticias extends BaseController
         return redirect()->to(base_url('/historial'));
 
     }
-    public function borradores(){
+    public function borradores()
+    {
         $Noticias = new NoticiasModel();
         $data['registros'] = $Noticias->mostrar_todo();
         $vistas = view('header') . view('borradores', $data) . view('footer');
         return $vistas;
     }
-    public function vista(){
+    public function vista()
+    {
         $Noticias = new NoticiasModel();
         $data['registros'] = $Noticias->mostrar_todo();
         $vistas = view('header') . view('validar', $data) . view('footer');
         return $vistas;
     }
-    public function borrador(){
+    public function borrador()
+    {
         $id = $_GET['id'];
         var_dump($id);
         $Noticias = new NoticiasModel();
@@ -316,7 +337,8 @@ class Noticias extends BaseController
         $builder->update();
         return redirect()->to(base_url('/validar'));
     }
-    public function anular(){
+    public function anular()
+    {
         $id = $_GET['id'];
         var_dump($id);
         $Noticias = new NoticiasModel();
@@ -330,6 +352,25 @@ class Noticias extends BaseController
         return redirect()->to(base_url('/validar'));
 
     }
+
+    public function verificarFechaPublicacion()
+    {
+        $Noticias = new NoticiasModel();
+        $fechaActual = Time::now();
+        $fechaFormateada = $fechaActual->toLocalizedString('yyyy-MM-dd');
+
+        // Obtén las publicaciones pendientes
+        $publicacionesPendientes = $Noticias->where('estado', 'validar')->findAll();
+
+        foreach ($publicacionesPendientes as $publicacion) {
+            if ($publicacion['fecha_publicacion'] < $fechaFormateada) {
+                // Cambia el estado a "publicar"
+                $publicacion['estado'] = 'publicado';
+                $Noticias->update($publicacion['id'], $publicacion);
+            }
+        }
+    }
+
 
 
 }
