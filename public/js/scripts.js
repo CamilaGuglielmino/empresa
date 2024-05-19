@@ -36,5 +36,5 @@ window.onpopstate = function(event) {
 };
 window.addEventListener('popstate', function(event) {
     // Tu código aquí. Por ejemplo, puedes mostrar una alerta o cambiar el contenido de la página.
-    alert("El usuario ha pulsado el botón de volver atrás.");
+    window.location.href="<?php echo ('Noticias/deshacerCambios') ?>";
 });

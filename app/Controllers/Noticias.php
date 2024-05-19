@@ -84,7 +84,7 @@ class Noticias extends BaseController
 
         if (!$usuario = $session->get('nombreUsuario')) {
             // Si no hay sesión, redirige al login
-           
+
             return redirect()->to(base_url('/login'));
         }
         $vistas = view('header') . view('nuevo') . view('footer');
@@ -139,7 +139,7 @@ class Noticias extends BaseController
         $session = \Config\Services::session();
 
         if (!$usuario = $session->get('nombreUsuario')) {
-            
+
             return redirect()->to(base_url('/login'));
         }
         $Noticias = new NoticiasModel();
@@ -155,7 +155,7 @@ class Noticias extends BaseController
 
         if (!$usuario = $session->get('nombreUsuario')) {
             // Si no hay sesión, redirige al login
-           
+
             return redirect()->to(base_url('/login'));
         }
         $id = $_GET['id'];
@@ -165,6 +165,7 @@ class Noticias extends BaseController
         // var_dump($dato);
         $vistas = view('header') . view('editar', $dato) . view('footer');
         return $vistas;
+
     }
     public function actualizar()
     {
@@ -282,9 +283,15 @@ class Noticias extends BaseController
     }
     public function descartar()
     {
+
         $id = $_GET['id'];
         var_dump($id);
         $Noticias = new NoticiasModel();
+
+        $datosOriginales = $Noticias->mostrar_noticia($id);
+
+        // Guárdalos en la sesión
+        $this->session->set('datos_originales', $datosOriginales);
         // Obtener el 'builder' para la tabla deseada
         $builder = $Noticias->builder();
 
@@ -297,7 +304,7 @@ class Noticias extends BaseController
     }
     public function validar()
     {
-        
+
         $id = $_GET['id'];
         $Noticias = new NoticiasModel();
         $id_usuario = session('nombreUsuario');
@@ -336,7 +343,7 @@ class Noticias extends BaseController
 
         if (!$usuario = $session->get('nombreUsuario')) {
             // Si no hay sesión, redirige al login
-           
+
             return redirect()->to(base_url('/login'));
         }
         $Noticias = new NoticiasModel();
@@ -392,7 +399,6 @@ class Noticias extends BaseController
         return redirect()->to(base_url('/validar'));
 
     }
-
     public static function verificarFechaPublicacion()
     {
         $Noticias = new NoticiasModel();
@@ -401,8 +407,8 @@ class Noticias extends BaseController
         $fechaFormateada = $fechaConCincoDiasMenos->toLocalizedString('yyyy-MM-dd');
         $fechaHoy = $fechaActual->toLocalizedString('yyyy-MM-dd');
 
-       
-        
+
+
         // // Obtén las publicaciones pendientes
         $publicacionesPendientes = $Noticias->where('estado', 'validar')->findAll();
 
@@ -416,7 +422,7 @@ class Noticias extends BaseController
                 $builder->set(['fecha_publicacion' => $fechaHoy]);
                 $builder->set(['estado' => 'publicado']);
                 $builder->set(['estado' => 'publicado']);
-                $builder->set(['estado1' => 'automaticamente']); 
+                $builder->set(['estado1' => 'automaticamente']);
                 $builder->update();
 
             }
@@ -424,12 +430,13 @@ class Noticias extends BaseController
         endforeach;
 
     }
-    public function automatico(){
+    public function automatico()
+    {
         $session = \Config\Services::session();
 
         if (!$usuario = $session->get('nombreUsuario')) {
             // Si no hay sesión, redirige al login
-           
+
             return redirect()->to(base_url('/login'));
         }
         $Noticias = new NoticiasModel();
@@ -438,11 +445,12 @@ class Noticias extends BaseController
         $vistas = view('header') . view('automatico', $data) . view('footer');
         return $vistas;
     }
-    public function despublicar(){
+    public function despublicar()
+    {
         $id = $_GET['id'];
         var_dump($id);
         $Noticias = new NoticiasModel();
-               
+
         // Obtener el 'builder' para la tabla deseada
         $builder = $Noticias->builder();
 
@@ -454,4 +462,25 @@ class Noticias extends BaseController
         $builder->update();
         return redirect()->to(base_url('/automatico'));
     }
+    public function deshacerCambios()
+    {
+        $id = $_GET['id'];
+        $Noticias = new NoticiasModel();
+        
+        // Verifica si hay datos originales en la sesión
+        if ($this->session->has('datos_originales')) {
+            $datosOriginales = $this->session->get('datos_originales');
+
+            $builder = $Noticias->builder();
+            
+            $builder->where('id', $id);
+            
+            $builder->update($id, $datosOriginales);
+
+            // Limpia la sesión
+            $this->session->remove('datos_originales');
+        }
+
+    }
+
 }

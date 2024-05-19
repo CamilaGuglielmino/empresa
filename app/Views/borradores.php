@@ -11,7 +11,9 @@ $num = '0';
 ?>
 <main>
     <div class="container mt-5">
+        <h2>Mis borradores</h2>
         <div class="row">
+
             <div class="col-lg-12">
                 <table class="table">
                     <thead>
