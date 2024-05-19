@@ -83,7 +83,6 @@ class Noticias extends BaseController
         $vistas = view('header') . view('nuevo') . view('footer');
         return $vistas;
     }
-
     public function new()
     {
         $imagen = $this->request->getFile('imagen');
@@ -93,8 +92,6 @@ class Noticias extends BaseController
             $rutaDestino = FCPATH . 'imagenes';
             $newName = $imagen->getRandomName(); // Genera un nuevo nombre para evitar conflictos
             $imagen->move($rutaDestino, $newName);
-
-
             // Verifica si el archivo se movió correctamente
             if ($imagen->hasMoved()) {
                 // El archivo se movió correctamente
@@ -104,12 +101,10 @@ class Noticias extends BaseController
             } else {
                 // El archivo no se movió, maneja el error aquí
                 echo "Error al mover el archivo.";
-
             }
 
         }
         $fechaActual = Time::now();
-
         $fechaFormateada = $fechaActual->toLocalizedString('yyyy-MM-dd');
 
         $id_usuario = session('nombreUsuario');
@@ -129,7 +124,6 @@ class Noticias extends BaseController
         $Noticias->insertar($data);
         return redirect()->to(base_url('/'));
     }
-
     public function historial()
     {
         $Noticias = new NoticiasModel();
@@ -139,7 +133,6 @@ class Noticias extends BaseController
         $vistas = view('header') . view('historial', $data) . view('footer');
         return $vistas;
     }
-
     public function editar()
     {
         $id = $_GET['id'];
@@ -150,7 +143,6 @@ class Noticias extends BaseController
         $vistas = view('header') . view('editar', $dato) . view('footer');
         return $vistas;
     }
-
     public function actualizar()
     {
         $imagen = $this->request->getFile('imagen');
@@ -196,7 +188,6 @@ class Noticias extends BaseController
         return redirect()->to(base_url('/'));
 
     }
-
     public function categoria()
     {
         $var = $_GET['var'];
@@ -236,6 +227,15 @@ class Noticias extends BaseController
         return $vistas;
 
     }
+    public function ver()
+    {
+        $id = $_GET['id'];
+        $Noticias = new NoticiasModel();
+        $data['dato'] = $Noticias->mostrar_noticia(['id' => $id]);
+        $vistas = view('header') . view('ver', $data) . view('footer');
+        return $vistas;
+
+    }
     public function descartar()
     {
         $id = $_GET['id'];
@@ -256,33 +256,23 @@ class Noticias extends BaseController
         $id = $_GET['id'];
         $Noticias = new NoticiasModel();
         $id_usuario = session('nombreUsuario');
+        $fechaActual = Time::now();
+        $fechaFormateada = $fechaActual->toLocalizedString('yyyy-MM-dd');
         // Obtener el 'builder' para la tabla deseada
         $builder = $Noticias->builder();
         // Realizar la actualización
         $builder->where('id', $id);
         $builder->set(['estado' => 'publicado']);
+        $builder->set(['nombrePublicador' => $id_usuario]);
+        $builder->set(['fecha_publicacion' => $fechaFormateada]);
         $builder->update();
-        $fechaActual = Time::now();
-        $fechaFormateada = $fechaActual->toLocalizedString('yyyy-MM-dd');
-        $data = [
-            
-            'nombre_usuario' => $id_usuario,
-            'fecha_publicacion' => $fechaFormateada,
-            'estado' => 'activo',
-
-        ];
-        
-       
-
-
-        return redirect()->to(base_url('/historial'));
-
+        return redirect()->to(base_url('/validar'));   
     }
     public function corregir()
     {
-
         $id = $_GET['id'];
         $Noticias = new NoticiasModel();
+
 
         // Obtener el 'builder' para la tabla deseada
         $builder = $Noticias->builder();
@@ -311,12 +301,18 @@ class Noticias extends BaseController
         $id = $_GET['id'];
         var_dump($id);
         $Noticias = new NoticiasModel();
+        $id_usuario = session('nombreUsuario');
+        $fechaActual = Time::now();
+        $fechaFormateada = $fechaActual->toLocalizedString('yyyy-MM-dd');
         // Obtener el 'builder' para la tabla deseada
         $builder = $Noticias->builder();
 
         // Realizar la actualización
         $builder->where('id', $id);
         $builder->set(['estado' => 'Borrador']);
+        $builder->set(['nombreCorregir' => $id_usuario]);
+        $builder->set(['fecha_correccion' => $fechaFormateada]);
+
         $builder->update();
         return redirect()->to(base_url('/validar'));
     }

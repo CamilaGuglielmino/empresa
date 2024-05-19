@@ -32,9 +32,9 @@
                         </div>
                         <div class="mb-3">
                             <label for="formFile">Imagen</label>
-                            <input type="file" name="imagen" class="form-control" id="formFile" accept="image/png"
+                            <input type="file" name="imagen" class="form-control" id="formFile"
                                 required>
-                            <small>*Subir imagen en formato png</small>
+                            
                         </div>
 
                     </div>
