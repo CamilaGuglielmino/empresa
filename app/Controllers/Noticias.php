@@ -16,7 +16,7 @@ class Noticias extends BaseController
 
         $data['registros'] = $Noticias->ordenar();
         $mensaje = session('mensaje');
-        //Events::trigger('publicacion_programada');
+        Events::trigger('publicacion_programada');
         $vistas = view('header') . view('inicio', $data) . view('footer');
         return $vistas;
 
@@ -80,6 +80,13 @@ class Noticias extends BaseController
     }
     public function nuevo()
     {
+        $session = \Config\Services::session();
+
+        if (!$usuario = $session->get('nombreUsuario')) {
+            // Si no hay sesión, redirige al login
+           
+            return redirect()->to(base_url('/login'));
+        }
         $vistas = view('header') . view('nuevo') . view('footer');
         return $vistas;
     }
@@ -122,13 +129,19 @@ class Noticias extends BaseController
         ];
         $Noticias = new NoticiasModel();
         $Noticias->insertar($data);
-        
+
         $this->session->setFlashdata('success', 'Se creo exitosamente');
 
         return redirect()->to(base_url('/'));
     }
     public function historial()
     {
+        $session = \Config\Services::session();
+
+        if (!$usuario = $session->get('nombreUsuario')) {
+            
+            return redirect()->to(base_url('/login'));
+        }
         $Noticias = new NoticiasModel();
 
         $data['registros'] = $Noticias->mostrar_todo();
@@ -138,6 +151,13 @@ class Noticias extends BaseController
     }
     public function editar()
     {
+        $session = \Config\Services::session();
+
+        if (!$usuario = $session->get('nombreUsuario')) {
+            // Si no hay sesión, redirige al login
+           
+            return redirect()->to(base_url('/login'));
+        }
         $id = $_GET['id'];
         $Noticias = new NoticiasModel();
         $dato['dato'] = $Noticias->mostrar_noticia(['id' => $id]);
@@ -148,7 +168,7 @@ class Noticias extends BaseController
     }
     public function actualizar()
     {
-       
+
         $imagen = $this->request->getFile('imagen');
 
         if ($imagen->isValid() && !$imagen->hasMoved()) {
@@ -172,22 +192,22 @@ class Noticias extends BaseController
         $fechaFormateada = $fechaActual->toLocalizedString('yyyy-MM-dd');
 
         $id_usuario = session('nombreUsuario');
-        
+
 
         var_dump($id_usuario);
-        if(!empty($imagen)){
+        if (!empty($imagen)) {
 
-        $data = [
-            'id' => rand(10000, 99999),
-            'nombre_usuario' => $id_usuario,
-            'titulo' => $this->request->getPost('titulo'),
-            'descripcion' => $this->request->getPost('descripcion'),
-            'fecha_correccion' => $fechaFormateada,
-            'estado' => $this->request->getPost('estado'),
-            'categoria' => $this->request->getPost('categoria'),
-            'imagen' => $imagen,
-        ];
-        }else{
+            $data = [
+                'id' => rand(10000, 99999),
+                'nombre_usuario' => $id_usuario,
+                'titulo' => $this->request->getPost('titulo'),
+                'descripcion' => $this->request->getPost('descripcion'),
+                'fecha_correccion' => $fechaFormateada,
+                'estado' => $this->request->getPost('estado'),
+                'categoria' => $this->request->getPost('categoria'),
+                'imagen' => $imagen,
+            ];
+        } else {
             $data = [
                 'id' => rand(10000, 99999),
                 'nombre_usuario' => $id_usuario,
@@ -247,6 +267,12 @@ class Noticias extends BaseController
     }
     public function ver()
     {
+        $session = \Config\Services::session();
+
+        if (!$usuario = $session->get('nombreUsuario')) {
+            // Si no hay sesión, redirige al login
+            return redirect()->to(base_url('/login'));
+        }
         $id = $_GET['id'];
         $Noticias = new NoticiasModel();
         $data['dato'] = $Noticias->mostrar_noticia(['id' => $id]);
@@ -271,6 +297,7 @@ class Noticias extends BaseController
     }
     public function validar()
     {
+        
         $id = $_GET['id'];
         $Noticias = new NoticiasModel();
         $id_usuario = session('nombreUsuario');
@@ -305,6 +332,13 @@ class Noticias extends BaseController
     }
     public function borradores()
     {
+        $session = \Config\Services::session();
+
+        if (!$usuario = $session->get('nombreUsuario')) {
+            // Si no hay sesión, redirige al login
+           
+            return redirect()->to(base_url('/login'));
+        }
         $Noticias = new NoticiasModel();
         $data['registros'] = $Noticias->mostrar_todo();
         $vistas = view('header') . view('borradores', $data) . view('footer');
@@ -312,6 +346,12 @@ class Noticias extends BaseController
     }
     public function vista()
     {
+        $session = \Config\Services::session();
+
+        if (!$usuario = $session->get('nombreUsuario')) {
+            // Si no hay sesión, redirige al login
+            return redirect()->to(base_url('/login'));
+        }
         $Noticias = new NoticiasModel();
         $data['registros'] = $Noticias->mostrar_todo();
         $vistas = view('header') . view('validar', $data) . view('footer');
@@ -353,24 +393,65 @@ class Noticias extends BaseController
 
     }
 
-    public function verificarFechaPublicacion()
+    public static function verificarFechaPublicacion()
     {
         $Noticias = new NoticiasModel();
         $fechaActual = Time::now();
-        $fechaFormateada = $fechaActual->toLocalizedString('yyyy-MM-dd');
+        $fechaConCincoDiasMenos = $fechaActual->subDays(5);
+        $fechaFormateada = $fechaConCincoDiasMenos->toLocalizedString('yyyy-MM-dd');
+        $fechaHoy = $fechaActual->toLocalizedString('yyyy-MM-dd');
 
-        // Obtén las publicaciones pendientes
+       
+        
+        // // Obtén las publicaciones pendientes
         $publicacionesPendientes = $Noticias->where('estado', 'validar')->findAll();
 
-        foreach ($publicacionesPendientes as $publicacion) {
-            if ($publicacion['fecha_publicacion'] < $fechaFormateada) {
+        foreach ($publicacionesPendientes as $publicacion):
+            if ($publicacion['fecha_creacion'] < $fechaFormateada) {
                 // Cambia el estado a "publicar"
-                $publicacion['estado'] = 'publicado';
-                $Noticias->update($publicacion['id'], $publicacion);
+                $id = $publicacion['id'];
+                $builder = $Noticias->builder();
+
+                $builder->where('id', $id);
+                $builder->set(['fecha_publicacion' => $fechaHoy]);
+                $builder->set(['estado' => 'publicado']);
+                $builder->set(['estado' => 'publicado']);
+                $builder->set(['estado1' => 'automaticamente']); 
+                $builder->update();
+
             }
-        }
+
+        endforeach;
+
     }
+    public function automatico(){
+        $session = \Config\Services::session();
 
+        if (!$usuario = $session->get('nombreUsuario')) {
+            // Si no hay sesión, redirige al login
+           
+            return redirect()->to(base_url('/login'));
+        }
+        $Noticias = new NoticiasModel();
 
+        $data['registros'] = $Noticias->mostrar_todo();
+        $vistas = view('header') . view('automatico', $data) . view('footer');
+        return $vistas;
+    }
+    public function despublicar(){
+        $id = $_GET['id'];
+        var_dump($id);
+        $Noticias = new NoticiasModel();
+               
+        // Obtener el 'builder' para la tabla deseada
+        $builder = $Noticias->builder();
 
+        // Realizar la actualización
+        $builder->where('id', $id);
+        $builder->set(['estado' => 'Borrador']);
+        $builder->set(['estado1' => 'Despublicada']);
+
+        $builder->update();
+        return redirect()->to(base_url('/automatico'));
+    }
 }

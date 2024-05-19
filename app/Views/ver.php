@@ -10,10 +10,13 @@ foreach ($dato as $dat):
     $fechaInvertida = date("d-m-Y", strtotime($fecha1));
     $validar = 'validar';
     $estado = $dat['estado'];
+    $estado1 = $dat['estado1'];
+
 
 
 endforeach;
 ?>
+
 <div class="container mt-5">
     <div class="row">
         <div class="col-lg-8">
@@ -52,7 +55,7 @@ endforeach;
                         role="button">Descartar noticia</a>
                     <a class="btn btn-secondary" roll="button" href="<?php echo base_url('/validar'); ?>">Volver a
                         Validar</a>
-                <?php } else {
+                <?php } elseif (strcasecmp($estado, 'Borrador') == 0) {
                     ?>
                     <a class="btn btn-success" href="<?php echo base_url('Noticias/editar?id=' . $id); ?>"
                         role="button">Editar</a>
@@ -60,6 +63,12 @@ endforeach;
                         role="button">Descartar</a>
                     <a class="btn btn-secondary" roll="button" href="<?php echo base_url('/borradores'); ?>">Volver a
                         Borradores</a>
+                <?php } elseif (strcasecmp($estado1, 'automaticamente') == 0) { ?>
+                    
+                    <a class="btn btn-info" href="<?php echo base_url('Noticias/despublicar?id=' . $id); ?>"
+                        role="button">Despublicar</a>
+                    <a class="btn btn-secondary" roll="button" href="<?php echo base_url('/automatico'); ?>">Volver a
+                        Publicaciones automaticas</a>
                 <?php } ?>
             </div>
 

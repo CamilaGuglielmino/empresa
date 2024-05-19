@@ -27,6 +27,10 @@ $routes->get('validar', 'Noticias::vista');
 $routes->get('Noticias/borrador', 'Noticias::borrador');
 $routes->get('Noticias/anular', 'Noticias::anular');
 $routes->get('Noticias/ver', 'Noticias::ver');
+$routes->get('automatico', 'Noticias::automatico');
+$routes->get('Noticias/despublicar', 'Noticias::despublicar');
+
+
 
 
 

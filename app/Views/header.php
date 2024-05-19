@@ -101,6 +101,8 @@ $session = \Config\Services::session();
                               <?php  } elseif (strcasecmp($tipo, $publicador)==0) {?>
                                 <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
                                     <li><a class="dropdown-item" href="<?php echo base_url('validar') ?>">Publicaciones para validar</a></li>
+                                    <li><a class="dropdown-item" href="<?php echo base_url('automatico') ?>">Publicaciones Automaticas</a></li>
+                                    
                                     <li><a class="dropdown-item" href="<?php echo base_url('historial') ?>">Historial</a></li>
                                     <li><hr class="dropdown-divider"></li>
                                     <li><a class="dropdown-item" href="<?php echo base_url('Noticias/logout') ?>">Salir</a></li>
@@ -111,6 +113,7 @@ $session = \Config\Services::session();
                                    
                                     <li><a class="dropdown-item" href="<?php echo base_url('nuevo') ?>">Nuevo</a></li>
                                     <li><a class="dropdown-item" href="<?php echo base_url('validar') ?>">Publicaciones para validar</a></li>
+                                    <li><a class="dropdown-item" href="<?php echo base_url('automatico') ?>">Publicaciones Automaticas</a></li>
                                     <li><a class="dropdown-item" href="<?php echo base_url('borradores') ?>">Mis borradores</a></li>
                                     
                                     <li><a class="dropdown-item" href="<?php echo base_url('historial') ?>">Historial</a></li>
@@ -153,6 +156,6 @@ $session = \Config\Services::session();
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 <!-- Core theme JS-->
-<script src="js/scripts.js"></script>
+<script src="<?= base_url('js/scripts.js"') ?>"></script>
 
 </html>

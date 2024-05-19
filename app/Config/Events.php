@@ -59,4 +59,4 @@ Events::on('pre_system', static function () {
  
 });
 
-//$events->on('publicacion_programada', 'Noticias::verificarFechaPublicacion');
+Events::on('publicacion_programada', 'App\Controllers\Noticias::verificarFechaPublicacion');

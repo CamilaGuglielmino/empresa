@@ -80,29 +80,7 @@ $usuario = $session->get('nombreUsuario');
                                     <tr>
                                         <th scope="row"><?php echo $num ?></th>
                                         <td><?php echo $autor ?></td>
-                                        <td>
-                                            <div class="modal fade" id="exampleModalToggle6" aria-hidden="true"
-                                                aria-labelledby="exampleModalToggleLabel" tabindex="-1">
-                                                <div class="modal-dialog modal-dialog-centered">
-                                                    <div class="modal-content">
-                                                        <div class="modal-header">
-                                                            <h1 class="modal-title fs-5" id="exampleModalToggleLabel">
-                                                                <?php echo $titulo ?></h1>
-                                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                                                aria-label="Close"></button>
-                                                        </div>
-                                                        <div class="modal-body">
-
-                                                            <?php echo $descripcion; ?>
-                                                            <img class="img-fluid rounded"
-                                                                src="<?php echo base_url('imagenes/' . $imagen) ?>">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <a data-bs-target="#exampleModalToggle6" data-bs-toggle="modal"
-                                                style="color: blue;"> <?php echo $titulo ?></a>
-                                        </td>
+                                        <td><?php echo $titulo ?></td>
                                         <td><?php echo $fecha1 ?></td>
                                         <td><?php echo $estado ?></td>
                                         <td><?php echo $categoria ?></td>

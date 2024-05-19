@@ -80,48 +80,5 @@ $num = '0';
             <?php } ?>
         </div>
     </div>
-    <!--MODAL 1-->
-
-    <!--MODAL 2-->
-    <div class="modal fade" id="exampleModalToggle1" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
-        tabindex="-1">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="exampleModalToggleLabel">¿Esta
-                        seguro que desea editar esta noticia?</h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-
-                <div class="modal-footer">
-                    <a class="btn btn-secondary" href="<?php echo base_url('Noticias/editar?id=' . $registro['id']); ?>"
-                        role="button">SI</a>
-                    <a class="btn btn-secondary" data-bs-toggle="modal" href="<?php echo base_url('/') ?>"
-                        role="button">NO</a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!--modal 3-->
-    <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
-        tabindex="-1">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="exampleModalToggleLabel">¿Esta
-                        seguro que desea eliminar?</h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    La publicación quedara anulada y no podrá volver a corregirla.
-                </div>
-                <div class="modal-footer">
-                    <a class="btn btn-secondary" href="<?php echo base_url('Noticias/descartar?id=' . $id); ?>"
-                        role="button">SI</a>
-                    <a class="btn btn-secondary" data-bs-toggle="modal" href="<?php echo base_url('/') ?>"
-                        role="button">NO</a>
-                </div>
-            </div>
-        </div>
-    </div>
+    
 </main>
