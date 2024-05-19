@@ -14,7 +14,7 @@ class Noticias extends BaseController
     {
         $Noticias = new NoticiasModel();
        
-        $data['registros'] = $Noticias->mostrar_todo();
+        $data['registros'] = $Noticias->ordenar();
         $mensaje = session('mensaje');
 
         $vistas = view('header') . view('inicio', $data) . view('footer');
