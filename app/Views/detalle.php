@@ -29,10 +29,11 @@ endforeach;
 
 
                 </header>
+                <?php if(!empty($imagen)){ ?>
                 <!-- Preview image figure-->
                 <figure class="mb-4"><img class="img-fluid rounded"
                 src="<?php echo base_url('imagenes/'.$imagen)?>" alt="..." /></figure>
-                        
+                <?php } ?>
                 <!-- Post content-->
                 <section class="mb-5">
                     <?php echo $descripcion?>

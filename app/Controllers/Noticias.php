@@ -531,5 +531,12 @@ class Noticias extends BaseController
         return $vistas;
 
     }
+    public function antiguas(){
+        $Noticias = new NoticiasModel();
+
+        $data['registros'] = $Noticias->ordenar();
+        $vistas = view('header') . view('antiguas', $data) . view('footer');
+        return $vistas;
+    }
 
 }

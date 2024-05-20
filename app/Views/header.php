@@ -97,10 +97,8 @@ $session = \Config\Services::session();
                                     <li><a class="dropdown-item" href="<?php echo base_url('borradores') ?>">Mis Borradores</a></li>
                                     <li><a class="dropdown-item" href="<?php echo base_url('publicadas') ?>">Mis noticias publicadas</a></li>
                                     <li><a class="dropdown-item" href="<?php echo base_url('descartadas') ?>">Mis noticias descartadas</a></li>
-
-
                                     <li><hr class="dropdown-divider"></li>
-                                    <li><a class="dropdown-item" href="<?php echo base_url('Noticias/logout') ?>">Salir</a></li>
+                                    <li><a class="dropdown-item" href="<?php echo base_url('Noticias/logout') ?>">Cerrar Sesión</a></li>
                                 </ul>
                               <?php  } elseif (strcasecmp($tipo, $publicador)==0) {?>
                                 <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
@@ -108,7 +106,7 @@ $session = \Config\Services::session();
                                     <li><a class="dropdown-item" href="<?php echo base_url('automatico') ?>">Publicaciones Automaticas</a></li>
                                     <li><a class="dropdown-item" href="<?php echo base_url('historial') ?>">Historial de publicaciones</a></li>
                                     <li><hr class="dropdown-divider"></li>
-                                    <li><a class="dropdown-item" href="<?php echo base_url('Noticias/logout') ?>">Salir</a></li>
+                                    <li><a class="dropdown-item" href="<?php echo base_url('Noticias/logout') ?>">Cerrar Sesión</a></li>
                                 </ul>
 
                               <?php } elseif (strcasecmp($tipo, $ambos)==0) {?>
@@ -120,7 +118,7 @@ $session = \Config\Services::session();
                                     <li><a class="dropdown-item" href="<?php echo base_url('borradores') ?>">Mis borradores</a></li>
                                     <li><a class="dropdown-item" href="<?php echo base_url('historial') ?>">Historial</a></li>
                                     <li><hr class="dropdown-divider"></li>
-                                    <li><a class="dropdown-item" href="<?php echo base_url('Noticias/logout') ?>">Salir</a></li>
+                                    <li><a class="dropdown-item" href="<?php echo base_url('Noticias/logout') ?>">Cerrar Sesión</a></li>
                                 </ul>
 
                              <?php }?>
@@ -143,9 +141,8 @@ $session = \Config\Services::session();
                                     </svg>
                                 </a>
                                 <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-                                    <li><a class="dropdown-item" href="#!">Ayuda</a></li>
-                                    <li><hr class="dropdown-divider"></li>
-                                    <li><a class="dropdown-item" href="<?php echo base_url('login') ?>">Ingresar</a></li>
+                                    
+                                    <li><a class="dropdown-item" href="<?php echo base_url('login') ?>">Iniciar Sesión</a></li>
                                 </ul>
                             </li>
                         </ul>

@@ -10,6 +10,7 @@ $session = \Config\Services::session();
     $estado1 = 'publicado';
     $num = 0;
     foreach ($registros as $registro):
+      $id=$registro['id'];
       $autor = $registro['nombre_usuario'];
       $titulo = $registro['titulo'];
       $descripcion = $registro['descripcion'];
@@ -28,7 +29,7 @@ $session = \Config\Services::session();
           <div class="card shadow sm" id="card">
             <img src="<?php echo base_url('imagenes/' . $imagen) ?>" class="card-img-top" alt="<?php echo $titulo ?>">
             <div class="card-body">
-              <a href="<?php echo base_url('detalle') ?>">
+              <a href="<?php echo base_url('detalle?id='.$id) ?>">
                 <h5 class="card-title"><?php echo $titulo ?></h5>
               </a>
               <p class="card-text"><?php echo $descripcion ?></p>
@@ -46,7 +47,7 @@ $session = \Config\Services::session();
           <div class="card shadow sm" id="card">
             
             <div class="card-body">
-              <a href="<?php echo base_url('detalle') ?>">
+              <a href="<?php echo base_url('detalle?id='.$id) ?>">
                 <h5 class="card-title"><?php echo $titulo ?></h5>
               </a>
               <p class="card-text"><?php echo $descripcion ?></p>
