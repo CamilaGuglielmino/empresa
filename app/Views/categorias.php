@@ -19,6 +19,7 @@ $session = \Config\Services::session();
       $imagen = $registro['imagen'];
       $fechaInvertida = date("d-m-Y", strtotime($fecha1));
       if (strcasecmp($estado, $estado1) == 0) {
+        if(!empty($imagen)){
         $num++;
 
         ?>
@@ -40,8 +41,26 @@ $session = \Config\Services::session();
           </div>
         </div>
         <?php
+      }else{ ?>
+        <div class="col">
+          <div class="card shadow sm" id="card">
+            
+            <div class="card-body">
+              <a href="<?php echo base_url('detalle') ?>">
+                <h5 class="card-title"><?php echo $titulo ?></h5>
+              </a>
+              <p class="card-text"><?php echo $descripcion ?></p>
+            </div>
+            <div class="card-footer">
+              <h6><i>Autor: <?php echo $autor ?></i></h6>
+              <h6><u>Categoria:</u> <?php echo $categoria ?> </h6>
+              <small class="text-body-secondary">Fecha de publicación: <?php echo $fechaInvertida ?></small>
+            </div>
+          </div>
+        </div>
+<?php
       }
-
+    }
     endforeach;
     //<?php echo base64_encode($ID); 
     ?>

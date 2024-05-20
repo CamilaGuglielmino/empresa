@@ -27,7 +27,9 @@ $session = \Config\Services::session();
     <!-- Favicon-->
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
     <!-- Core theme CSS (includes Bootstrap)-->
-    <link href="<?= base_url('css/styles.css') ?>" rel="stylesheet">
+    <link href="<?= base_url('css/styles.css'); ?>" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <script src="<?= base_url('js/scripts.js'); ?>"></script>
 
 </head>
     <!-- Responsive navbar-->
@@ -92,8 +94,10 @@ $session = \Config\Services::session();
                                         
                                     
                                     <li><a class="dropdown-item" href="<?php echo base_url('nuevo') ?>">Nuevo</a></li>
-                                    <li><a class="dropdown-item" href="<?php echo base_url('historial') ?>">Historial</a></li>
-                                    <li><a class="dropdown-item" href="<?php echo base_url('borradores') ?>">Borradores</a></li>
+                                    <li><a class="dropdown-item" href="<?php echo base_url('borradores') ?>">Mis Borradores</a></li>
+                                    <li><a class="dropdown-item" href="<?php echo base_url('publicadas') ?>">Mis noticias publicadas</a></li>
+                                    <li><a class="dropdown-item" href="<?php echo base_url('descartadas') ?>">Mis noticias descartadas</a></li>
+
 
                                     <li><hr class="dropdown-divider"></li>
                                     <li><a class="dropdown-item" href="<?php echo base_url('Noticias/logout') ?>">Salir</a></li>
@@ -102,8 +106,7 @@ $session = \Config\Services::session();
                                 <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
                                     <li><a class="dropdown-item" href="<?php echo base_url('validar') ?>">Publicaciones para validar</a></li>
                                     <li><a class="dropdown-item" href="<?php echo base_url('automatico') ?>">Publicaciones Automaticas</a></li>
-                                    
-                                    <li><a class="dropdown-item" href="<?php echo base_url('historial') ?>">Historial</a></li>
+                                    <li><a class="dropdown-item" href="<?php echo base_url('historial') ?>">Historial de publicaciones</a></li>
                                     <li><hr class="dropdown-divider"></li>
                                     <li><a class="dropdown-item" href="<?php echo base_url('Noticias/logout') ?>">Salir</a></li>
                                 </ul>
@@ -115,7 +118,6 @@ $session = \Config\Services::session();
                                     <li><a class="dropdown-item" href="<?php echo base_url('validar') ?>">Publicaciones para validar</a></li>
                                     <li><a class="dropdown-item" href="<?php echo base_url('automatico') ?>">Publicaciones Automaticas</a></li>
                                     <li><a class="dropdown-item" href="<?php echo base_url('borradores') ?>">Mis borradores</a></li>
-                                    
                                     <li><a class="dropdown-item" href="<?php echo base_url('historial') ?>">Historial</a></li>
                                     <li><hr class="dropdown-divider"></li>
                                     <li><a class="dropdown-item" href="<?php echo base_url('Noticias/logout') ?>">Salir</a></li>
@@ -156,6 +158,5 @@ $session = \Config\Services::session();
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 <!-- Core theme JS-->
-<script src="<?= base_url('js/scripts.js"') ?>"></script>
 
 </html>

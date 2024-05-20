@@ -20,14 +20,13 @@ $session = \Config\Services::session();
     $fechaInvertida = date("d-m-Y", strtotime($fecha1)); 
     $publicado = 'Publicado';
     if (strcasecmp($estado, $publicado) == 0) {
+      if(!empty($imagen)){
      
       
 ?>
       <div class="col">
-        <div class="card shadow sm" id="card">
-      
-          
-          <img src="<?php echo base_url('imagenes/'.$imagen)?>" class="card-img-top" alt="<?php echo $titulo?>">
+        <div class="card shadow sm" id="card">         
+          <img src="<?php echo base_url('imagenes/'.$imagen)?>" class="card-img-top">
           <div class="card-body">
           <a href="<?php echo base_url('Noticias/detalle?id='.$id);?>">
             <h5 class="card-title"><?php echo $titulo?></h5>
@@ -37,18 +36,32 @@ $session = \Config\Services::session();
           <div class="card-footer">
             <h6><i>Autor:  <?php echo $autor?></i></h6>
             <h6><u>Categoria:</u> <?php echo $categoria?> </h6>
-           
             <small class="text-body-secondary">Fecha de publicación: <?php echo $fechaInvertida?></small>  <!-- echo $fecha1; -->
           </div>
         </div>
       </div>
       
     <?php
-  
+      }else{ ?>
+      <div class="col">
+        <div class="card shadow sm" id="card">         
+          <div class="card-body">
+          <a href="<?php echo base_url('Noticias/detalle?id='.$id);?>">
+            <h5 class="card-title"><?php echo $titulo?></h5>
+            </a>
+            <p class="card-text"><?php echo $descripcion?></p>
+          </div>
+          <div class="card-footer">
+            <h6><i>Autor:  <?php echo $autor?></i></h6>
+            <h6><u>Categoria:</u> <?php echo $categoria?> </h6>
+            <small class="text-body-secondary">Fecha de publicación: <?php echo $fechaInvertida?></small>  <!-- echo $fecha1; -->
+          </div>
+        </div>
+      </div>
+      <?php }
 
     }
   endforeach;
-
 
   //<?php echo base64_encode($ID); 
   ?>

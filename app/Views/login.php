@@ -7,7 +7,6 @@
 <div class="container mt-5">
     <div class="row">
         <div class="col-lg-8">
-
             <form action="<?php echo base_url('Noticias/iniciar_sesion')?>" method="post">
                 <section>
                     <h3 class="titulo"> Iniciar Sesión</h4>
@@ -30,14 +29,10 @@
                 </div>
                 <br>
                 <br>
-
                 <input class="submitBtn" type="submit" name="iniciar" value="Ingresar">
-
-
             </form>
             <br>
             <br>
-
 
         </div>
     </div>

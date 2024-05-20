@@ -3,6 +3,8 @@ namespace App\Controllers;
 
 use App\Models\UsuariosModel;
 use App\Models\NoticiasModel;
+use App\Models\CorregirModel;
+
 use CodeIgniter\Events\Events;
 use CodeIgniter\I18n\Time;
 
@@ -169,6 +171,7 @@ class Noticias extends BaseController
     }
     public function actualizar()
     {
+        $id = $_GET['id'];
 
         $imagen = $this->request->getFile('imagen');
 
@@ -200,7 +203,7 @@ class Noticias extends BaseController
 
             $data = [
                 'id' => rand(10000, 99999),
-                'nombre_usuario' => $id_usuario,
+                'id_noticia' => $id,
                 'titulo' => $this->request->getPost('titulo'),
                 'descripcion' => $this->request->getPost('descripcion'),
                 'fecha_correccion' => $fechaFormateada,
@@ -211,7 +214,7 @@ class Noticias extends BaseController
         } else {
             $data = [
                 'id' => rand(10000, 99999),
-                'nombre_usuario' => $id_usuario,
+                'id_noticia' => $id,
                 'titulo' => $this->request->getPost('titulo'),
                 'descripcion' => $this->request->getPost('descripcion'),
                 'fecha_correccion' => $fechaFormateada,
@@ -220,10 +223,12 @@ class Noticias extends BaseController
 
             ];
         }
+        $Corregir = new CorregirModel();
+        $Corregir->insertar($data);
 
 
-        $Noticias = new NoticiasModel();
-        $Noticias->insertar($data);
+
+       
         return redirect()->to(base_url('/borradores'));
 
     }
@@ -289,12 +294,10 @@ class Noticias extends BaseController
         $Noticias = new NoticiasModel();
 
         $datosOriginales = $Noticias->mostrar_noticia($id);
-
         // Guárdalos en la sesión
         $this->session->set('datos_originales', $datosOriginales);
         // Obtener el 'builder' para la tabla deseada
         $builder = $Noticias->builder();
-
         // Realizar la actualización
         $builder->where('id', $id);
         $builder->set(['estado' => 'descartado']);
@@ -480,6 +483,52 @@ class Noticias extends BaseController
             // Limpia la sesión
             $this->session->remove('datos_originales');
         }
+
+    }
+    public function publicada(){
+        $session = \Config\Services::session();
+
+        if (!$usuario = $session->get('nombreUsuario')) {
+            // Si no hay sesión, redirige al login
+
+            return redirect()->to(base_url('/login'));
+        }
+        $Noticias = new NoticiasModel();
+
+        $data['registros'] = $Noticias->mostrar_todo();
+        $vistas = view('header') . view('publicadas', $data) . view('footer');
+        return $vistas;
+    }
+    public function cambios(){
+        $session = \Config\Services::session();
+
+        if (!$usuario = $session->get('nombreUsuario')) {
+            // Si no hay sesión, redirige al login
+
+            return redirect()->to(base_url('/login'));
+        }
+        $id = $_GET['id'];
+        $Noticias = new NoticiasModel();
+        $Correccion =new CorregirModel();
+        $dato['correcciones'] = $Correccion->mostrar_noticia(['id_noticia' => $id]);
+        $data['registros'] = $Noticias->mostrar_noticia(['id' => $id]);
+        $dataCompleto = array_merge($data, $dato);
+        $vistas = view('header') . view('cambios', $dataCompleto) . view('footer');
+        return $vistas;
+    }
+    public function descartadas(){
+        $session = \Config\Services::session();
+
+        if (!$usuario = $session->get('nombreUsuario')) {
+            // Si no hay sesión, redirige al login
+
+            return redirect()->to(base_url('/login'));
+        }
+        $Noticias = new NoticiasModel();
+        $data['registros'] = $Noticias->mostrar_todo();
+       
+        $vistas = view('header') . view('descartadas', $data) . view('footer');
+        return $vistas;
 
     }
 

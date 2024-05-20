@@ -54,7 +54,8 @@ $usuario = $session->get('nombreUsuario');
                                 <td><?php echo $fecha1 ?></td>
                                 <td><?php echo $estado1 ?></td>
                                 <td><?php echo $categoria ?></td>
-                                <td><?php echo $imagen ?></td>
+                                <td><img src="<?php echo base_url('imagenes/'.$imagen)?>" class="card-img-top" alt="<?php echo $titulo?>"></td>
+
                                 <td>
                                             <a class="btn btn-secondary" href="<?php echo base_url('Noticias/ver?id=' . $id); ?>"
                                                 role="button">Ver</a>
@@ -73,5 +74,12 @@ $usuario = $session->get('nombreUsuario');
         </div>
     </div>
 
-
+    <style>
+        td,
+        th {
+            border: 1px solid #dddddd !important;
+            text-align: left !important;
+            padding: 8px !important;
+        }
+    </style>
 </main>

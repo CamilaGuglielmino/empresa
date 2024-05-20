@@ -2,12 +2,7 @@
     <div class="container mt-5">
         <div class="row">
             <div class="col-lg-8">
-
-                <form action="<?php echo base_url('Noticias/actualizar') ?>" method="post" enctype="multipart/form-data" >
-                    <section>
-                        <h3 class="titulo"> Editar Noticia</h4>
-                    </section>
-                   <?php
+            <?php
                      //  $id = $dato['dato']; 
                     
                     foreach ($dato as $dat):
@@ -21,6 +16,12 @@
                        
                     endforeach;
                    ?>
+
+                <form action="<?php echo base_url('Noticias/actualizar?id='.$id) ?>" method="post" enctype="multipart/form-data" >
+                    <section>
+                        <h3 class="titulo"> Editar Noticia</h4>
+                    </section>
+                  
 
 
                     <div class="contenedor">

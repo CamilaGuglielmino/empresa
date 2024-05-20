@@ -29,6 +29,10 @@ $routes->get('Noticias/anular', 'Noticias::anular');
 $routes->get('Noticias/ver', 'Noticias::ver');
 $routes->get('automatico', 'Noticias::automatico');
 $routes->get('Noticias/despublicar', 'Noticias::despublicar');
+$routes->get('publicadas', 'Noticias::publicada');
+$routes->get('descartadas', 'Noticias::descartadas');
+$routes->get('Noticias/cambios', 'Noticias::cambios');
+
 
 
 

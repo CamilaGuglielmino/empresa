@@ -5,7 +5,7 @@
 
                 <form action="<?php echo base_url('Noticias/new') ?>" method="post" enctype="multipart/form-data" autocomplete="off">
                     <section>
-                        <h3 class="titulo"> Nueva Publicación</h4>
+                        <h3 class="titulo"> Nueva noticia</h4>
                     </section>
 
                     <div class="contenedor">
