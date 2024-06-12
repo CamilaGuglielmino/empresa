@@ -7,7 +7,7 @@
 <div class="container mt-5">
     <div class="row">
         <div class="col-lg-8">
-            <form action="<?php echo base_url('Noticias/iniciar_sesion')?>" method="post">
+            <form action="<?php echo base_url('Usuarios/iniciar_sesion')?>" method="post">
                 <section>
                     <h3 class="titulo"> Iniciar Sesión</h4>
                 </section>

@@ -9,8 +9,8 @@ use CodeIgniter\Router\RouteCollection;
 
 $routes->get('/', 'Noticias::index');
 $routes->get('/login', 'Noticias::login');
-$routes->post('Noticias/iniciar_sesion', 'Noticias::iniciar_sesion');
-$routes->get('Noticias/logout', 'Noticias::logout');
+$routes->post('Usuarios/iniciar_sesion', 'Usuarios::iniciar_sesion');
+$routes->get('Usuarios/logout', 'Usuarios::logout');
 $routes->get('/nuevo', 'Noticias::nuevo');
 $routes->post('Noticias/new', 'Noticias::new');
 $routes->get('/historial', 'Noticias::historial');

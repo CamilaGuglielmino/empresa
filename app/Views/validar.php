@@ -66,7 +66,7 @@ $num = '0';
 
             <?php if ($num == '0') {
                 ?>
-                <div class="card">
+                <div class="card" >
                     <h2>No hay noticias para validar</h2>
                     <br>
                     <br>

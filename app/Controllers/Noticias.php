@@ -26,26 +26,22 @@ class Noticias extends BaseController
 
     public function login()
     {
-
         $vistas = view('header') . view('login') . view('footer');
         return $vistas;
     }
     public function iniciar_sesion()
     {
-
         //var_dump('nombreUsuario', 'contraseña',);
-
         $usuario = $this->request->getPost('nombreUsuario');
-        var_dump($usuario);
+      //  var_dump($usuario);
 
         $contraseña = $this->request->getPost('contraseña');
-        var_dump($contraseña);
+      //  var_dump($contraseña);
 
         $Usuario = new UsuariosModel();
         $datoUsuario = $Usuario->obtenerUsuario(['nombreUsuario' => $usuario]);
         if (!empty($datoUsuario)) {
             $contraBD = $datoUsuario[0]['contraseña'];
-
 
             if (strcasecmp($contraBD, $contraseña) == 0) {
                 var_dump($contraBD);
@@ -59,7 +55,7 @@ class Noticias extends BaseController
                 $this->session->setFlashdata('success_message', '¡Inicio de sesión exitoso!');
                 return redirect()->to(base_url('/'))->with('mensaje', '1');
 
-            }
+            
         } else {
 
             $this->session->setFlashdata('error_message', 'Credenciales incorrectas');
@@ -68,6 +64,7 @@ class Noticias extends BaseController
 
 
         }
+    }
     }
     public function logout()
     {
@@ -307,7 +304,6 @@ class Noticias extends BaseController
     }
     public function validar()
     {
-
         $id = $_GET['id'];
         $Noticias = new NoticiasModel();
         $id_usuario = session('nombreUsuario');
@@ -327,7 +323,6 @@ class Noticias extends BaseController
     {
         $id = $_GET['id'];
         $Noticias = new NoticiasModel();
-
 
         // Obtener el 'builder' para la tabla deseada
         $builder = $Noticias->builder();
