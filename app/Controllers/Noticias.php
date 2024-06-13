@@ -33,10 +33,10 @@ class Noticias extends BaseController
     {
         //var_dump('nombreUsuario', 'contraseña',);
         $usuario = $this->request->getPost('nombreUsuario');
-      //  var_dump($usuario);
+        //  var_dump($usuario);
 
         $contraseña = $this->request->getPost('contraseña');
-      //  var_dump($contraseña);
+        //  var_dump($contraseña);
 
         $Usuario = new UsuariosModel();
         $datoUsuario = $Usuario->obtenerUsuario(['nombreUsuario' => $usuario]);
@@ -55,16 +55,16 @@ class Noticias extends BaseController
                 $this->session->setFlashdata('success_message', '¡Inicio de sesión exitoso!');
                 return redirect()->to(base_url('/'))->with('mensaje', '1');
 
-            
-        } else {
 
-            $this->session->setFlashdata('error_message', 'Credenciales incorrectas');
+            } else {
 
-            return redirect()->to(base_url('/login'))->with('mensaje', '0');
+                $this->session->setFlashdata('error_message', 'Credenciales incorrectas');
+
+                return redirect()->to(base_url('/login'))->with('mensaje', '0');
 
 
+            }
         }
-    }
     }
     public function logout()
     {
@@ -168,64 +168,82 @@ class Noticias extends BaseController
     }
     public function actualizar()
     {
+
         $id = $_GET['id'];
 
-        $imagen = $this->request->getFile('imagen');
-
-        if ($imagen->isValid() && !$imagen->hasMoved()) {
-            // Asegúrate de que la carpeta 'uploads' exista en la ruta especificada y tenga los permisos adecuados
-            $rutaDestino = WRITEPATH . 'uploads';
-            $newName = $imagen->getRandomName(); // Genera un nuevo nombre para evitar conflictos
-            $imagen->move($rutaDestino, $newName);
-
-
-            // Verifica si el archivo se movió correctamente
-            if ($imagen->hasMoved()) {
-                // El archivo se movió correctamente
-                echo "Archivo guardado en: " . $rutaDestino . $newName;
-                $imagen = $newName;
-            } else {
-                // El archivo no se movió, maneja el error aquí
-                echo "Error al mover el archivo.";
-            }
-        }
         $fechaActual = Time::now();
         $fechaFormateada = $fechaActual->toLocalizedString('yyyy-MM-dd');
-
         $id_usuario = session('nombreUsuario');
+        $estado = $this->request->getPost('estado');
+        if (strcasecmp($estado, 'Validar') == 0) {
+            $Noticias = new NoticiasModel();
+          
+            $builder = $Noticias->builder();
+             // Realizar la actualización
+            $builder->where('id', $id);
+            $builder->set([ 'titulo' => $this->request->getPost('titulo')]);
+            $builder->set(['descripcion' => $this->request->getPost('descripcion')]);
+            $builder->set(['fecha_correccion' => $fechaFormateada]);
+            $builder->set(['estado' => $this->request->getPost('estado')]);
+            $builder->set(['categoria' => $this->request->getPost('categoria')]);
+            $builder->set(['imagen' => $this->request->getFile('imagen')]);
+            $builder->set(['nombreCorregir' =>$id_usuario]);
 
 
-        var_dump($id_usuario);
-        if (!empty($imagen)) {
-
-            $data = [
-                'id' => rand(10000, 99999),
-                'id_noticia' => $id,
-                'titulo' => $this->request->getPost('titulo'),
-                'descripcion' => $this->request->getPost('descripcion'),
-                'fecha_correccion' => $fechaFormateada,
-                'estado' => $this->request->getPost('estado'),
-                'categoria' => $this->request->getPost('categoria'),
-                'imagen' => $imagen,
-            ];
+            $builder->update();
+            
         } else {
-            $data = [
-                'id' => rand(10000, 99999),
-                'id_noticia' => $id,
-                'titulo' => $this->request->getPost('titulo'),
-                'descripcion' => $this->request->getPost('descripcion'),
-                'fecha_correccion' => $fechaFormateada,
-                'estado' => $this->request->getPost('estado'),
-                'categoria' => $this->request->getPost('categoria'),
 
-            ];
+            if (!empty($imagen)) {
+                $imagen = $this->request->getFile('imagen');
+
+                if ($imagen->isValid() && !$imagen->hasMoved()) {
+                    // Asegúrate de que la carpeta 'uploads' exista en la ruta especificada y tenga los permisos adecuados
+                    $rutaDestino = WRITEPATH . 'uploads';
+                    $newName = $imagen->getRandomName(); // Genera un nuevo nombre para evitar conflictos
+                    $imagen->move($rutaDestino, $newName);
+
+
+                    // Verifica si el archivo se movió correctamente
+                    if ($imagen->hasMoved()) {
+                        // El archivo se movió correctamente
+                        echo "Archivo guardado en: " . $rutaDestino . $newName;
+                        $imagen = $newName;
+                    } else {
+                        // El archivo no se movió, maneja el error aquí
+                        echo "Error al mover el archivo.";
+                    }
+                }
+
+                $data = [
+                    'id' => rand(10000, 99999),
+                    'id_noticia' => $id,
+                    'titulo' => $this->request->getPost('titulo'),
+                    'descripcion' => $this->request->getPost('descripcion'),
+                    'fecha_correccion' => $fechaFormateada,
+                    'estado' => $this->request->getPost('estado'),
+                    'categoria' => $this->request->getPost('categoria'),
+                    'imagen' => $imagen,
+                ];
+            } else {
+                $data = [
+                    'id' => rand(10000, 99999),
+                    'id_noticia' => $id,
+                    'titulo' => $this->request->getPost('titulo'),
+                    'descripcion' => $this->request->getPost('descripcion'),
+                    'fecha_correccion' => $fechaFormateada,
+                    'estado' => $this->request->getPost('estado'),
+                    'categoria' => $this->request->getPost('categoria'),
+                    'imagen' => $this->request->getFile('imagen'),
+
+                ];
+            }
+            $Corregir = new CorregirModel();
+            $Corregir->insertar($data);
+
+
         }
-        $Corregir = new CorregirModel();
-        $Corregir->insertar($data);
 
-
-
-       
         return redirect()->to(base_url('/borradores'));
 
     }
@@ -289,10 +307,6 @@ class Noticias extends BaseController
         $id = $_GET['id'];
         var_dump($id);
         $Noticias = new NoticiasModel();
-
-        $datosOriginales = $Noticias->mostrar_noticia($id);
-        // Guárdalos en la sesión
-        $this->session->set('datos_originales', $datosOriginales);
         // Obtener el 'builder' para la tabla deseada
         $builder = $Noticias->builder();
         // Realizar la actualización
@@ -464,15 +478,15 @@ class Noticias extends BaseController
     {
         $id = $_GET['id'];
         $Noticias = new NoticiasModel();
-        
+
         // Verifica si hay datos originales en la sesión
         if ($this->session->has('datos_originales')) {
             $datosOriginales = $this->session->get('datos_originales');
 
             $builder = $Noticias->builder();
-            
+
             $builder->where('id', $id);
-            
+
             $builder->update($id, $datosOriginales);
 
             // Limpia la sesión
@@ -480,7 +494,8 @@ class Noticias extends BaseController
         }
 
     }
-    public function publicada(){
+    public function publicada()
+    {
         $session = \Config\Services::session();
 
         if (!$usuario = $session->get('nombreUsuario')) {
@@ -494,7 +509,8 @@ class Noticias extends BaseController
         $vistas = view('header') . view('publicadas', $data) . view('footer');
         return $vistas;
     }
-    public function cambios(){
+    public function cambios()
+    {
         $session = \Config\Services::session();
 
         if (!$usuario = $session->get('nombreUsuario')) {
@@ -504,14 +520,15 @@ class Noticias extends BaseController
         }
         $id = $_GET['id'];
         $Noticias = new NoticiasModel();
-        $Correccion =new CorregirModel();
+        $Correccion = new CorregirModel();
         $dato['correcciones'] = $Correccion->mostrar_noticia(['id_noticia' => $id]);
         $data['registros'] = $Noticias->mostrar_noticia(['id' => $id]);
         $dataCompleto = array_merge($data, $dato);
         $vistas = view('header') . view('cambios', $dataCompleto) . view('footer');
         return $vistas;
     }
-    public function descartadas(){
+    public function descartadas()
+    {
         $session = \Config\Services::session();
 
         if (!$usuario = $session->get('nombreUsuario')) {
@@ -521,12 +538,13 @@ class Noticias extends BaseController
         }
         $Noticias = new NoticiasModel();
         $data['registros'] = $Noticias->mostrar_todo();
-       
+
         $vistas = view('header') . view('descartadas', $data) . view('footer');
         return $vistas;
 
     }
-    public function antiguas(){
+    public function antiguas()
+    {
         $Noticias = new NoticiasModel();
 
         $data['registros'] = $Noticias->ordenar();

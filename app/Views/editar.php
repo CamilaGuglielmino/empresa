@@ -44,11 +44,23 @@
                             </select>
 
                         </div>
-                        <div class="mb-3">
+                        <?php 
+                        if (empty($imagen)){ ?>
+                            <div class="mb-3">
                             <label for="formFile">Imagen</label>
                             <input type="file" name="imagen" class="form-control" id="formFile" value="<?php echo $imagen ?>" required>
                             
                         </div>
+                        <?php
+                        }else{?>
+                        <figure class="mb-4"><img class="img-fluid rounded" src="<?php echo base_url('imagenes/'.$imagen);?>" alt="..." /></figure>
+                        <label for="formFile">Cambiar imagen</label>
+                        <input type="file" name="imagen" class="form-control" id="formFile" value="<?php echo $imagen ?>" >
+                        <?php
+
+                        }
+                        ?>
+                        
                         <div class="mb-3">
                             <h5>Elija un estado para la guardar la noticia </h5>
                             <select class="form-select" name="estado" required>

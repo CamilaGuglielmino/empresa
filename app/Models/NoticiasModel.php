@@ -48,6 +48,7 @@ class NoticiasModel extends Model
     {
         $Noticias = $this->db->table('noticias');
         $Noticias->where($id);
+        
         return $Noticias->get()->getResultArray();
     }
     public function mostrar_categoria($var)
