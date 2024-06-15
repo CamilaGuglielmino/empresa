@@ -11,7 +11,7 @@ $num = '0';
         <div class="col-8">
             <h2>Mis borradores activos</h2>
         </div>
-        <!-- <div class="col-4"><a role="button">Desactividas</a></div> -->
+        
     </div>
     <div class="row">
         <div class="col-lg-12">
